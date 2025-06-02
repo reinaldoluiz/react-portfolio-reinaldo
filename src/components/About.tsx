@@ -1,71 +1,81 @@
 
 const About = () => {
   return (
-    <section id="about" className="py-32 bg-white relative overflow-hidden">
-      {/* Decorative sketchy elements */}
-      <div className="absolute top-10 right-10 w-12 h-12 border-2 border-blue-300 rounded-full opacity-20"></div>
-      <div className="absolute bottom-20 left-10 w-8 h-8 bg-yellow-300 transform rotate-45 opacity-30"></div>
-      
-      <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-800 transform -rotate-1 inline-block">
-              About Me
-            </h2>
-            <div className="w-32 h-1 bg-red-400 mx-auto mt-4 transform rotate-1"></div>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="order-2 md:order-1">
-              <div className="bg-blue-50 p-8 transform -rotate-1 border-2 border-gray-300 mb-8">
-                <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Just like preparing for a hiking adventure, I believe great UX design requires careful planning, 
-                  understanding the terrain (user needs), and having the right tools for the journey.
-                </p>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  With 5+ years of experience, I've guided countless digital expeditions, helping users navigate 
-                  complex interfaces and reach their goals with confidence and joy.
+    <section id="about" className="py-24 lg:py-32 bg-white">
+      <div className="container mx-auto px-6 max-w-7xl">
+        {/* Section Header */}
+        <div className="max-w-3xl mb-20">
+          <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            About Me
+          </h2>
+          <div className="w-32 h-1 bg-red-400 mb-8 transform rotate-1"></div>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Just like preparing for a hiking adventure, I believe great UX design requires careful planning, 
+            understanding the terrain (user needs), and having the right tools for the journey.
+          </p>
+        </div>
+        
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
+          {/* Content */}
+          <div>
+            <div className="space-y-12">
+              <div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-3">
+                  🔍 Research & Discovery
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Like scouting the best trail, I dive deep into user research to understand the journey ahead. 
+                  I use interviews, surveys, and analytics to map out user behaviors and pain points.
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 gap-6">
-                <div className="bg-yellow-100 p-6 transform rotate-1 border-2 border-gray-300">
-                  <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
-                    🔍 Research & Discovery
-                  </h3>
-                  <p className="text-gray-600">
-                    Like scouting the best trail, I dive deep into user research to understand the journey ahead.
-                  </p>
-                </div>
-                
-                <div className="bg-green-100 p-6 transform -rotate-1 border-2 border-gray-300">
-                  <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
-                    🎨 Design & Prototyping
-                  </h3>
-                  <p className="text-gray-600">
-                    Sketching the path forward with wireframes, prototypes, and beautiful interfaces.
-                  </p>
-                </div>
-                
-                <div className="bg-orange-100 p-6 transform rotate-1 border-2 border-gray-300">
-                  <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
-                    🚀 Testing & Iteration
-                  </h3>
-                  <p className="text-gray-600">
-                    Every good explorer tests their route and adjusts based on what they discover.
-                  </p>
-                </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-3">
+                  🎨 Design & Prototyping
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Sketching the path forward with wireframes, prototypes, and beautiful interfaces. 
+                  I create design systems that scale and interfaces that delight users.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-900 flex items-center gap-3">
+                  🚀 Testing & Iteration
+                </h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Every good explorer tests their route and adjusts based on what they discover. 
+                  I run usability tests and iterate designs based on real user feedback.
+                </p>
               </div>
             </div>
             
-            <div className="order-1 md:order-2 text-center">
+            <div className="mt-16 grid grid-cols-3 gap-8 text-center">
+              <div className="bg-blue-50 p-6 transform -rotate-1 border-2 border-gray-200">
+                <div className="text-3xl font-bold text-blue-600 mb-2">50+</div>
+                <div className="text-sm text-gray-600">Projects Completed</div>
+              </div>
+              <div className="bg-green-50 p-6 transform rotate-1 border-2 border-gray-200">
+                <div className="text-3xl font-bold text-green-600 mb-2">15</div>
+                <div className="text-sm text-gray-600">Happy Clients</div>
+              </div>
+              <div className="bg-yellow-50 p-6 transform -rotate-1 border-2 border-gray-200">
+                <div className="text-3xl font-bold text-yellow-600 mb-2">5+</div>
+                <div className="text-sm text-gray-600">Years Experience</div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Illustration */}
+          <div className="text-center">
+            <div className="relative">
               <img 
                 src="/lovable-uploads/ad8c3b46-7b73-4725-910d-8e9d9e309938.png" 
                 alt="Explorer with magnifying glass" 
-                className="w-64 h-64 object-contain mx-auto mb-6"
+                className="w-80 h-80 object-contain mx-auto"
               />
-              <div className="bg-pink-100 p-4 transform -rotate-2 border-2 border-gray-300 inline-block">
-                <p className="font-semibold text-gray-800">
+              <div className="absolute -bottom-6 -left-6 bg-pink-100 p-4 transform -rotate-2 border-2 border-gray-300 max-w-xs">
+                <p className="text-sm font-semibold text-gray-800">
                   "Always exploring new paths to better user experiences!"
                 </p>
               </div>
