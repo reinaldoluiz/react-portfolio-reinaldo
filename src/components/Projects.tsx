@@ -1,72 +1,53 @@
 
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { ExternalLink } from "lucide-react";
-
 const Projects = () => {
   const projects = [
     {
       title: "EcoCommerce App",
-      description: "A sustainable shopping platform that helps users discover eco-friendly products and track their environmental impact.",
-      tags: ["Mobile App", "UX Research", "Prototyping"],
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
-      link: "#"
+      description: "A sustainable shopping platform that helps users discover eco-friendly products.",
+      year: "2024",
+      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop"
     },
     {
-      title: "FinTech Dashboard",
-      description: "A comprehensive financial dashboard for investment tracking with real-time data visualization and portfolio management.",
-      tags: ["Web App", "Data Visualization", "UI Design"],
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-      link: "#"
+      title: "FinTech Dashboard", 
+      description: "A comprehensive financial dashboard for investment tracking with real-time data.",
+      year: "2024",
+      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop"
     },
     {
-      title: "Learning Management System",
-      description: "An intuitive educational platform that connects students and instructors with interactive learning experiences.",
-      tags: ["Web Platform", "User Testing", "Accessibility"],
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop",
-      link: "#"
+      title: "Learning Platform",
+      description: "An intuitive educational platform connecting students and instructors.",
+      year: "2023", 
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=400&fit=crop"
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-4 text-slate-900">Featured Projects</h2>
-          <p className="text-xl text-slate-600 text-center mb-16 max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my design process and problem-solving approach.
-          </p>
+          <h2 className="text-4xl md:text-5xl font-light mb-16 text-gray-900">Projects</h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="space-y-24">
             {projects.map((project, index) => (
-              <Card key={index} className="group overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                <div className="relative overflow-hidden">
+              <div key={index} className="grid md:grid-cols-2 gap-16 items-center">
+                <div className={index % 2 === 1 ? "md:order-2" : ""}>
                   <img 
                     src={project.image} 
                     alt={project.title}
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-80 object-cover"
                   />
-                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <ExternalLink className="h-8 w-8 text-white" />
-                  </div>
                 </div>
                 
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 text-slate-900 group-hover:text-blue-600 transition-colors">
+                <div className={index % 2 === 1 ? "md:order-1" : ""}>
+                  <p className="text-sm text-gray-500 mb-4">{project.year}</p>
+                  <h3 className="text-2xl md:text-3xl font-light mb-6 text-gray-900">
                     {project.title}
                   </h3>
-                  <p className="text-slate-600 mb-4 leading-relaxed">
+                  <p className="text-lg text-gray-700 leading-relaxed">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="secondary" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
         </div>
