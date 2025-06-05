@@ -1,6 +1,5 @@
 
 import { ArrowDown } from "lucide-react";
-import BackgroundRemover from "./BackgroundRemover";
 
 const Hero = () => {
   const scrollToNext = () => {
@@ -41,13 +40,10 @@ const Hero = () => {
           
           <button 
             onClick={scrollToNext}
-            className="bg-red-400 hover:bg-red-500 text-white px-8 py-4 text-lg font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg mb-16"
+            className="bg-red-400 hover:bg-red-500 text-white px-8 py-4 text-lg font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg"
           >
             Let's Explore My Work! →
           </button>
-
-          {/* Background Remover Tool */}
-          <BackgroundRemover />
         </div>
       </div>
       
