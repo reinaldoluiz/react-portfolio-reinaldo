@@ -1,4 +1,5 @@
 
+
 const About = () => {
   return (
     <section className="py-32 bg-white relative overflow-hidden">
@@ -15,9 +16,10 @@ const About = () => {
             <div className="w-32 h-1 bg-red-400 mx-auto mt-4 transform rotate-1"></div>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="order-2 md:order-1">
-              <div className="bg-blue-50 p-8 transform -rotate-1 border-2 border-gray-300 mb-8">
+          {/* First row: About text, illustration, and quote */}
+          <div className="grid md:grid-cols-2 gap-16 items-center mb-16">
+            <div>
+              <div className="bg-blue-50 p-8 transform -rotate-1 border-2 border-gray-300">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
                   Just like preparing for a hiking adventure, I believe great UX design requires careful planning, 
                   understanding the terrain (user needs), and having the right tools for the journey.
@@ -27,38 +29,9 @@ const About = () => {
                   complex interfaces and reach their goals with confidence and joy.
                 </p>
               </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-yellow-100 p-6 transform rotate-1 border-2 border-gray-300">
-                  <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
-                    🔍 Research & Discovery
-                  </h3>
-                  <p className="text-gray-600">
-                    Like scouting the best trail, I dive deep into user research to understand the journey ahead.
-                  </p>
-                </div>
-                
-                <div className="bg-green-100 p-6 transform -rotate-1 border-2 border-gray-300">
-                  <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
-                    🎨 Design & Prototyping
-                  </h3>
-                  <p className="text-gray-600">
-                    Sketching the path forward with wireframes, prototypes, and beautiful interfaces.
-                  </p>
-                </div>
-                
-                <div className="bg-orange-100 p-6 transform rotate-1 border-2 border-gray-300">
-                  <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
-                    🚀 Testing & Iteration
-                  </h3>
-                  <p className="text-gray-600">
-                    Every good explorer tests their route and adjusts based on what they discover.
-                  </p>
-                </div>
-              </div>
             </div>
             
-            <div className="order-1 md:order-2 text-center">
+            <div className="text-center">
               <img 
                 src="/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png" 
                 alt="Explorer with magnifying glass" 
@@ -71,6 +44,36 @@ const About = () => {
               </div>
             </div>
           </div>
+          
+          {/* Second row: Three skill boxes */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="bg-yellow-100 p-6 transform rotate-1 border-2 border-gray-300">
+              <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
+                🔍 Research & Discovery
+              </h3>
+              <p className="text-gray-600">
+                Like scouting the best trail, I dive deep into user research to understand the journey ahead.
+              </p>
+            </div>
+            
+            <div className="bg-green-100 p-6 transform -rotate-1 border-2 border-gray-300">
+              <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
+                🎨 Design & Prototyping
+              </h3>
+              <p className="text-gray-600">
+                Sketching the path forward with wireframes, prototypes, and beautiful interfaces.
+              </p>
+            </div>
+            
+            <div className="bg-orange-100 p-6 transform rotate-1 border-2 border-gray-300">
+              <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
+                🚀 Testing & Iteration
+              </h3>
+              <p className="text-gray-600">
+                Every good explorer tests their route and adjusts based on what they discover.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -78,3 +81,4 @@ const About = () => {
 };
 
 export default About;
+
