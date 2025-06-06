@@ -1,7 +1,6 @@
-
 const About = () => {
   return (
-    <section id="about" className="py-32 bg-white relative overflow-hidden">
+    <section className="py-32 bg-white relative overflow-hidden">
       {/* Decorative sketchy elements */}
       <div className="absolute top-10 right-10 w-12 h-12 border-2 border-blue-300 rounded-full opacity-20"></div>
       <div className="absolute bottom-20 left-10 w-8 h-8 bg-yellow-300 transform rotate-45 opacity-30"></div>
@@ -60,7 +59,7 @@ const About = () => {
             
             <div className="order-1 md:order-2 text-center">
               <img 
-                src="/lovable-uploads/16f2913a-2696-432d-8f3c-ddf80832f46a.png" 
+                src="/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png" 
                 alt="Explorer with magnifying glass" 
                 className="w-64 h-64 object-contain mx-auto mb-6"
               />
