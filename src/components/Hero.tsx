@@ -1,14 +1,12 @@
-
 import { ArrowDown } from "lucide-react";
-
 const Hero = () => {
   const scrollToNext = () => {
     const aboutSection = document.getElementById('about');
-    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+    aboutSection?.scrollIntoView({
+      behavior: 'smooth'
+    });
   };
-
-  return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-orange-50 relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-orange-50 relative overflow-hidden">
       {/* Decorative doodles */}
       <div className="absolute top-20 left-10 w-8 h-8 border-2 border-blue-400 rounded-full opacity-30"></div>
       <div className="absolute top-40 right-20 w-6 h-6 bg-orange-300 rotate-45 opacity-40"></div>
@@ -18,11 +16,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Main illustration */}
           <div className="mb-8 flex justify-center">
-            <img 
-              src="/lovable-uploads/2ca7961a-8405-4a57-9f96-2dbab84a09a2.png" 
-              alt="Adventure character with backpack" 
-              className="w-48 h-48 object-contain"
-            />
+            <img alt="Adventure character with backpack" className="w-48 h-48 object-contain" src="/lovable-uploads/d70d29e8-a402-4a89-a98d-44df7fcacf09.png" />
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-800 tracking-tight transform -rotate-1">
@@ -38,23 +32,15 @@ const Hero = () => {
             Discovering user needs and crafting digital adventures that guide people to their destinations!
           </p>
           
-          <button 
-            onClick={scrollToNext}
-            className="bg-red-400 hover:bg-red-500 text-white px-8 py-4 text-lg font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg"
-          >
+          <button onClick={scrollToNext} className="bg-red-400 hover:bg-red-500 text-white px-8 py-4 text-lg font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg">
             Let's Explore My Work! →
           </button>
         </div>
       </div>
       
-      <button 
-        onClick={scrollToNext}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
-      >
+      <button onClick={scrollToNext} className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <ArrowDown className="h-6 w-6 text-gray-600" />
       </button>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
