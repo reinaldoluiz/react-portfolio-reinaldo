@@ -1,3 +1,4 @@
+
 const About = () => {
   return (
     <section className="py-32 bg-white relative overflow-hidden">
@@ -27,7 +28,7 @@ const About = () => {
                 </p>
               </div>
               
-              <div className="grid grid-cols-1 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-yellow-100 p-6 transform rotate-1 border-2 border-gray-300">
                   <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
                     🔍 Research & Discovery
