@@ -5,7 +5,7 @@ const Projects = () => {
       title: "EcoCommerce App",
       description: "A sustainable shopping platform that helps users discover eco-friendly products with an intuitive map-like navigation system.",
       year: "2024",
-      image: "/lovable-uploads/8c522382-468a-41df-9106-8ffef5906707.png",
+      image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
       color: "bg-green-100",
       tools: ["Figma", "User Research", "Prototyping"]
     },
@@ -13,7 +13,7 @@ const Projects = () => {
       title: "FinTech Dashboard", 
       description: "A comprehensive financial dashboard for investment tracking - like having a compass for your financial journey.",
       year: "2024",
-      image: "/lovable-uploads/a13a26b6-f595-4a4a-816e-693e4ae3b7be.png",
+      image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
       color: "bg-blue-100",
       tools: ["Adobe XD", "Data Visualization", "Usability Testing"]
     },
@@ -21,7 +21,7 @@ const Projects = () => {
       title: "Learning Platform",
       description: "An educational platform connecting students and instructors - mapping out learning adventures for every user.",
       year: "2023", 
-      image: "/lovable-uploads/c21c8675-9bb8-405c-a4c5-9917043f11f7.png",
+      image: "/lovable-uploads/898d43f4-a54b-415e-8512-7d437380d908.png",
       color: "bg-yellow-100",
       tools: ["Sketch", "Information Architecture", "User Flows"]
     }
@@ -86,7 +86,7 @@ const Projects = () => {
           <div className="text-center mt-20">
             <div className="bg-orange-200 p-6 transform -rotate-1 border-2 border-gray-300 inline-block">
               <img 
-                src="/lovable-uploads/2744b0f8-f478-4577-8f53-05767814047d.png" 
+                src="/lovable-uploads/3bc795d8-161f-4f91-acc0-46a5d2d4b7d9.png" 
                 alt="Running character" 
                 className="w-24 h-24 object-contain mx-auto mb-4"
               />

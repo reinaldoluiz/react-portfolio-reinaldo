@@ -19,7 +19,7 @@ const Hero = () => {
           {/* Main illustration */}
           <div className="mb-8 flex justify-center">
             <img 
-              src="/lovable-uploads/63f9863d-a63f-488f-8685-8af492bb3722.png" 
+              src="/lovable-uploads/2ca7961a-8405-4a57-9f96-2dbab84a09a2.png" 
               alt="Adventure character with backpack" 
               className="w-48 h-48 object-contain"
             />

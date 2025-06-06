@@ -4,19 +4,19 @@ const Skills = () => {
     {
       title: "Design Tools",
       skills: ["Figma", "Adobe Creative Suite", "Sketch", "Principle"],
-      illustration: "/lovable-uploads/ec645de9-161b-42c7-a79a-55568ad202b4.png",
+      illustration: "/lovable-uploads/45b28675-eb95-4a86-b3cc-3a79f03709d0.png",
       color: "bg-blue-100"
     },
     {
       title: "Development", 
       skills: ["HTML/CSS", "JavaScript", "React", "Tailwind CSS"],
-      illustration: "/lovable-uploads/854b38a4-9b9c-4a87-b32d-52abdfb9b99a.png",
+      illustration: "/lovable-uploads/6fc5ff19-a59d-4426-967e-0a1990aa3c84.png",
       color: "bg-green-100"
     },
     {
       title: "UX Methods",
       skills: ["User Research", "Usability Testing", "Information Architecture", "Design Systems"],
-      illustration: "/lovable-uploads/565de3cd-214f-487a-8680-a68a60ce12ed.png",
+      illustration: "/lovable-uploads/f9e35747-07b9-409a-8404-387cce1846a7.png",
       color: "bg-yellow-100"
     }
   ];

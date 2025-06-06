@@ -19,7 +19,7 @@ const Contact = () => {
             <div className="text-center md:text-left">
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/1dce2f7c-9669-42ab-a5c6-a963f4bfa390.png" 
+                  src="/lovable-uploads/5445d46d-711b-49b0-9683-89d1404f0db4.png" 
                   alt="Adventure character with background" 
                   className="w-56 h-56 object-contain mx-auto md:mx-0"
                 />

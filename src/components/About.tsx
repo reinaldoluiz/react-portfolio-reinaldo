@@ -60,7 +60,7 @@ const About = () => {
             
             <div className="order-1 md:order-2 text-center">
               <img 
-                src="/lovable-uploads/ad8c3b46-7b73-4725-910d-8e9d9e309938.png" 
+                src="/lovable-uploads/16f2913a-2696-432d-8f3c-ddf80832f46a.png" 
                 alt="Explorer with magnifying glass" 
                 className="w-64 h-64 object-contain mx-auto mb-6"
               />
