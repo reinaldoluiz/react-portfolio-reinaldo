@@ -66,6 +66,18 @@ const Navigation = () => {
                 >
                   Skills
                 </button>
+                <Link 
+                  to="/resume"
+                  className="text-gray-600 hover:text-red-400 transition-colors font-medium"
+                >
+                  Resume
+                </Link>
+                <Link 
+                  to="/portfolio"
+                  className="text-gray-600 hover:text-red-400 transition-colors font-medium"
+                >
+                  Portfolio
+                </Link>
               </>
             ) : (
               <>
@@ -139,6 +151,20 @@ const Navigation = () => {
                   >
                     Skills
                   </button>
+                  <Link 
+                    to="/resume"
+                    className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Resume
+                  </Link>
+                  <Link 
+                    to="/portfolio"
+                    className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Portfolio
+                  </Link>
                   <button 
                     onClick={() => scrollToSection('contact')}
                     className="text-left bg-red-400 text-white px-4 py-2 hover:bg-red-500 transition-colors font-medium border-2 border-black transform hover:rotate-1 w-fit"
