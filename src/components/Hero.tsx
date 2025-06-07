@@ -18,6 +18,11 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
+          {/* Main illustration */}
+          <div className="mb-8 flex justify-center">
+            <img alt="Adventure character with backpack" className="w-48 h-48 object-contain" src="/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png" />
+          </div>
+          
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-800 tracking-tight transform -rotate-1">
             Reinaldo Luiz
           </h1>
