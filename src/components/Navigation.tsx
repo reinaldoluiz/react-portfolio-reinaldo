@@ -30,10 +30,11 @@ const Navigation = () => {
     setIsMobileMenuOpen(false);
   };
 
+  // Always show navigation on non-home pages
   if (!isVisible && isHomePage) return null;
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm transition-all duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
+    <nav className={`fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm transition-all duration-300`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* Logo/Name */}
