@@ -1,3 +1,4 @@
+
 import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
@@ -23,7 +24,7 @@ const Hero = () => {
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-800 tracking-tight transform -rotate-1">
-            Alex Jordan
+            Reinaldo Luiz
           </h1>
           <div className="inline-block bg-yellow-200 px-6 py-3 transform rotate-1 border-2 border-black mb-8">
             <p className="text-xl md:text-2xl text-gray-800 font-semibold">

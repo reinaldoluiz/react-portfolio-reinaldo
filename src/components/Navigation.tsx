@@ -33,7 +33,7 @@ const Navigation = () => {
             onClick={() => scrollToSection('hero')}
             className="text-xl font-bold text-gray-800 hover:text-red-400 transition-colors"
           >
-            Alex Jordan
+            Reinaldo Luiz
           </button>
 
           {/* Desktop Menu */}

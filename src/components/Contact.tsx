@@ -38,7 +38,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="bg-blue-100 p-4 transform rotate-1 border-2 border-gray-300">
                   <p className="text-gray-800 font-bold">📧 Email</p>
-                  <p className="text-gray-700">alex.jordan@email.com</p>
+                  <p className="text-gray-700">reinaldo.luiz@email.com</p>
                 </div>
                 
                 <div className="bg-green-100 p-4 transform -rotate-1 border-2 border-gray-300">
@@ -99,7 +99,7 @@ const Contact = () => {
       <div className="border-t-2 border-gray-300 mt-24 pt-8 bg-white transform -rotate-1">
         <div className="container mx-auto px-6">
           <p className="text-center text-gray-500 text-sm">
-            © 2024 Alex Jordan - Adventure Designer. All rights reserved. 🎒
+            © 2024 Reinaldo Luiz - Adventure Designer. All rights reserved. 🎒
           </p>
         </div>
       </div>
