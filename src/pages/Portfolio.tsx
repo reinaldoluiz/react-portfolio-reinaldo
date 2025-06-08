@@ -99,7 +99,7 @@ const Portfolio = () => {
                 <TabsTrigger 
                   key={category} 
                   value={category}
-                  className="text-sm font-semibold data-[state=active]:bg-red-400 data-[state=active]:text-white transform rotate-1 data-[state=active]:rotate-0 transition-all duration-300"
+                  className="text-sm font-semibold text-center data-[state=active]:bg-red-400 data-[state=active]:text-white transform rotate-1 data-[state=active]:rotate-0 transition-all duration-300"
                 >
                   {category}
                 </TabsTrigger>
