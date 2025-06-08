@@ -1,110 +1,42 @@
 
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 const ProjectDetail = () => {
   const { id } = useParams();
   
-  // Dados dos projetos (mesmos dados da página Portfolio)
-  const projects = [
-    {
-      id: 1,
-      title: "EcoCommerce App",
-      description: "A sustainable shopping platform that helps users discover eco-friendly products with an intuitive map-like navigation system.",
-      year: "2024",
-      image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
-      color: "bg-green-100",
-      tools: ["Figma", "User Research", "Prototyping"],
-      category: "Mobile App",
-      fullDescription: "O EcoCommerce App é uma plataforma inovadora que conecta consumidores conscientes com produtos sustentáveis. Desenvolvido com foco na experiência do usuário, o aplicativo oferece um sistema de navegação intuitivo que permite aos usuários descobrir facilmente produtos ecológicos. O projeto incluiu extensa pesquisa de usuário, prototipagem iterativa e testes de usabilidade para garantir uma experiência fluida e engajante.",
-      challenges: ["Criar uma navegação intuitiva para produtos sustentáveis", "Balancear funcionalidade com design limpo", "Integrar sistemas de recomendação personalizados"],
-      solutions: ["Sistema de filtros avançados por categoria sustentável", "Interface minimalista com foco no produto", "Algoritmo de recomendação baseado em preferências eco-friendly"]
-    },
-    {
-      id: 2,
-      title: "FinTech Dashboard", 
-      description: "A comprehensive financial dashboard for investment tracking - like having a compass for your financial journey.",
-      year: "2024",
-      image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
-      color: "bg-blue-100",
-      tools: ["Adobe XD", "Data Visualization", "Usability Testing"],
-      category: "Web App",
-      fullDescription: "Um dashboard financeiro completo que transforma dados complexos em insights visuais claros. Este projeto focou em criar uma interface que tornasse o acompanhamento de investimentos acessível e compreensível para usuários de todos os níveis de experiência financeira.",
-      challenges: ["Visualizar dados financeiros complexos de forma simples", "Criar interface responsiva para diferentes dispositivos", "Garantir segurança e confiabilidade dos dados"],
-      solutions: ["Gráficos interativos com drill-down de informações", "Design system flexível para múltiplas telas", "Implementação de protocolos de segurança visuais"]
-    },
-    {
-      id: 3,
-      title: "Learning Platform",
-      description: "An educational platform connecting students and instructors - mapping out learning adventures for every user.",
-      year: "2023", 
-      image: "/lovable-uploads/898d43f4-a54b-415e-8512-7d437380d908.png",
-      color: "bg-yellow-100",
-      tools: ["Sketch", "Information Architecture", "User Flows"],
-      category: "Platform",
-      fullDescription: "Uma plataforma educacional que revoluciona a forma como estudantes e instrutores interagem. O projeto envolveu a criação de uma arquitetura de informação robusta e fluxos de usuário otimizados para diferentes perfis de aprendizado.",
-      challenges: ["Atender diferentes tipos de learners", "Criar sistema de progresso motivacional", "Facilitar interação entre alunos e professores"],
-      solutions: ["Personalização de jornadas de aprendizado", "Gamificação com badges e conquistas", "Sistema de comunicação integrado e intuitivo"]
-    },
-    {
-      id: 4,
-      title: "Healthcare App",
-      description: "A telemedicine application that connects patients with doctors through an intuitive and accessible interface.",
-      year: "2023",
-      image: "/lovable-uploads/3bc795d8-161f-4f91-acc0-46a5d2d4b7d9.png",
-      color: "bg-pink-100",
-      tools: ["Figma", "Accessibility Design", "User Testing"],
-      category: "Mobile App",
-      fullDescription: "Aplicativo de telemedicina que prioriza acessibilidade e facilidade de uso. O projeto incluiu extensos testes com usuários de diferentes faixas etárias e níveis de familiaridade com tecnologia.",
-      challenges: ["Garantir acessibilidade para todas as idades", "Simplificar processo de consulta médica", "Criar interface confiável para área da saúde"],
-      solutions: ["Design inclusivo com tipografia legível", "Fluxo de agendamento em poucos passos", "Elementos visuais que transmitem confiança e segurança"]
-    },
-    {
-      id: 5,
-      title: "Food Delivery UI",
-      description: "A modern food delivery interface focusing on quick ordering and real-time tracking features.",
-      year: "2022",
-      image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
-      color: "bg-orange-100",
-      tools: ["Adobe XD", "Micro-interactions", "Prototyping"],
-      category: "Mobile App",
-      fullDescription: "Interface moderna para delivery de comida com foco em velocidade de pedido e rastreamento em tempo real. O projeto explorou micro-interações para criar uma experiência fluida e envolvente.",
-      challenges: ["Otimizar velocidade do processo de pedido", "Criar sistema de rastreamento claro", "Balancear informações sem sobrecarregar a tela"],
-      solutions: ["One-tap ordering para itens favoritos", "Mapa de rastreamento com estimativas precisas", "Hierarquia visual clara com uso estratégico de cores"]
-    },
-    {
-      id: 6,
-      title: "Travel Booking System",
-      description: "A comprehensive travel booking platform with intuitive search and booking flows.",
-      year: "2022",
-      image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
-      color: "bg-purple-100",
-      tools: ["Figma", "User Journey Mapping", "A/B Testing"],
-      category: "Web App",
-      fullDescription: "Plataforma completa de reservas de viagem com foco em simplicidade e eficiência. O projeto envolveu mapeamento detalhado de jornadas do usuário e testes A/B para otimizar conversões.",
-      challenges: ["Simplificar processo complexo de reserva", "Apresentar muitas opções sem confundir", "Criar confiança na finalização da compra"],
-      solutions: ["Wizard de reserva com progress indicator", "Filtros inteligentes com preview de resultados", "Checkout transparente com resumo claro"]
-    }
-  ];
-
-  const project = projects.find(p => p.id === parseInt(id || '1'));
-
-  if (!project) {
-    return (
-      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
-        <Navigation />
-        <div className="pt-20 container mx-auto px-6">
-          <div className="text-center py-20">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Projeto não encontrado</h1>
-            <Link to="/portfolio" className="text-red-400 hover:text-red-500 font-medium">
-              ← Voltar ao Portfolio
-            </Link>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  // Mock project data - in a real app, this would come from an API or database
+  const project = {
+    id: parseInt(id || '1'),
+    title: "EcoCommerce App",
+    subtitle: "Sustainable Shopping Platform",
+    description: "A comprehensive sustainable shopping platform that helps users discover eco-friendly products through an intuitive map-like navigation system. The app focuses on environmental impact transparency and conscious consumer choices.",
+    year: "2024",
+    duration: "4 months",
+    team: "Designer, 2 Developers, PM",
+    role: "Lead UX/UI Designer",
+    image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
+    color: "bg-green-100",
+    tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
+    category: "Mobile App",
+    problem: "Users struggle to find and verify eco-friendly products while shopping online. Existing platforms lack transparency about environmental impact and sustainable alternatives.",
+    solution: "Created an intuitive mobile app with map-based navigation, sustainability scores, and AR features to help users make informed eco-friendly purchasing decisions.",
+    process: [
+      "User Research & Interviews",
+      "Competitive Analysis", 
+      "Wireframing & Prototyping",
+      "User Testing & Iteration",
+      "Final Design & Handoff"
+    ],
+    results: [
+      "40% increase in user engagement",
+      "25% improvement in task completion",
+      "4.8/5 app store rating",
+      "Featured in sustainability category"
+    ]
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
@@ -112,46 +44,56 @@ const ProjectDetail = () => {
       <div className="pt-20">
         <div className="container mx-auto px-6 py-16">
           {/* Back Button */}
-          <Link 
-            to="/portfolio" 
-            className="inline-flex items-center gap-2 text-gray-600 hover:text-red-400 transition-colors mb-8 font-medium"
-          >
-            <ArrowLeft size={20} />
-            Voltar ao Portfolio
-          </Link>
+          <div className="mb-8">
+            <Link 
+              to="/portfolio"
+              className="inline-flex items-center gap-2 bg-white px-4 py-2 transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-gray-300 text-gray-700 hover:text-red-400"
+            >
+              <ArrowLeft size={20} />
+              Back to Portfolio
+            </Link>
+          </div>
 
           {/* Project Header */}
-          <div className="grid lg:grid-cols-2 gap-16 items-start mb-16">
-            <div>
-              <div className={`${project.color} p-8 transform rotate-2 border-2 border-gray-300 shadow-lg`}>
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-64 object-contain mx-auto"
-                />
+          <div className="text-center mb-16">
+            <div className="bg-red-200 px-4 py-2 inline-block transform rotate-2 mb-4">
+              <p className="text-sm font-bold text-gray-800">{project.category}</p>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 transform -rotate-1 inline-block mb-4">
+              {project.title}
+            </h1>
+            <p className="text-xl text-gray-600 mb-6">{project.subtitle}</p>
+            <div className="w-32 h-1 bg-blue-400 mx-auto transform rotate-1"></div>
+          </div>
+
+          {/* Project Info Grid */}
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="bg-blue-100 p-6 transform rotate-1 border-2 border-gray-300">
+              <div className="flex items-center gap-2 mb-2">
+                <Calendar size={20} className="text-red-400" />
+                <h3 className="font-bold text-gray-800">Timeline</h3>
               </div>
+              <p className="text-gray-700">{project.duration}</p>
+              <p className="text-sm text-gray-600">{project.year}</p>
             </div>
             
-            <div>
-              <div className="bg-red-200 px-4 py-2 inline-block transform -rotate-1 mb-4">
-                <p className="text-sm font-bold text-gray-800">{project.category}</p>
+            <div className="bg-yellow-100 p-6 transform -rotate-1 border-2 border-gray-300">
+              <div className="flex items-center gap-2 mb-2">
+                <Users size={20} className="text-red-400" />
+                <h3 className="font-bold text-gray-800">Team</h3>
               </div>
-              
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 transform rotate-1">
-                {project.title}
-              </h1>
-              
-              <div className="bg-gray-200 px-4 py-2 inline-block transform rotate-1 mb-6">
-                <p className="text-lg font-bold text-gray-800">{project.year}</p>
+              <p className="text-gray-700">{project.team}</p>
+              <p className="text-sm text-gray-600">My role: {project.role}</p>
+            </div>
+            
+            <div className="bg-green-100 p-6 transform rotate-2 border-2 border-gray-300">
+              <div className="flex items-center gap-2 mb-2">
+                <Clock size={20} className="text-red-400" />
+                <h3 className="font-bold text-gray-800">Tools Used</h3>
               </div>
-              
-              <p className="text-xl text-gray-700 leading-relaxed mb-6">
-                {project.description}
-              </p>
-              
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-1">
                 {project.tools.map((tool, index) => (
-                  <span key={index} className="bg-white px-3 py-2 text-sm font-semibold text-gray-700 transform rotate-1 border border-gray-400">
+                  <span key={index} className="bg-white px-2 py-1 text-xs font-semibold text-gray-700 border border-gray-400">
                     {tool}
                   </span>
                 ))}
@@ -159,43 +101,53 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          {/* Project Details */}
-          <div className="space-y-16">
-            {/* Full Description */}
-            <div className="bg-white p-8 transform -rotate-1 border-2 border-gray-300 shadow-lg">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4 transform rotate-1">
-                Sobre o Projeto
-              </h2>
-              <p className="text-gray-700 leading-relaxed text-lg">
-                {project.fullDescription}
-              </p>
+          {/* Project Image */}
+          <div className="mb-16">
+            <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
+              <img 
+                src={project.image} 
+                alt={project.title}
+                className="w-full max-w-2xl h-96 object-contain mx-auto"
+              />
             </div>
+          </div>
 
-            {/* Challenges & Solutions */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-orange-100 p-8 transform rotate-2 border-2 border-gray-300">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  Desafios
-                </h3>
-                <ul className="space-y-3">
-                  {project.challenges.map((challenge, index) => (
-                    <li key={index} className="text-gray-700 leading-relaxed flex items-start gap-2">
-                      <span className="text-red-400 font-bold">•</span>
-                      {challenge}
+          {/* Project Details */}
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            {/* Problem & Solution */}
+            <div>
+              <div className="bg-orange-100 p-6 transform rotate-1 border-2 border-gray-300 mb-8">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">The Challenge</h3>
+                <p className="text-gray-700 leading-relaxed">{project.problem}</p>
+              </div>
+              
+              <div className="bg-pink-100 p-6 transform -rotate-1 border-2 border-gray-300">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">The Solution</h3>
+                <p className="text-gray-700 leading-relaxed">{project.solution}</p>
+              </div>
+            </div>
+            
+            {/* Process & Results */}
+            <div>
+              <div className="bg-purple-100 p-6 transform -rotate-1 border-2 border-gray-300 mb-8">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Design Process</h3>
+                <ul className="space-y-2">
+                  {project.process.map((step, index) => (
+                    <li key={index} className="text-gray-700 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                      {step}
                     </li>
                   ))}
                 </ul>
               </div>
-
-              <div className="bg-green-100 p-8 transform -rotate-2 border-2 border-gray-300">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">
-                  Soluções
-                </h3>
-                <ul className="space-y-3">
-                  {project.solutions.map((solution, index) => (
-                    <li key={index} className="text-gray-700 leading-relaxed flex items-start gap-2">
-                      <span className="text-green-600 font-bold">✓</span>
-                      {solution}
+              
+              <div className="bg-teal-100 p-6 transform rotate-1 border-2 border-gray-300">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Results</h3>
+                <ul className="space-y-2">
+                  {project.results.map((result, index) => (
+                    <li key={index} className="text-gray-700 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                      {result}
                     </li>
                   ))}
                 </ul>
@@ -204,24 +156,25 @@ const ProjectDetail = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-16">
-            <div className="bg-blue-100 p-8 transform rotate-1 border-2 border-gray-300 inline-block max-w-md">
-              <h3 className="text-xl font-bold text-gray-800 mb-3">
-                Gostou deste projeto?
+          <div className="text-center">
+            <div className="bg-red-100 p-8 transform rotate-1 border-2 border-gray-300 inline-block max-w-md">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                Interested in this project?
               </h3>
-              <p className="text-gray-700 mb-4">
-                Vamos conversar sobre como posso ajudar no seu próximo projeto!
+              <p className="text-gray-700 mb-6">
+                Let's discuss how we can create something amazing for your next project!
               </p>
               <Link 
                 to="/#contact"
                 className="bg-red-400 hover:bg-red-500 text-white px-6 py-3 font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black inline-block"
               >
-                Entre em Contato
+                Get In Touch
               </Link>
             </div>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

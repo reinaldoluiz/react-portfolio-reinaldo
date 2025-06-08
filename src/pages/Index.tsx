@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -25,6 +26,7 @@ const Index = () => {
       <section id="contact">
         <Contact />
       </section>
+      <Footer />
     </div>
   );
 };
