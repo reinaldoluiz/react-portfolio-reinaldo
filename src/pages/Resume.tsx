@@ -1,5 +1,3 @@
-
-
 import { Download, MapPin, Phone, Mail, Calendar } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -269,19 +267,19 @@ const Resume = () => {
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 bg-white border-2 border-gray-300 p-2">
               <TabsTrigger 
                 value="pt" 
-                className="text-sm font-semibold text-center data-[state=active]:bg-red-400 data-[state=active]:text-white transition-all duration-300"
+                className="text-sm font-semibold data-[state=active]:bg-red-400 data-[state=active]:text-white transition-all duration-300"
               >
                 Português
               </TabsTrigger>
               <TabsTrigger 
                 value="en"
-                className="text-sm font-semibold text-center data-[state=active]:bg-red-400 data-[state=active]:text-white transition-all duration-300"
+                className="text-sm font-semibold data-[state=active]:bg-red-400 data-[state=active]:text-white transition-all duration-300"
               >
                 English
               </TabsTrigger>
               <TabsTrigger 
                 value="es"
-                className="text-sm font-semibold text-center data-[state=active]:bg-red-400 data-[state=active]:text-white transition-all duration-300"
+                className="text-sm font-semibold data-[state=active]:bg-red-400 data-[state=active]:text-white transition-all duration-300"
               >
                 Español
               </TabsTrigger>
@@ -307,3 +305,5 @@ const Resume = () => {
 };
 
 export default Resume;
+
+</edits_to_apply>
