@@ -1,3 +1,4 @@
+
 import { Download, MapPin, Phone, Mail, Calendar } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -264,22 +265,22 @@ const Resume = () => {
       <div className="pt-20">
         <Tabs defaultValue="pt" className="w-full">
           <div className="container mx-auto px-6 max-w-4xl">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 bg-white border-2 border-gray-300 p-2">
+            <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 bg-transparent border-b border-gray-200 p-0 h-auto rounded-none">
               <TabsTrigger 
                 value="pt" 
-                className="text-sm font-semibold data-[state=active]:bg-red-400 data-[state=active]:text-white transition-all duration-300"
+                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
               >
                 Português
               </TabsTrigger>
               <TabsTrigger 
                 value="en"
-                className="text-sm font-semibold data-[state=active]:bg-red-400 data-[state=active]:text-white transition-all duration-300"
+                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
               >
                 English
               </TabsTrigger>
               <TabsTrigger 
                 value="es"
-                className="text-sm font-semibold data-[state=active]:bg-red-400 data-[state=active]:text-white transition-all duration-300"
+                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
               >
                 Español
               </TabsTrigger>
