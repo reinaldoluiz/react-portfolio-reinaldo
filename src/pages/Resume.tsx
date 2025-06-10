@@ -305,5 +305,3 @@ const Resume = () => {
 };
 
 export default Resume;
-
-</edits_to_apply>
