@@ -21,8 +21,8 @@ const Portfolio = () => {
       title: "Pull-Ups E-commerce", 
       description: "Complete e-commerce redesign for Pull-Ups training pants, creating an engaging and educational platform for parents. The project focused on combining product discovery with educational content about potty training.",
       year: "2024",
-      image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
-      color: "bg-blue-100",
+      image: "/lovable-uploads/18593925-b8e8-43b5-94fa-a39fedaf3798.png",
+      color: "bg-purple-100",
       tools: ["Research", "UI Design", "Design System"],
       categories: ["Research", "UI Design", "Design System"]
     },
