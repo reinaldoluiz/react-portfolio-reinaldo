@@ -1,5 +1,3 @@
-
-
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -11,7 +9,7 @@ const ProjectDetail = () => {
   // Mock project data - in a real app, this would come from an API or database
   const project = {
     id: parseInt(id || '1'),
-    title: "EcoCommerce App",
+    title: "Intimus Brazil",
     subtitle: "Sustainable Shopping Platform",
     description: "A comprehensive sustainable shopping platform that helps users discover eco-friendly products through an intuitive map-like navigation system. The app focuses on environmental impact transparency and conscious consumer choices.",
     year: "2024",
@@ -21,7 +19,7 @@ const ProjectDetail = () => {
     image: "/lovable-uploads/53a631d0-16bb-4460-970a-b51729b1668b.png",
     color: "bg-pink-100",
     tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
-    category: "Mobile App",
+    category: "UI Design",
     problem: "Users struggle to find and verify eco-friendly products while shopping online. Existing platforms lack transparency about environmental impact and sustainable alternatives.",
     solution: "Created an intuitive mobile app with map-based navigation, sustainability scores, and AR features to help users make informed eco-friendly purchasing decisions.",
     process: [
@@ -57,7 +55,7 @@ const ProjectDetail = () => {
 
           {/* Project Header */}
           <div className="text-center mb-16">
-            <div className="bg-red-200 px-4 py-2 inline-block transform rotate-2 mb-4">
+            <div className="bg-red-200 px-4 py-2 inline-block transform rotate-2 mb-6">
               <p className="text-sm font-bold text-gray-800">{project.category}</p>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 transform -rotate-1 inline-block mb-4">
@@ -183,4 +181,3 @@ const ProjectDetail = () => {
 };
 
 export default ProjectDetail;
-
