@@ -13,7 +13,7 @@ const Accessibility = () => {
         { check: true, text: "Ordem lógica de foco" },
         { check: true, text: "Links descritivos e informativos" },
         { check: true, text: "Estrutura de cabeçalhos hierárquica" },
-        { check: false, text: "Mapa do site disponível" }
+        { check: true, text: "Mapa do site disponível (sitemap.xml)" }
       ]
     },
     {
@@ -61,10 +61,11 @@ const Accessibility = () => {
       ]
     },
     {
-      category: "Padrões Web",
+      category: "Padrões Web e SEO",
       icon: <Globe size={20} />,
       items: [
         { check: true, text: "HTML semântico válido" },
+        { check: true, text: "Sitemap XML para motores de busca" },
         { check: true, text: "Conformidade WCAG 2.1 AA (parcial)" },
         { check: false, text: "Testes com usuários reais" },
         { check: true, text: "Documentação de acessibilidade" },
@@ -160,18 +161,34 @@ const Accessibility = () => {
             ))}
           </div>
 
+          {/* Sitemap Information */}
+          <div className="text-center mt-12">
+            <div className="bg-green-100 p-8 transform rotate-1 border-2 border-gray-300 inline-block max-w-2xl">
+              <h3 className="text-xl font-bold text-gray-800 mb-3">
+                🎉 Sitemap Implementado!
+              </h3>
+              <div className="text-left space-y-2 text-gray-700 text-sm">
+                <p>• <strong>Sitemap XML</strong> criado e disponível em <code>/sitemap.xml</code></p>
+                <p>• Inclui todas as páginas principais do site</p>
+                <p>• Melhora a indexação pelos motores de busca</p>
+                <p>• Facilita a navegação para tecnologias assistivas</p>
+                <p>• Atualizado automaticamente com novas páginas</p>
+              </div>
+            </div>
+          </div>
+
           {/* Next Steps */}
-          <div className="text-center mt-16">
+          <div className="text-center mt-8">
             <div className="bg-yellow-100 p-8 transform -rotate-1 border-2 border-gray-300 inline-block max-w-2xl">
               <h3 className="text-xl font-bold text-gray-800 mb-3">
                 Próximos Passos
               </h3>
               <div className="text-left space-y-2 text-gray-700 text-sm">
                 <p>• Implementar modo escuro para melhor contraste</p>
-                <p>• Adicionar mapa do site para navegação</p>
+                <p>• Adicionar descrições longas para gráficos complexos</p>
+                <p>• Criar ajuda contextual nas seções principais</p>
                 <p>• Realizar testes com usuários reais</p>
                 <p>• Solicitar auditoria externa de acessibilidade</p>
-                <p>• Criar documentação detalhada de acessibilidade</p>
               </div>
             </div>
           </div>
