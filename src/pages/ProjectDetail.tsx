@@ -256,35 +256,35 @@ const ProjectDetail = () => {
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               {project.id === 2 ? (
-                // Grid layout for project 2 with cropped sections of the case study
-                <div className="w-full h-[500px]">
-                  <div className="grid grid-cols-2 gap-4 h-full">
-                    {/* Left section - crop top part of the image */}
+                // Grid layout for project 2 with properly cropped sections
+                <div className="w-full h-[600px]">
+                  <div className="grid grid-cols-2 gap-6 h-full">
+                    {/* Left section - top part of the image */}
                     <div className="h-full overflow-hidden rounded-lg">
                       <img 
                         src="/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png" 
-                        alt="Pull-Ups E-commerce - Top Section"
+                        alt="FinTech Dashboard - Top Section"
                         className="w-full h-full object-cover shadow-lg"
-                        style={{objectPosition: '50% 5%', objectFit: 'cover'}}
+                        style={{objectPosition: '50% 0%'}}
                       />
                     </div>
                     
-                    {/* Right section - two cropped parts */}
-                    <div className="grid grid-rows-2 gap-4 h-full">
+                    {/* Right section - middle and bottom parts */}
+                    <div className="grid grid-rows-2 gap-6 h-full">
                       <div className="h-full overflow-hidden rounded-lg">
                         <img 
                           src="/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png"
-                          alt="Pull-Ups E-commerce - Middle Section"
+                          alt="FinTech Dashboard - Middle Section"
                           className="w-full h-full object-cover shadow-lg"
-                          style={{objectPosition: '50% 40%', objectFit: 'cover'}}
+                          style={{objectPosition: '50% 50%'}}
                         />
                       </div>
                       <div className="h-full overflow-hidden rounded-lg">
                         <img 
                           src="/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png"
-                          alt="Pull-Ups E-commerce - Bottom Section"
+                          alt="FinTech Dashboard - Bottom Section"
                           className="w-full h-full object-cover shadow-lg"
-                          style={{objectPosition: '50% 80%', objectFit: 'cover'}}
+                          style={{objectPosition: '50% 100%'}}
                         />
                       </div>
                     </div>
