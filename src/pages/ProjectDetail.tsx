@@ -259,13 +259,13 @@ const ProjectDetail = () => {
                 // Grid layout for project 2 with 4 different parts of the image
                 <div className="w-full h-[600px]">
                   <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
-                    {/* Top left - focus on left side of image */}
+                    {/* Top left - focus on computer with zoom */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: '0% 0%',
+                        backgroundSize: '200%',
+                        backgroundPosition: '30% 40%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
