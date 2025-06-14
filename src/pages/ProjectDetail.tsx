@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -16,7 +17,7 @@ const ProjectDetail = () => {
     duration: "4 months",
     team: "Designer, 2 Developers, PM",
     role: "Lead UX/UI Designer",
-    image: "/lovable-uploads/uploaded-image.png",
+    image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
     color: "bg-green-100",
     tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
     category: "Mobile App",
