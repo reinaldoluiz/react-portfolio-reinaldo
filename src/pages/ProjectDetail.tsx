@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -55,8 +56,10 @@ const ProjectDetail = () => {
 
           {/* Project Header */}
           <div className="text-center mb-16">
-            <div className="bg-red-200 px-4 py-2 inline-block transform rotate-2 mb-6">
-              <p className="text-sm font-bold text-gray-800">{project.category}</p>
+            <div className="mb-6">
+              <div className="bg-red-200 px-4 py-2 inline-block transform rotate-2">
+                <p className="text-sm font-bold text-gray-800">{project.category}</p>
+              </div>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 transform -rotate-1 inline-block mb-4">
               {project.title}
