@@ -14,10 +14,8 @@ const Resume = () => {
         aboutText: "Sou Reinaldo, um brasileiro atualmente na Espanha estudando mestrado em design UX. Tenho conhecimento de todas as etapas de desenvolvimento e habilidades de experiência do usuário em frontend para a construção visual de páginas. Sou um profissional criativo e adaptável com experiência em UX e design gráfico. Trago comigo habilidades valiosas em resolução de problemas, comunicação e trabalho em equipe. Estou sempre me esforçando para aprender e me adaptar a novos desafios, e acredito que minha atenção aos detalhes e capacidade de pensar criticamente podem trazer valor em qualquer ambiente de trabalho. Meu objetivo é contribuir positivamente para a equipe e ajudar a alcançar resultados eficazes."
       },
       contact: {
-        location: "São Paulo, Brasil",
-        phone: "+55 (11) 99999-9999",
-        email: "reinaldo@email.com",
-        experience: "5+ anos de experiência"
+        location: "Barcelona, Espanha",
+        experience: "+8 anos de experiência"
       },
       sections: {
         experience: "Experiência",
@@ -88,6 +86,17 @@ const Resume = () => {
           ]
         },
         {
+          degree: "Bacharelado em Design",
+          institution: "Mackenzie • Jan 2004 - Dez 2009, Brasil",
+          details: [
+            "• Design Studios: Trabalhar em projetos de design com orientação do corpo docente",
+            "• Workshops e Sessões de Desenvolvimento: Aprender habilidades técnicas e tendências da indústria",
+            "• Sessões de Crítica: Apresentar trabalhos para feedback e melhoria",
+            "• Pesquisa em Design: Conduzir estudos para informar decisões de design",
+            "• Projetos Colaborativos: Trabalhar juntos em desafios interdisciplinares"
+          ]
+        },
+        {
           degree: "Bacharelado em Tecnologia - Tecnologia em Sistemas para Internet",
           institution: "FATEC-SP • Jan 2016 - Dez 2020, Brasil",
           details: [
@@ -102,17 +111,6 @@ const Resume = () => {
             "• Curso intensivo de nove semanas no Le Wagon São Paulo (Lote #158) aprendendo HTML, CSS, Bootstrap, JavaScript, SQL, Git, GitHub, API, JSON, Heroku e Ruby on Rails",
             "• Design, implementação e entrega de produção de um clone do AirBnB e um protótipo Rails para pesquisa de perfumes",
             "• Habilidades: Figma, Sistema front-end, Web design, Ruby on Rails, CSS, HTML5, Ruby, Adobe Photoshop"
-          ]
-        },
-        {
-          degree: "Bacharelado em Design",
-          institution: "Mackenzie • Jan 2004 - Dez 2009, Brasil",
-          details: [
-            "• Design Studios: Trabalhar em projetos de design com orientação do corpo docente",
-            "• Workshops e Sessões de Desenvolvimento: Aprender habilidades técnicas e tendências da indústria",
-            "• Sessões de Crítica: Apresentar trabalhos para feedback e melhoria",
-            "• Pesquisa em Design: Conduzir estudos para informar decisões de design",
-            "• Projetos Colaborativos: Trabalhar juntos em desafios interdisciplinares"
           ]
         },
         {
@@ -148,10 +146,8 @@ const Resume = () => {
         aboutText: "I am Reinaldo, a Brazilian currently in Spain studying for a master's degree in UX design. I have knowledge of all stages of development and user experience skills in frontend for the visual construction of pages. I am a creative and adaptable professional with experience in UX and graphic design. I bring with me valuable skills in problem-solving, communication and teamwork. I am always striving to learn and adapt to new challenges, and I believe that my attention to detail and ability to think critically can bring value in any work environment. My goal is to contribute positively to the team and help achieve effective results."
       },
       contact: {
-        location: "São Paulo, Brazil",
-        phone: "+55 (11) 99999-9999",
-        email: "reinaldo@email.com",
-        experience: "5+ years experience"
+        location: "Barcelona, Spain",
+        experience: "+8 years experience"
       },
       sections: {
         experience: "Experience",
@@ -222,6 +218,17 @@ const Resume = () => {
           ]
         },
         {
+          degree: "Bachelor in Design",
+          institution: "Mackenzie • Jan 2004 - Dec 2009, Brazil",
+          details: [
+            "• Design Studios: Working on design projects with guidance from faculty",
+            "• Workshops and Skill-building Sessions: Learning technical skills and industry trends",
+            "• Critique Sessions: Presenting work for feedback and improvement",
+            "• Design Research: Conducting studies to inform design decisions",
+            "• Collaborative Projects: Working together on interdisciplinary challenges"
+          ]
+        },
+        {
           degree: "Bachelor of Technology - Computer Technology/Computer Systems Technology",
           institution: "FATEC-SP • Jan 2016 - Dec 2020, Brazil",
           details: [
@@ -236,17 +243,6 @@ const Resume = () => {
             "• Studied at Le Wagon São Paulo (Batch #158) Nine-week intensive course learning HTML, CSS, Bootstrap, JavaScript, SQL, Git, GitHub, API, JSON, Heroku and Ruby on Rails",
             "• Design, implementation and production delivery of an AirBnB clone and a Rails prototype for perfume research",
             "• Skills: Figma, Frontend System, Web design, Ruby on Rails, CSS, HTML5, Ruby, Adobe Photoshop"
-          ]
-        },
-        {
-          degree: "Bachelor in Design",
-          institution: "Mackenzie • Jan 2004 - Dec 2009, Brazil",
-          details: [
-            "• Design Studios: Working on design projects with guidance from faculty",
-            "• Workshops and Skill-building Sessions: Learning technical skills and industry trends",
-            "• Critique Sessions: Presenting work for feedback and improvement",
-            "• Design Research: Conducting studies to inform design decisions",
-            "• Collaborative Projects: Working together on interdisciplinary challenges"
           ]
         },
         {
@@ -282,10 +278,8 @@ const Resume = () => {
         aboutText: "Soy Reinaldo, un brasileño actualmente en España estudiando una maestría en diseño UX. Tengo conocimiento de todas las etapas de desarrollo y habilidades de experiencia de usuario en frontend para la construcción visual de páginas. Soy un profesional creativo y adaptable con experiencia en UX y diseño gráfico. Traigo conmigo habilidades valiosas en resolución de problemas, comunicación y trabajo en equipo. Siempre me esfuerzo por aprender y adaptarme a nuevos desafíos, y creo que mi atención al detalle y capacidad de pensar críticamente pueden aportar valor en cualquier ambiente de trabajo. Mi objetivo es contribuir positivamente al equipo y ayudar a lograr resultados efectivos."
       },
       contact: {
-        location: "São Paulo, Brasil",
-        phone: "+55 (11) 99999-9999",
-        email: "reinaldo@email.com",
-        experience: "5+ años de experiencia"
+        location: "Barcelona, España",
+        experience: "+8 años de experiencia"
       },
       sections: {
         experience: "Experiencia",
@@ -356,6 +350,17 @@ const Resume = () => {
           ]
         },
         {
+          degree: "Licenciatura en Diseño",
+          institution: "Mackenzie • Ene 2004 - Dic 2009, Brasil",
+          details: [
+            "• Design Studios: Trabajar en proyectos de diseño con orientación del cuerpo docente",
+            "• Workshops y Sesiones de Desarrollo: Aprender habilidades técnicas y tendências de la industria",
+            "• Sesiones de Crítica: Presentar trabajos para feedback y mejora",
+            "• Investigación en Diseño: Conducir estudios para informar decisiones de diseño",
+            "• Proyectos Colaborativos: Trabajar juntos en desafíos interdisciplinarios"
+          ]
+        },
+        {
           degree: "Licenciatura en Tecnología - Tecnología en Sistemas para Internet",
           institution: "FATEC-SP • Ene 2016 - Dic 2020, Brasil",
           details: [
@@ -370,17 +375,6 @@ const Resume = () => {
             "• Estudié en Le Wagon São Paulo (Lote #158) Curso intensivo de nueve semanas aprendiendo HTML, CSS, Bootstrap, JavaScript, SQL, Git, GitHub, API, JSON, Heroku y Ruby on Rails",
             "• Diseño, implementación y entrega de producción de un clon de AirBnB y un prototipo Rails para investigación de perfumes",
             "• Habilidades: Figma, Sistema frontend, Web design, Ruby on Rails, CSS, HTML5, Ruby, Adobe Photoshop"
-          ]
-        },
-        {
-          degree: "Licenciatura en Diseño",
-          institution: "Mackenzie • Ene 2004 - Dic 2009, Brasil",
-          details: [
-            "• Design Studios: Trabajar en proyectos de diseño con orientación del cuerpo docente",
-            "• Workshops y Sesiones de Desarrollo: Aprender habilidades técnicas y tendências de la industria",
-            "• Sesiones de Crítica: Presentar trabajos para feedback y mejora",
-            "• Investigación en Diseño: Conducir estudios para informar decisiones de diseño",
-            "• Proyectos Colaborativos: Trabajar juntos en desafíos interdisciplinarios"
           ]
         },
         {
@@ -457,16 +451,26 @@ const Resume = () => {
             <h2 className="text-5xl md:text-6xl font-bold text-gray-800 transform rotate-1 inline-block mb-4">
               {data.personalInfo.name}
             </h2>
-            <div className="flex items-center gap-2 mb-6">
-              <Linkedin size={24} className="text-red-400" />
-              <a 
-                href="https://www.linkedin.com/in/reinaldolluiz/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-red-400 hover:text-red-500 font-semibold underline"
-              >
-                linkedin.com/in/reinaldolluiz/
-              </a>
+            <div className="flex flex-wrap items-center gap-6 mb-6">
+              <div className="flex items-center gap-2">
+                <MapPin size={20} className="text-red-400" />
+                <span className="text-gray-700 font-medium">{data.contact.location}</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Linkedin size={20} className="text-red-400" />
+                <a 
+                  href="https://www.linkedin.com/in/reinaldolluiz/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-red-400 hover:text-red-500 font-semibold underline"
+                >
+                  linkedin.com/in/reinaldolluiz/
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Calendar size={20} className="text-red-400" />
+                <span className="text-gray-700 font-medium">{data.contact.experience}</span>
+              </div>
             </div>
           </div>
           
@@ -477,28 +481,6 @@ const Resume = () => {
             <p className="text-gray-700 leading-relaxed text-lg">
               {data.personalInfo.aboutText}
             </p>
-          </div>
-        </div>
-
-        {/* Contact Info */}
-        <div className="bg-blue-50 p-6 transform rotate-1 border border-gray-200 mb-12 rounded-lg">
-          <div className="grid md:grid-cols-2 gap-4">
-            <div className="flex items-center gap-2">
-              <MapPin size={20} className="text-red-400" />
-              <span className="text-gray-700">{data.contact.location}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Phone size={20} className="text-red-400" />
-              <span className="text-gray-700">{data.contact.phone}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Mail size={20} className="text-red-400" />
-              <span className="text-gray-700">{data.contact.email}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Calendar size={20} className="text-red-400" />
-              <span className="text-gray-700">{data.contact.experience}</span>
-            </div>
           </div>
         </div>
 
