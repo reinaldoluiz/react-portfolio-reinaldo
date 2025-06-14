@@ -94,7 +94,7 @@ const Portfolio = () => {
           </p>
         </div>
 
-        {/* Categories Selection - Updated to match Resume tabs style */}
+        {/* Categories Selection */}
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-red-400 pb-2">
             Project Categories
@@ -105,7 +105,7 @@ const Portfolio = () => {
                 <TabsTrigger 
                   key={category} 
                   value={category}
-                  className="data-[state=active]:bg-red-400 data-[state=active]:text-white"
+                  className="data-[state=active]:bg-red-400 data-[state=active]:text-white text-sm font-semibold"
                 >
                   {category}
                 </TabsTrigger>
