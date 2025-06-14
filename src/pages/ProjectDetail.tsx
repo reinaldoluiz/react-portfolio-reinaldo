@@ -283,13 +283,13 @@ const ProjectDetail = () => {
                       }}
                     />
                     
-                    {/* Bottom left - focus on upper portion to avoid Takeaways text */}
+                    {/* Bottom left - focus on center area to avoid texts */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '0% 30%',
+                        backgroundPosition: '20% 50%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
