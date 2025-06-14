@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
           <div className="inline-block bg-yellow-200 px-6 py-3 transform rotate-1 border-2 border-black mb-8">
             <p className="text-xl md:text-2xl text-gray-800 font-semibold">
-              UI/UX Designer & Product Designer
+              UI/UX Designer & Explorer
             </p>
           </div>
           
