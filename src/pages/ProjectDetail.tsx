@@ -259,49 +259,49 @@ const ProjectDetail = () => {
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               {project.id === 2 ? (
-                // Grid layout for project 2 with 4 different parts of the image
+                // Grid layout for project 2 with the new images
                 <div className="w-full h-[500px]">
                   <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
-                    {/* Top left - focus on left side of image */}
+                    {/* Top left - Reinaldo Luiz mockup */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
-                        backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                        backgroundImage: `url('/lovable-uploads/18593925-b8e8-43b5-94fa-a39fedaf3798.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '0% 0%',
+                        backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
                     
-                    {/* Top right - focus on About Pulls section with oriental child */}
+                    {/* Top right - About Pull-Ups page */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
-                        backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                        backgroundImage: `url('/lovable-uploads/6c0eef8c-0854-4e43-a833-862a82f40b23.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '30% 40%',
+                        backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
                     
-                    {/* Bottom left - focus on center area to avoid texts */}
+                    {/* Bottom left - Various features and content */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
-                        backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                        backgroundImage: `url('/lovable-uploads/470e5153-db23-4479-a138-1c12dc72d959.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '20% 50%',
+                        backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
                     
-                    {/* Bottom right - focus on center/bottom right */}
+                    {/* Bottom right - Disney integration */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
-                        backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                        backgroundImage: `url('/lovable-uploads/5c328bc9-a8e3-4f58-9f7c-658e8c08e5a5.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '100% 100%',
+                        backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
