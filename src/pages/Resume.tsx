@@ -1,11 +1,14 @@
 
 import { ArrowLeft, MapPin, Linkedin, Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
+import Navigation from "../components/Navigation";
 
 const Resume = () => {
   return (
     <div className="min-h-screen bg-white">
-      <div className="container mx-auto px-6 py-8 max-w-4xl">
+      <Navigation />
+      
+      <div className="container mx-auto px-6 py-8 max-w-4xl mt-16">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <Link to="/" className="flex items-center text-red-400 hover:text-red-500 font-medium">
@@ -179,10 +182,10 @@ const Resume = () => {
             <div className="border-l-4 border-red-400 pl-4">
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-semibold text-gray-800">Bacharelado em Design</h3>
+                  <h3 className="font-semibold text-gray-800">Bacharelado em Design Gráfico</h3>
                   <p className="text-red-400">Universidade Anhembi Morumbi</p>
                 </div>
-                <span className="text-sm text-gray-500">2014 - 2018</span>
+                <span className="text-sm text-gray-500">2012 - 2016</span>
               </div>
             </div>
           </div>
@@ -194,17 +197,17 @@ const Resume = () => {
             Idiomas
           </h2>
           <div className="grid md:grid-cols-3 gap-4">
-            <div className="text-center">
-              <h3 className="font-semibold text-gray-800">Português</h3>
-              <p className="text-sm text-gray-600">Nativo</p>
+            <div className="text-center p-4 bg-gray-50 rounded-lg">
+              <h3 className="font-semibold text-gray-800 text-lg">Português</h3>
+              <p className="text-sm text-gray-600 mt-1">Nativo</p>
             </div>
-            <div className="text-center">
-              <h3 className="font-semibold text-gray-800">Inglês</h3>
-              <p className="text-sm text-gray-600">Avançado</p>
+            <div className="text-center p-4 bg-gray-50 rounded-lg">
+              <h3 className="font-semibold text-gray-800 text-lg">Inglês</h3>
+              <p className="text-sm text-gray-600 mt-1">Avançado</p>
             </div>
-            <div className="text-center">
-              <h3 className="font-semibold text-gray-800">Espanhol</h3>
-              <p className="text-sm text-gray-600">Intermediário</p>
+            <div className="text-center p-4 bg-gray-50 rounded-lg">
+              <h3 className="font-semibold text-gray-800 text-lg">Espanhol</h3>
+              <p className="text-sm text-gray-600 mt-1">Intermediário</p>
             </div>
           </div>
         </section>
