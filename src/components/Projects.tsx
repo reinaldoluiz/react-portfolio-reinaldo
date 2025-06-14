@@ -1,4 +1,6 @@
 
+import { Link } from 'react-router-dom';
+
 const Projects = () => {
   const projects = [
     {
@@ -91,9 +93,15 @@ const Projects = () => {
                 alt="Running character" 
                 className="w-24 h-24 object-contain mx-auto mb-4"
               />
-              <p className="text-lg font-semibold text-gray-800">
+              <p className="text-lg font-semibold text-gray-800 mb-4">
                 Ready for the next adventure? Let's work together!
               </p>
+              <Link 
+                to="/portfolio"
+                className="bg-red-400 hover:bg-red-500 text-white px-6 py-3 font-semibold transform rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black inline-block"
+              >
+                View Portfolio
+              </Link>
             </div>
           </div>
         </div>

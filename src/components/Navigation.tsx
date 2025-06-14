@@ -55,19 +55,13 @@ const Navigation = () => {
             Reinaldo Luiz
           </Link>
 
-          {/* Desktop Menu - Always show home menu */}
+          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('about')}
               className="text-gray-600 hover:text-red-400 transition-colors font-medium"
             >
               About
-            </button>
-            <button 
-              onClick={() => scrollToSection('projects')}
-              className="text-gray-600 hover:text-red-400 transition-colors font-medium"
-            >
-              Projects
             </button>
             <button 
               onClick={() => scrollToSection('skills')}
@@ -110,7 +104,7 @@ const Navigation = () => {
           </button>
         </div>
 
-        {/* Mobile Menu - Always show home menu */}
+        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-3">
@@ -119,12 +113,6 @@ const Navigation = () => {
                 className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
               >
                 About
-              </button>
-              <button 
-                onClick={() => scrollToSection('projects')}
-                className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
-              >
-                Projects
               </button>
               <button 
                 onClick={() => scrollToSection('skills')}
