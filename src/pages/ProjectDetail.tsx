@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -6,36 +7,186 @@ import Footer from '../components/Footer';
 const ProjectDetail = () => {
   const { id } = useParams();
   
-  // Mock project data - in a real app, this would come from an API or database
-  const project = {
-    id: parseInt(id || '1'),
-    title: "Intimus Brazil",
-    subtitle: "Sustainable Shopping Platform",
-    description: "A comprehensive sustainable shopping platform that helps users discover eco-friendly products through an intuitive map-like navigation system. The app focuses on environmental impact transparency and conscious consumer choices.",
-    year: "2024",
-    duration: "4 months",
-    team: "Designer, 2 Developers, PM",
-    role: "Product Designer",
-    image: "/lovable-uploads/53a631d0-16bb-4460-970a-b51729b1668b.png",
-    color: "bg-pink-100",
-    tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
-    category: "UI Design",
-    problem: "Users struggle to find and verify eco-friendly products while shopping online. Existing platforms lack transparency about environmental impact and sustainable alternatives.",
-    solution: "Created an intuitive mobile app with map-based navigation, sustainability scores, and AR features to help users make informed eco-friendly purchasing decisions.",
-    process: [
-      "User Research & Interviews",
-      "Competitive Analysis", 
-      "Wireframing & Prototyping",
-      "User Testing & Iteration",
-      "Final Design & Handoff"
-    ],
-    results: [
-      "40% increase in user engagement",
-      "25% improvement in task completion",
-      "4.8/5 app store rating",
-      "Featured in sustainability category"
-    ]
-  };
+  // Array with different project data
+  const projects = [
+    {
+      id: 1,
+      title: "Intimus Brazil",
+      subtitle: "Sustainable Shopping Platform",
+      description: "A comprehensive sustainable shopping platform that helps users discover eco-friendly products through an intuitive map-like navigation system. The app focuses on environmental impact transparency and conscious consumer choices.",
+      year: "2024",
+      duration: "4 months",
+      team: "Designer, 2 Developers, PM",
+      role: "Product Designer",
+      image: "/lovable-uploads/53a631d0-16bb-4460-970a-b51729b1668b.png",
+      color: "bg-pink-100",
+      tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
+      category: "UI Design",
+      problem: "Users struggle to find and verify eco-friendly products while shopping online. Existing platforms lack transparency about environmental impact and sustainable alternatives.",
+      solution: "Created an intuitive mobile app with map-based navigation, sustainability scores, and AR features to help users make informed eco-friendly purchasing decisions.",
+      process: [
+        "User Research & Interviews",
+        "Competitive Analysis", 
+        "Wireframing & Prototyping",
+        "User Testing & Iteration",
+        "Final Design & Handoff"
+      ],
+      results: [
+        "40% increase in user engagement",
+        "25% improvement in task completion",
+        "4.8/5 app store rating",
+        "Featured in sustainability category"
+      ]
+    },
+    {
+      id: 2,
+      title: "FinTech Dashboard",
+      subtitle: "Investment Tracking Platform",
+      description: "A comprehensive financial dashboard for investment tracking - like having a compass for your financial journey. Features real-time data visualization and portfolio management tools.",
+      year: "2024",
+      duration: "6 months",
+      team: "2 Designers, 3 Developers, Product Manager",
+      role: "Senior UX Designer",
+      image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
+      color: "bg-blue-100",
+      tools: ["Adobe XD", "Data Visualization", "Usability Testing", "Figma"],
+      category: "Design System",
+      problem: "Investors needed a centralized platform to track multiple portfolios and investments across different platforms, with complex data being hard to understand at a glance.",
+      solution: "Designed a clean, intuitive dashboard with advanced data visualization, real-time updates, and customizable widgets for different investor personas.",
+      process: [
+        "Stakeholder Interviews",
+        "User Journey Mapping",
+        "Information Architecture",
+        "Design System Creation",
+        "Prototype Testing & Validation"
+      ],
+      results: [
+        "60% reduction in task completion time",
+        "45% increase in daily active users",
+        "4.9/5 user satisfaction score",
+        "Winner of Best Finance App 2024"
+      ]
+    },
+    {
+      id: 3,
+      title: "Learning Platform",
+      subtitle: "Educational Connection System",
+      description: "An educational platform connecting students and instructors - mapping out learning adventures for every user. Features interactive course creation and progress tracking.",
+      year: "2023",
+      duration: "5 months",
+      team: "3 Designers, 4 Developers, 2 PMs",
+      role: "Lead Product Designer",
+      image: "/lovable-uploads/898d43f4-a54b-415e-8512-7d437380d908.png",
+      color: "bg-yellow-100",
+      tools: ["Sketch", "Information Architecture", "User Flows", "Principle"],
+      category: "Research",
+      problem: "Students and instructors struggled to connect effectively in online learning environments, with poor engagement and completion rates across educational platforms.",
+      solution: "Created an engaging platform with gamified learning paths, real-time collaboration tools, and personalized learning recommendations.",
+      process: [
+        "Educational Research",
+        "Student & Teacher Interviews",
+        "Learning Path Design",
+        "Interactive Prototype Development",
+        "Pilot Program & Feedback Integration"
+      ],
+      results: [
+        "85% course completion rate",
+        "300% increase in student engagement",
+        "Used by 50+ educational institutions",
+        "Featured in EdTech Innovation Awards"
+      ]
+    },
+    {
+      id: 4,
+      title: "Healthcare App",
+      subtitle: "Telemedicine Platform",
+      description: "A telemedicine application that connects patients with doctors through an intuitive and accessible interface, focusing on user safety and medical compliance.",
+      year: "2023",
+      duration: "8 months",
+      team: "2 Designers, 5 Developers, Medical Advisor",
+      role: "UX/UI Designer",
+      image: "/lovable-uploads/3bc795d8-161f-4f91-acc0-46a5d2d4b7d9.png",
+      color: "bg-green-100",
+      tools: ["Figma", "Accessibility Design", "User Testing", "Prototyping"],
+      category: "UI Design",
+      problem: "Patients faced barriers accessing healthcare remotely, with existing telemedicine solutions being complex and not meeting accessibility standards.",
+      solution: "Designed an accessible, HIPAA-compliant platform with simple navigation, video consultations, and integrated prescription management.",
+      process: [
+        "Healthcare Regulation Research",
+        "Patient & Doctor Interviews",
+        "Accessibility Compliance Design",
+        "Medical Workflow Integration",
+        "Clinical Testing & Validation"
+      ],
+      results: [
+        "95% patient satisfaction rate",
+        "50% reduction in appointment wait times",
+        "HIPAA compliance certification",
+        "Adopted by 25+ healthcare providers"
+      ]
+    },
+    {
+      id: 5,
+      title: "Food Delivery UI",
+      subtitle: "Modern Ordering Experience",
+      description: "A modern food delivery interface focusing on quick ordering and real-time tracking features, with emphasis on local restaurant discovery.",
+      year: "2022",
+      duration: "3 months",
+      team: "Designer, 2 Developers",
+      role: "UI/UX Designer",
+      image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
+      color: "bg-orange-100",
+      tools: ["Adobe XD", "Micro-interactions", "Prototyping", "After Effects"],
+      category: "UI Design",
+      problem: "Users found existing food delivery apps cluttered and slow, with poor restaurant discovery and confusing ordering processes.",
+      solution: "Created a streamlined interface with visual menu browsing, one-tap ordering, and engaging micro-interactions for a delightful user experience.",
+      process: [
+        "Competitive Analysis",
+        "User Flow Optimization",
+        "Visual Design & Branding",
+        "Micro-interaction Design",
+        "Usability Testing"
+      ],
+      results: [
+        "35% faster ordering process",
+        "20% increase in repeat orders",
+        "4.7/5 app store rating",
+        "Featured in Design Awards 2022"
+      ]
+    },
+    {
+      id: 6,
+      title: "Brand Identity Project",
+      subtitle: "Comprehensive Brand System",
+      description: "A comprehensive brand identity design including logo, color palette, and marketing materials for a sustainable fashion startup.",
+      year: "2022",
+      duration: "2 months",
+      team: "Brand Designer, Marketing Specialist",
+      role: "Brand Designer",
+      image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
+      color: "bg-purple-100",
+      tools: ["Illustrator", "InDesign", "Brand Strategy", "Photoshop"],
+      category: "Graphic Design",
+      problem: "A sustainable fashion startup needed a complete brand identity that would resonate with eco-conscious consumers and stand out in a crowded market.",
+      solution: "Developed a cohesive brand system with earth-inspired visuals, sustainable messaging, and flexible design elements across all touchpoints.",
+      process: [
+        "Brand Strategy Workshop",
+        "Market Research & Analysis",
+        "Logo & Visual Identity Design",
+        "Brand Guidelines Creation",
+        "Marketing Material Design"
+      ],
+      results: [
+        "300% increase in brand recognition",
+        "150% growth in social media following",
+        "Featured in sustainable fashion magazines",
+        "Brand system adopted across 15+ touchpoints"
+      ]
+    }
+  ];
+  
+  // Find the project based on ID
+  const project = projects.find(p => p.id === parseInt(id || '1')) || projects[0];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
@@ -102,7 +253,7 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          {/* Project Image - Updated with pink background */}
+          {/* Project Image */}
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               <div className="w-full max-w-4xl mx-auto">
