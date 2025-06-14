@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -258,8 +259,17 @@ const ProjectDetail = () => {
           {/* Project Images Grid */}
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
-              {project.id === 2 ? (
-                // Grid layout for project 2 with the new images
+              {project.id === 1 ? (
+                // Single image layout for project 1
+                <div className="w-full max-w-4xl mx-auto">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-80 object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+              ) : project.id === 2 ? (
+                // Grid layout for project 2 with the uploaded images
                 <div className="w-full h-[500px]">
                   <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
                     {/* Top left - Reinaldo Luiz mockup */}
@@ -308,13 +318,53 @@ const ProjectDetail = () => {
                   </div>
                 </div>
               ) : (
-                // Single image layout for all other projects
-                <div className="w-full max-w-4xl mx-auto">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-80 object-cover rounded-lg shadow-lg"
-                  />
+                // Grid layout for projects 3, 4, 5, and 6 using placeholder images
+                <div className="w-full h-[500px]">
+                  <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
+                    {/* Top left */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white"
+                      style={{
+                        backgroundImage: `url('https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    
+                    {/* Top right */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white"
+                      style={{
+                        backgroundImage: `url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    
+                    {/* Bottom left */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white"
+                      style={{
+                        backgroundImage: `url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    
+                    {/* Bottom right */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white"
+                      style={{
+                        backgroundImage: `url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                  </div>
                 </div>
               )}
             </div>
