@@ -1,3 +1,4 @@
+
 import { Download, MapPin, Phone, Mail, Calendar, Linkedin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -26,21 +27,64 @@ const Resume = () => {
       },
       jobs: [
         {
-          title: "Designer UX/UI Sênior",
-          company: "TechCorp • 2022 - Presente",
+          title: "UI/UX Designer",
+          company: "Tech Mahindra, Remote, United States • Out 2021 - Jan 2025",
           tasks: [
-            "• Liderei o design de 3 grandes lançamentos de produtos",
-            "• Melhorei a satisfação do usuário em 40% através de design baseado em pesquisa",
-            "• Orientei designers juniores e estabeleci sistema de design"
+            "• Cliente atendido: Kimberly-Clark",
+            "• Conduzi testes de usabilidade, garantindo acessibilidade e alinhamento dos objetivos dos stakeholders",
+            "• Colaborei com equipes multiculturais em projetos mundiais",
+            "• Desenvolvi e implementei sistemas de design seguindo critérios de melhoria e usabilidade",
+            "• Criei landing pages, sites de e-commerce e sistemas para produtos em toda América do Norte e Sul"
           ]
         },
         {
-          title: "Designer UX",
-          company: "StartupXYZ • 2020 - 2022",
+          title: "UX Lead",
+          company: "HDI Insurance, São Paulo - Brasil • Jan 2021 - Dez 2021",
           tasks: [
-            "• Projetei aplicativo mobile com 100k+ downloads",
-            "• Conduzi pesquisa de usuário e testes de usabilidade",
-            "• Colaborei com equipe de desenvolvimento na implementação"
+            "• Gerenciei projetos de agência mantendo identidade da marca e sistema de design",
+            "• Coordenei trabalho da equipe UX com business e desenvolvedores",
+            "• Criei ícones e componentes para manter consistência entre designers",
+            "• Colaborei com equipes de design e desenvolvimento para implementar sistemas funcionais"
+          ]
+        },
+        {
+          title: "Product Designer",
+          company: "Santander, São Paulo - Brasil • Jan 2021 - Dez 2021",
+          tasks: [
+            "• Participei do processo UX end-to-end, incluindo análise de dados para insights de negócio",
+            "• Atualizei Sistema de Design, criando componentes e ícones",
+            "• Liderei projeto de redesign do app para melhorar jornada do usuário",
+            "• Participei ativamente de reuniões de decisão com business e desenvolvimento"
+          ]
+        },
+        {
+          title: "Product Designer",
+          company: "Deloitte, Brasil • Mar 2020 - Dez 2020",
+          tasks: [
+            "• Produzi conceitos funcionais e conceituais em colaboração com POs e usuários finais",
+            "• Traduzi conceitos em protótipos funcionais priorizados no desenvolvimento",
+            "• Documentei User Stories, coletando requisitos e criando personas",
+            "• Trabalhei com Salesforce, Vlocity Omniscript e LWC para clientes como Claro e Caixa Seguradora"
+          ]
+        },
+        {
+          title: "UX/UI Designer & Front-end Developer",
+          company: "Finnet, Brasil • Mar 2019 - Set 2020",
+          tasks: [
+            "• Criei processos de design eficazes: fluxos UX, mapas de jornada, wireframes",
+            "• Dominei princípios de design responsivo para mobile e desktop",
+            "• Estabeleci padrões de design: guias de estilo UI, estratégias visuais e sistemas de design",
+            "• Garanti experiência consistente do usuário across plataformas Web, iOS e Android"
+          ]
+        },
+        {
+          title: "UX/UI Designer & Front-end Developer",
+          company: "Hortatech, Brasil • Set 2018 - Set 2019",
+          tasks: [
+            "• Criei wireframes, conduzi testes de usuário, A/B testing e pesquisa de usuário",
+            "• Desenvolvi designs visualmente atraentes usando Adobe XD, Photoshop e Illustrator",
+            "• Programei em JavaScript, HTML, CSS, Bootstrap com design responsivo",
+            "• Otimizei projetos web para proporcionar experiência de usuário excepcional"
           ]
         }
       ],
@@ -85,21 +129,64 @@ const Resume = () => {
       },
       jobs: [
         {
-          title: "Senior UX/UI Designer",
-          company: "TechCorp • 2022 - Present",
+          title: "UI/UX Designer",
+          company: "Tech Mahindra, Remote, United States • Oct 2021 - Jan 2025",
           tasks: [
-            "• Led design for 3 major product launches",
-            "• Improved user satisfaction by 40% through research-driven design",
-            "• Mentored junior designers and established design system"
+            "• Clients Served: Kimberly-Clark",
+            "• Conducted user testing, ensuring accessibility and aligning stakeholder goals",
+            "• Collaborated with multicultural teams on worldwide projects",
+            "• Developed and implemented design systems adhering to improvement and usability criteria",
+            "• Designed landing pages, e-commerce sites, and systems for products throughout North and South America"
           ]
         },
         {
-          title: "UX Designer",
-          company: "StartupXYZ • 2020 - 2022",
+          title: "UX Lead",
+          company: "HDI Insurance, São Paulo - Brazil • Jan 2021 - Dec 2021",
           tasks: [
-            "• Designed mobile app with 100k+ downloads",
-            "• Conducted user research and usability testing",
-            "• Collaborated with development team on implementation"
+            "• Managed project agency management while adhering to brand identity and design system",
+            "• Coordinated UX team's work with business and developers",
+            "• Created icons and components for product designers to maintain consistency",
+            "• Collaborated closely with designers and development teams to implement functional design systems"
+          ]
+        },
+        {
+          title: "Product Designer",
+          company: "Santander, São Paulo - Brazil • Jan 2021 - Dec 2021",
+          tasks: [
+            "• Involved in end-to-end UX process, including data analysis for business insights",
+            "• Updated Design System, creating components and icons",
+            "• Led app redesign project to improve user journey",
+            "• Actively participated in decision-making meetings with business and development teams"
+          ]
+        },
+        {
+          title: "Product Designer",
+          company: "Deloitte, Brazil • Mar 2020 - Dec 2020",
+          tasks: [
+            "• Produced functional and conceptual concepts with POs, end-users, and training professionals",
+            "• Translated concepts into functional prototypes prioritized in development",
+            "• Documented User Stories, gathering requirements and creating user personas",
+            "• Worked with Salesforce, Vlocity Omniscript, and LWC for clients like Claro and Caixa Seguradora"
+          ]
+        },
+        {
+          title: "UX/UI Designer & Front-end Developer",
+          company: "Finnet, Brazil • Mar 2019 - Sep 2020",
+          tasks: [
+            "• Created effective design processes: UX flows, user journey maps, wireframes",
+            "• Mastered responsive design principles for mobile and desktop screens",
+            "• Established design standards: UI style guides, visual strategies, and design systems",
+            "• Ensured consistent user experience across Web, iOS, and Android platforms"
+          ]
+        },
+        {
+          title: "UX/UI Designer & Front-end Developer",
+          company: "Hortatech, Brazil • Sep 2018 - Sep 2019",
+          tasks: [
+            "• Created wireframes, conducted user testing, A/B testing, and user research",
+            "• Developed visually attractive designs using Adobe XD, Photoshop, and Illustrator",
+            "• Programmed in JavaScript, HTML, CSS, Bootstrap with responsive design",
+            "• Optimized web projects to provide amazing user experience"
           ]
         }
       ],
@@ -144,21 +231,64 @@ const Resume = () => {
       },
       jobs: [
         {
-          title: "Diseñador UX/UI Senior",
-          company: "TechCorp • 2022 - Presente",
+          title: "UI/UX Designer",
+          company: "Tech Mahindra, Remote, United States • Oct 2021 - Ene 2025",
           tasks: [
-            "• Lideré el diseño de 3 grandes lanzamientos de productos",
-            "• Mejoré la satisfacción del usuario en 40% mediante diseño basado en investigación",
-            "• Mentoré diseñadores junior y establecí sistema de diseño"
+            "• Clientes atendidos: Kimberly-Clark",
+            "• Realicé pruebas de usuario, garantizando accesibilidad y alineación de objetivos",
+            "• Colaboré con equipos multiculturales en proyectos mundiales",
+            "• Desarrollé e implementé sistemas de diseño siguiendo criterios de mejora y usabilidad",
+            "• Diseñé landing pages, sitios de e-commerce y sistemas para productos en Norte y Sudamérica"
           ]
         },
         {
-          title: "Diseñador UX",
-          company: "StartupXYZ • 2020 - 2022",
+          title: "UX Lead",
+          company: "HDI Insurance, São Paulo - Brasil • Ene 2021 - Dic 2021",
           tasks: [
-            "• Diseñé aplicación móvil con 100k+ descargas",
-            "• Realicé investigación de usuarios y pruebas de usabilidad",
-            "• Colaboré con equipo de desarrollo en implementación"
+            "• Gestioné proyectos de agencia manteniendo identidad de marca y sistema de diseño",
+            "• Coordiné trabajo del equipo UX con business y desarrolladores",
+            "• Creé íconos y componentes para mantener consistencia entre diseñadores",
+            "• Colaboré estrechamente con equipos de diseño y desarrollo para implementar sistemas funcionales"
+          ]
+        },
+        {
+          title: "Product Designer",
+          company: "Santander, São Paulo - Brasil • Ene 2021 - Dic 2021",
+          tasks: [
+            "• Participé en proceso UX end-to-end, incluyendo análisis de datos para insights de negocio",
+            "• Actualicé Sistema de Diseño, creando componentes e íconos",
+            "• Lideré proyecto de rediseño de app para mejorar journey del usuario",
+            "• Participé activamente en reuniones de decisión con business y desarrollo"
+          ]
+        },
+        {
+          title: "Product Designer",
+          company: "Deloitte, Brasil • Mar 2020 - Dic 2020",
+          tasks: [
+            "• Produje conceptos funcionales y conceptuales con POs, usuarios finales y profesionales",
+            "• Traduje conceptos en prototipos funcionales priorizados en desarrollo",
+            "• Documenté User Stories, recopilando requisitos y creando personas",
+            "• Trabajé con Salesforce, Vlocity Omniscript y LWC para clientes como Claro y Caixa Seguradora"
+          ]
+        },
+        {
+          title: "UX/UI Designer & Front-end Developer",
+          company: "Finnet, Brasil • Mar 2019 - Sep 2020",
+          tasks: [
+            "• Creé procesos de diseño efectivos: flujos UX, mapas de journey, wireframes",
+            "• Dominé principios de diseño responsivo para pantallas móviles y desktop",
+            "• Establecí estándares de diseño: guías de estilo UI, estrategias visuales y sistemas de diseño",
+            "• Aseguré experiencia consistente del usuario across plataformas Web, iOS y Android"
+          ]
+        },
+        {
+          title: "UX/UI Designer & Front-end Developer",
+          company: "Hortatech, Brasil • Sep 2018 - Sep 2019",
+          tasks: [
+            "• Creé wireframes, realicé pruebas de usuario, A/B testing e investigación de usuario",
+            "• Desarrollé diseños visualmente atractivos usando Adobe XD, Photoshop e Illustrator",
+            "• Programé en JavaScript, HTML, CSS, Bootstrap con diseño responsivo",
+            "• Optimicé proyectos web para proporcionar experiencia de usuario excepcional"
           ]
         }
       ],
