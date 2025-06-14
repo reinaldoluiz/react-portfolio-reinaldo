@@ -123,7 +123,7 @@ const Portfolio = () => {
                           <img 
                             src={project.image} 
                             alt={project.title}
-                            className="w-full h-48 object-contain mx-auto"
+                            className="w-full h-48 object-cover mx-auto"
                           />
                         </div>
 
