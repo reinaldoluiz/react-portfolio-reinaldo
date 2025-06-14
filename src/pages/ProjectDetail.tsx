@@ -256,37 +256,40 @@ const ProjectDetail = () => {
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               {project.id === 2 ? (
-                // Grid layout for project 2 with properly cropped sections
+                // Grid layout for project 2 with background images
                 <div className="w-full h-[600px]">
                   <div className="grid grid-cols-2 gap-6 h-full">
                     {/* Left section - top part of the image */}
-                    <div className="h-full overflow-hidden rounded-lg">
-                      <img 
-                        src="/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png" 
-                        alt="FinTech Dashboard - Top Section"
-                        className="w-full h-full object-cover shadow-lg"
-                        style={{objectPosition: '50% 0%'}}
-                      />
-                    </div>
+                    <div 
+                      className="h-full rounded-lg shadow-lg"
+                      style={{
+                        backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: '50% 0%',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
                     
                     {/* Right section - middle and bottom parts */}
                     <div className="grid grid-rows-2 gap-6 h-full">
-                      <div className="h-full overflow-hidden rounded-lg">
-                        <img 
-                          src="/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png"
-                          alt="FinTech Dashboard - Middle Section"
-                          className="w-full h-full object-cover shadow-lg"
-                          style={{objectPosition: '50% 50%'}}
-                        />
-                      </div>
-                      <div className="h-full overflow-hidden rounded-lg">
-                        <img 
-                          src="/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png"
-                          alt="FinTech Dashboard - Bottom Section"
-                          className="w-full h-full object-cover shadow-lg"
-                          style={{objectPosition: '50% 100%'}}
-                        />
-                      </div>
+                      <div 
+                        className="h-full rounded-lg shadow-lg"
+                        style={{
+                          backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: '50% 50%',
+                          backgroundRepeat: 'no-repeat'
+                        }}
+                      />
+                      <div 
+                        className="h-full rounded-lg shadow-lg"
+                        style={{
+                          backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: '50% 100%',
+                          backgroundRepeat: 'no-repeat'
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
