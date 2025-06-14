@@ -1,4 +1,4 @@
-
+import { useState } from "react";
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "../components/Navigation";
@@ -7,8 +7,11 @@ import ResumeSection from "../components/resume/ResumeSection";
 import ExperienceItem from "../components/resume/ExperienceItem";
 import SkillsGrid from "../components/resume/SkillsGrid";
 import LanguageCard from "../components/resume/LanguageCard";
+import LanguageSelector from "../components/resume/LanguageSelector";
 
 const Resume = () => {
+  const [language, setLanguage] = useState("pt");
+
   const experiences = [
     {
       title: "Product Designer",
@@ -67,12 +70,14 @@ const Resume = () => {
       <Navigation />
       
       <div className="container mx-auto px-6 py-8 max-w-4xl mt-16">
-        {/* Header */}
+        {/* Language Selector */}
         <div className="flex items-center justify-between mb-8">
-          <Link to="/" className="flex items-center text-red-400 hover:text-red-500 font-medium">
-            <ArrowLeft className="h-4 w-4 mr-2" />
-            Voltar ao Portfolio
-          </Link>
+          <div className="flex-1 max-w-md">
+            <LanguageSelector 
+              currentLanguage={language} 
+              onLanguageChange={setLanguage} 
+            />
+          </div>
           <button 
             onClick={() => window.print()} 
             className="bg-red-400 text-white px-4 py-2 rounded hover:bg-red-500 transition-colors border-2 border-black transform hover:rotate-1"
