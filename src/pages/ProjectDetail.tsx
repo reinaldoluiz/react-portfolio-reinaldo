@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -256,10 +257,10 @@ const ProjectDetail = () => {
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               {project.id === 2 ? (
-                // Grid layout for project 2 with 4 different parts of the image
+                // Grid layout for project 2 with 4 different images
                 <div className="w-full h-[600px]">
                   <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
-                    {/* Top left - focus on left side of image */}
+                    {/* Top left - focus on left side of project 2 image */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
@@ -270,18 +271,18 @@ const ProjectDetail = () => {
                       }}
                     />
                     
-                    {/* Top right - focus on right side of image */}
+                    {/* Top right - project 3 image */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
-                        backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                        backgroundImage: `url('/lovable-uploads/898d43f4-a54b-415e-8512-7d437380d908.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '100% 0%',
+                        backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
                     
-                    {/* Bottom left - focus on bottom left */}
+                    {/* Bottom left - focus on bottom left of project 2 */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
@@ -292,7 +293,7 @@ const ProjectDetail = () => {
                       }}
                     />
                     
-                    {/* Bottom right - focus on center/bottom right */}
+                    {/* Bottom right - focus on center/bottom right of project 2 */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
