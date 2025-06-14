@@ -1,7 +1,11 @@
 
 import { MapPin, Linkedin, Calendar } from "lucide-react";
 
-const ResumeHeader = () => {
+interface ResumeHeaderProps {
+  experienceText: string;
+}
+
+const ResumeHeader = ({ experienceText }: ResumeHeaderProps) => {
   return (
     <div className="text-center mb-8 pb-8 border-b-2 border-gray-200">
       <h1 className="text-4xl font-bold text-gray-800 mb-2">Reinaldo Luiz</h1>
@@ -21,7 +25,7 @@ const ResumeHeader = () => {
         </div>
         <div className="flex items-center">
           <Calendar className="h-4 w-4 mr-1" />
-          <span>+8 anos de experiência</span>
+          <span>{experienceText}</span>
         </div>
       </div>
     </div>

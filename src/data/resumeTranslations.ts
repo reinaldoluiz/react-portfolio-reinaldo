@@ -1,5 +1,7 @@
+
 export const resumeTranslations = {
   en: {
+    experienceText: "+8 years of experience",
     introduction: {
       title: "Introduction",
       content: "Experienced designer with over 8 years of expertise in UI/UX and frontend development, specialized in creating user-centered digital solutions. I have worked with global companies like Kimberly-Clark, Santander, and HDI Seguros, developing digital products that connect user needs with business objectives. My approach combines user research, design thinking, and technical implementation to deliver exceptional experiences."
@@ -163,6 +165,7 @@ export const resumeTranslations = {
     printButton: "Print CV"
   },
   pt: {
+    experienceText: "+8 anos de experiência",
     introduction: {
       title: "Introdução",
       content: "Designer experiente com mais de 8 anos de experiência em UI/UX e desenvolvimento frontend, especializado em criar soluções digitais centradas no usuário. Tenho trabalhado com empresas globais como Kimberly-Clark, Santander e HDI Seguros, desenvolvendo produtos digitais que conectam necessidades dos usuários com objetivos de negócio. Minha abordagem combina pesquisa de usuário, design thinking e implementação técnica para entregar experiências excepcionais."
@@ -326,6 +329,7 @@ export const resumeTranslations = {
     printButton: "Imprimir CV"
   },
   es: {
+    experienceText: "+8 años de experiencia",
     introduction: {
       title: "Introducción",
       content: "Diseñador experimentado con más de 8 años de experiencia en UI/UX y desarrollo frontend, especializado en crear soluciones digitales centradas en el usuario. He trabajado con empresas globales como Kimberly-Clark, Santander y HDI Seguros, desarrollando productos digitales que conectan las necesidades de los usuarios con los objetivos de negocio. Mi enfoque combina investigación de usuarios, design thinking y implementación técnica para entregar experiencias excepcionales."
@@ -489,6 +493,7 @@ export const resumeTranslations = {
     printButton: "Imprimir CV"
   },
   ca: {
+    experienceText: "+8 anys d'experiència",
     introduction: {
       title: "Introducció",
       content: "Dissenyador experimentat amb més de 8 anys d'experiència en UI/UX i desenvolupament frontend, especialitzat en crear solucions digitals centrades en l'usuari. He treballat amb empreses globals com Kimberly-Clark, Santander i HDI Seguros, desenvolupant productes digitals que connecten les necessitats dels usuaris amb els objectius de negoci. El meu enfocament combina recerca d'usuaris, design thinking i implementació tècnica per lliurar experiències excepcionals."

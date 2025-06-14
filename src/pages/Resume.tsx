@@ -38,7 +38,7 @@ const Resume = () => {
 
         {/* Resume content - starts here for printing */}
         <div className="print:mt-0">
-          <ResumeHeader />
+          <ResumeHeader experienceText={t.experienceText} />
 
           <ResumeSection title={t.introduction.title}>
             <p className="text-gray-700 leading-relaxed">
