@@ -33,7 +33,7 @@ const Hero = () => {
           </div>
           
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
-            +8 years crafting digital experiences from concept to production. Currently based in Barcelona, Spain, pursuing a Master's in UX Design while helping teams create user-centered solutions worldwide.
+            +8 years crafting digital experiences from concept to production, helping teams create user-centered solutions worldwide.
           </p>
           
           <button onClick={scrollToNext} className="bg-red-400 hover:bg-red-500 text-white px-8 py-4 text-lg font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg">
