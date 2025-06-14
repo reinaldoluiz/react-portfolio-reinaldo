@@ -1,12 +1,13 @@
 
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
   const isHomePage = location.pathname === '/';
 
   useEffect(() => {
@@ -29,8 +30,12 @@ const Navigation = () => {
       const element = document.getElementById(sectionId);
       element?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      // If not on home page, navigate to home page with hash
-      window.location.href = `/#${sectionId}`;
+      // Navigate to home page and then scroll to section
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
     }
     setIsMobileMenuOpen(false);
   };
