@@ -116,14 +116,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      
-      <div className="border-t-2 border-gray-300 mt-24 pt-8 bg-white transform -rotate-1">
-        <div className="container mx-auto px-6">
-          <p className="text-center text-gray-500 text-sm">
-            © 2024 Reinaldo Luiz - Adventure Designer. All rights reserved. 🎒
-          </p>
-        </div>
-      </div>
     </section>
   );
 };
