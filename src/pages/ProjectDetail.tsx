@@ -16,7 +16,7 @@ const ProjectDetail = () => {
     duration: "4 months",
     team: "Designer, 2 Developers, PM",
     role: "Lead UX/UI Designer",
-    image: "/lovable-uploads/8e593d90-dc15-4e68-8713-5533eaf5291f.png",
+    image: "/lovable-uploads/53a631d0-16bb-4460-970a-b51729b1668b.png",
     color: "bg-green-100",
     tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
     category: "Mobile App",
@@ -100,7 +100,7 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          {/* Project Image - Improved quality display */}
+          {/* Project Image - Updated with new image */}
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               <div className="w-full max-w-4xl mx-auto">
@@ -108,7 +108,6 @@ const ProjectDetail = () => {
                   src={project.image} 
                   alt={project.title}
                   className="w-full h-auto object-cover object-top rounded-lg shadow-lg"
-                  style={{ imageRendering: 'high-quality' }}
                 />
               </div>
             </div>
