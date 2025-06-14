@@ -54,7 +54,7 @@ const Projects = () => {
                     <img 
                       src={project.image} 
                       alt={project.title}
-                      className="w-48 h-48 object-contain mx-auto"
+                      className="w-full h-48 object-contain mx-auto"
                     />
                   </div>
                 </div>
