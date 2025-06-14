@@ -71,31 +71,34 @@ const ProjectDetail = () => {
     },
     {
       id: 3,
-      title: "Learning Platform",
-      subtitle: "Educational Connection System",
-      description: "An educational platform connecting students and instructors - mapping out learning adventures for every user. Features interactive course creation and progress tracking.",
+      title: "Santander Auto",
+      subtitle: "UX/UI Landing Page and APP",
+      description: "Complete redesign of the Santander Auto app and landing page for car and motorcycle insurance. The project focused on creating a seamless digital experience that helps users acquire insurance and add value to their insurance installments through an intuitive mobile interface and comprehensive web presence.",
       year: "2023",
       duration: "5 months",
-      team: "3 Designers, 4 Developers, 2 PMs",
-      role: "Lead Product Designer",
-      image: "/lovable-uploads/898d43f4-a54b-415e-8512-7d437380d908.png",
-      color: "bg-yellow-100",
-      tools: ["Sketch", "Information Architecture", "User Flows", "Principle"],
-      category: "Research",
-      problem: "Students and instructors struggled to connect effectively in online learning environments, with poor engagement and completion rates across educational platforms.",
-      solution: "Created an engaging platform with gamified learning paths, real-time collaboration tools, and personalized learning recommendations.",
+      team: "UX/UI Designer, Developer, Product Manager, Business Analyst",
+      role: "Lead UX/UI Designer",
+      image: "/lovable-uploads/13c99f9e-2516-44a2-a16f-677610b38f82.png",
+      color: "bg-red-100",
+      tools: ["Adobe XD", "Illustrator", "Figma", "Google Analytics"],
+      category: "UX/UI Design",
+      problem: "Customers faced difficulties navigating the complex insurance acquisition process, with poor mobile user experience and lack of clear value proposition for insurance installments. The existing platform had high abandonment rates and low user satisfaction.",
+      solution: "Developed a comprehensive digital solution featuring an intuitive mobile app with streamlined insurance acquisition flow, clear coverage information, and added-value services. Created responsive landing pages that effectively communicate the benefits and guide users through the decision-making process.",
       process: [
-        "Educational Research",
-        "Student & Teacher Interviews",
-        "Learning Path Design",
-        "Interactive Prototype Development",
-        "Pilot Program & Feedback Integration"
+        "Business Requirements Analysis",
+        "User Journey Mapping & Pain Point Identification",
+        "Competitive Analysis of Insurance Platforms",
+        "Mobile-First Design Approach",
+        "Prototyping & User Testing",
+        "Design System Implementation",
+        "Collaboration with Development Team"
       ],
       results: [
-        "85% course completion rate",
-        "300% increase in student engagement",
-        "Used by 50+ educational institutions",
-        "Featured in EdTech Innovation Awards"
+        "Improved user experience with simplified navigation",
+        "Enhanced mobile app functionality and usability",
+        "Increased conversion rates on landing pages",
+        "Better user engagement with insurance products",
+        "Successful integration of value-added services"
       ]
     },
     {
@@ -328,8 +331,17 @@ const ProjectDetail = () => {
                     />
                   </div>
                 </div>
+              ) : project.id === 3 ? (
+                // Single image layout for project 3 (Santander Auto)
+                <div className="w-full max-w-4xl mx-auto">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-auto object-contain rounded-lg shadow-lg"
+                  />
+                </div>
               ) : (
-                // Grid layout for projects 3, 4, 5, and 6 using placeholder images
+                // Grid layout for projects 4, 5, and 6 using placeholder images
                 <div className="w-full h-[500px]">
                   <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
                     {/* Top left */}

@@ -16,17 +16,18 @@ const Projects = () => {
       title: "Pull-Ups E-commerce", 
       description: "Complete e-commerce redesign for Pull-Ups training pants, creating an engaging and educational platform for parents. The project focused on combining product discovery with educational content about potty training.",
       year: "2024",
-      image: "/lovable-uploads/18593925-b8e8-43b5-94fa-a39fedaf3798.png",
+      image: "/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png",
       color: "bg-purple-100",
       tools: ["Research", "UI Design", "Design System"]
     },
     {
-      title: "HDI Insurance Digital Platform",
-      description: "Led UX team coordination with business and development teams, maintaining brand identity while creating user-friendly insurance products and services.",
-      year: "2021", 
-      image: "/lovable-uploads/898d43f4-a54b-415e-8512-7d437380d908.png",
-      color: "bg-yellow-100",
-      tools: ["Team Leadership", "Brand Identity", "Component Design", "Cross-functional Collaboration"]
+      title: "Santander Auto",
+      description: "Complete redesign of the Santander Auto app and landing page, creating a seamless digital experience for car and motorcycle insurance. The project focused on improving user journey and adding value to insurance installments.",
+      year: "2023", 
+      image: "/lovable-uploads/13c99f9e-2516-44a2-a16f-677610b38f82.png",
+      color: "bg-red-100",
+      tools: ["UX Research", "Mobile Design", "Design System", "User Testing"],
+      category: "UX/UI Design"
     }
   ];
 

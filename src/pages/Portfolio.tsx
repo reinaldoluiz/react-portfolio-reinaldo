@@ -22,20 +22,20 @@ const Portfolio = () => {
       title: "Pull-Ups E-commerce", 
       description: "Complete e-commerce redesign for Pull-Ups training pants, creating an engaging and educational platform for parents. The project focused on combining product discovery with educational content about potty training.",
       year: "2024",
-      image: "/lovable-uploads/18593925-b8e8-43b5-94fa-a39fedaf3798.png",
+      image: "/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png",
       color: "bg-purple-100",
       tools: ["Research", "UI Design", "Design System"],
       categories: ["Research", "UI Design", "Design System"]
     },
     {
       id: 3,
-      title: "Learning Platform",
-      description: "An educational platform connecting students and instructors - mapping out learning adventures for every user.",
+      title: "Santander Auto",
+      description: "Complete redesign of the Santander Auto app and landing page, creating a seamless digital experience for car and motorcycle insurance. The project focused on improving user journey and adding value to insurance installments.",
       year: "2023", 
-      image: "/lovable-uploads/898d43f4-a54b-415e-8512-7d437380d908.png",
-      color: "bg-yellow-100",
-      tools: ["Sketch", "Information Architecture", "User Flows"],
-      category: "Research"
+      image: "/lovable-uploads/13c99f9e-2516-44a2-a16f-677610b38f82.png",
+      color: "bg-red-100",
+      tools: ["UX Research", "Mobile Design", "Design System", "User Testing"],
+      category: "UX/UI Design"
     },
     {
       id: 4,
@@ -69,7 +69,7 @@ const Portfolio = () => {
     }
   ];
 
-  const categories = ["All", "Research", "UI Design", "Design System", "Graphic Design"];
+  const categories = ["All", "Research", "UI Design", "UX/UI Design", "Design System", "Graphic Design"];
 
   const filterProjectsByCategory = (category: string) => {
     if (category === "All") return projects;
@@ -100,12 +100,12 @@ const Portfolio = () => {
 
           {/* Categories Tabs */}
           <Tabs defaultValue="All" className="w-full max-w-4xl mx-auto mb-16">
-            <TabsList className="grid w-full grid-cols-5 bg-white">
+            <TabsList className="grid w-full grid-cols-6 bg-white">
               {categories.map((category) => (
                 <TabsTrigger 
                   key={category} 
                   value={category}
-                  className="data-[state=active]:bg-red-400 data-[state=active]:text-white"
+                  className="data-[state=active]:bg-red-400 data-[state=active]:text-white text-xs"
                 >
                   {category}
                 </TabsTrigger>
