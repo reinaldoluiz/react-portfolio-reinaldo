@@ -1,3 +1,4 @@
+
 import { Download, MapPin, Phone, Mail, Calendar, Linkedin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -245,7 +246,7 @@ const Resume = () => {
             </div>
           </div>
           
-          <div className="bg-purple-100 p-8 transform -rotate-1 border-2 border-gray-300 mb-8">
+          <div className="bg-slate-50 p-8 transform -rotate-1 border border-gray-200 mb-8 rounded-lg">
             <h3 className="text-2xl font-bold text-gray-800 mb-4 transform rotate-1 inline-block">
               {data.personalInfo.aboutTitle}
             </h3>
@@ -256,7 +257,7 @@ const Resume = () => {
         </div>
 
         {/* Contact Info */}
-        <div className="bg-blue-50 p-6 transform rotate-1 border-2 border-gray-300 mb-12">
+        <div className="bg-blue-50 p-6 transform rotate-1 border border-gray-200 mb-12 rounded-lg">
           <div className="grid md:grid-cols-2 gap-4">
             <div className="flex items-center gap-2">
               <MapPin size={20} className="text-red-400" />
@@ -284,7 +285,7 @@ const Resume = () => {
           </h2>
           <div className="space-y-8">
             {data.jobs.map((job, index) => (
-              <div key={index} className={`p-6 transform ${index % 2 === 0 ? '-rotate-1 bg-yellow-100' : 'rotate-1 bg-green-100'} border-2 border-gray-300`}>
+              <div key={index} className={`p-6 transform ${index % 2 === 0 ? '-rotate-1 bg-amber-50' : 'rotate-1 bg-emerald-50'} border border-gray-200 rounded-lg`}>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{job.title}</h3>
                 <p className="text-red-400 font-semibold mb-2">{job.company}</p>
                 <ul className="text-gray-700 space-y-1">
@@ -302,7 +303,7 @@ const Resume = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 transform rotate-1 inline-block">
             {data.sections.education}
           </h2>
-          <div className="bg-pink-100 p-6 transform -rotate-1 border-2 border-gray-300">
+          <div className="bg-rose-50 p-6 transform -rotate-1 border border-gray-200 rounded-lg">
             <h3 className="text-xl font-bold text-gray-800 mb-2">{data.education.degree}</h3>
             <p className="text-red-400 font-semibold mb-2">{data.education.institution}</p>
             <p className="text-gray-700">{data.education.focus}</p>
@@ -316,7 +317,7 @@ const Resume = () => {
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {data.skillsCategories.map((category, index) => (
-              <div key={index} className={`p-4 transform ${index % 3 === 0 ? 'rotate-1 bg-orange-100' : index % 3 === 1 ? '-rotate-1 bg-blue-100' : 'rotate-1 bg-yellow-100'} border-2 border-gray-300`}>
+              <div key={index} className={`p-4 transform ${index % 3 === 0 ? 'rotate-1 bg-purple-50' : index % 3 === 1 ? '-rotate-1 bg-teal-50' : 'rotate-1 bg-orange-50'} border border-gray-200 rounded-lg`}>
                 <h3 className="font-bold text-gray-800 mb-2">{category.title}</h3>
                 <p className="text-gray-700 text-sm">{category.skills}</p>
               </div>
