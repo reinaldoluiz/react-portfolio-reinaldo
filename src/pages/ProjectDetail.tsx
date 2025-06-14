@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -257,49 +256,49 @@ const ProjectDetail = () => {
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               {project.id === 2 ? (
-                // Grid layout for project 2 with 4 equal images
+                // Grid layout for project 2 with 4 different parts of the image
                 <div className="w-full h-[600px]">
                   <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
-                    {/* Top left */}
+                    {/* Top left - focus on left side of image */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '25% 25%',
+                        backgroundPosition: '0% 0%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
                     
-                    {/* Top right */}
+                    {/* Top right - focus on right side of image */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '75% 25%',
+                        backgroundPosition: '100% 0%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
                     
-                    {/* Bottom left */}
+                    {/* Bottom left - focus on bottom left */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '25% 75%',
+                        backgroundPosition: '0% 100%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
                     
-                    {/* Bottom right */}
+                    {/* Bottom right - focus on center/bottom right */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '75% 75%',
+                        backgroundPosition: '100% 100%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
