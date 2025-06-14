@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
@@ -32,7 +31,7 @@ const Portfolio = () => {
       title: "Santander Auto",
       description: "Complete redesign of the Santander Auto app and landing page, creating a seamless digital experience for car and motorcycle insurance. The project focused on improving user journey and adding value to insurance installments.",
       year: "2023", 
-      image: "/lovable-uploads/13c99f9e-2516-44a2-a16f-677610b38f82.png",
+      image: "/lovable-uploads/e171f6c0-f022-4ab0-a8cb-67dc5c32b757.png",
       color: "bg-red-100",
       tools: ["UX Research", "Mobile Design", "Design System", "User Testing"],
       category: "UX/UI Design"
