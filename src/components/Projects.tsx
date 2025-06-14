@@ -2,12 +2,13 @@
 const Projects = () => {
   const projects = [
     {
-      title: "Kimberly-Clark Global Products",
-      description: "Led UX/UI design for global product lines across North and South America, creating design systems and e-commerce platforms that serve millions of users worldwide.",
-      year: "2021-2025",
-      image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
-      color: "bg-green-100",
-      tools: ["Figma", "Design Systems", "User Testing", "Accessibility"]
+      title: "Intimus Brazil",
+      description: "A sustainable shopping platform that helps users discover eco-friendly products with an intuitive map-like navigation system.",
+      year: "2024",
+      image: "/lovable-uploads/53a631d0-16bb-4460-970a-b51729b1668b.png",
+      color: "bg-pink-100",
+      tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
+      category: "UI Design"
     },
     {
       title: "Santander Banking App Redesign", 

@@ -9,12 +9,12 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "EcoCommerce App",
+      title: "Intimus Brazil",
       description: "A sustainable shopping platform that helps users discover eco-friendly products with an intuitive map-like navigation system.",
       year: "2024",
-      image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
-      color: "bg-green-100",
-      tools: ["Figma", "User Research", "Prototyping"],
+      image: "/lovable-uploads/53a631d0-16bb-4460-970a-b51729b1668b.png",
+      color: "bg-pink-100",
+      tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
       category: "UI Design"
     },
     {
