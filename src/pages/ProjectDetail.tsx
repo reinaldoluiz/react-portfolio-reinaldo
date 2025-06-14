@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -258,7 +259,7 @@ const ProjectDetail = () => {
               <div className="w-full max-w-4xl mx-auto">
                 <div className="grid grid-cols-2 gap-4 h-96">
                   {/* Single image on the left */}
-                  <div>
+                  <div className="h-full">
                     <img 
                       src={project.image} 
                       alt={`${project.title} - Main view`}
@@ -267,15 +268,15 @@ const ProjectDetail = () => {
                   </div>
                   
                   {/* Two images stacked on the right */}
-                  <div className="grid grid-rows-2 gap-4">
-                    <div>
+                  <div className="grid grid-rows-2 gap-4 h-full">
+                    <div className="h-full">
                       <img 
                         src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=200&fit=crop"
                         alt={`${project.title} - Detail view 1`}
                         className="w-full h-full object-cover rounded-lg shadow-lg"
                       />
                     </div>
-                    <div>
+                    <div className="h-full">
                       <img 
                         src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
                         alt={`${project.title} - Detail view 2`}
