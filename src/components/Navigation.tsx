@@ -25,8 +25,13 @@ const Navigation = () => {
   }, [isHomePage]);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    if (isHomePage) {
+      const element = document.getElementById(sectionId);
+      element?.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // If not on home page, navigate to home page with hash
+      window.location.href = `/#${sectionId}`;
+    }
     setIsMobileMenuOpen(false);
   };
 
@@ -45,78 +50,44 @@ const Navigation = () => {
             Reinaldo Luiz
           </Link>
 
-          {/* Desktop Menu */}
+          {/* Desktop Menu - Always show home menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {isHomePage ? (
-              <>
-                <button 
-                  onClick={() => scrollToSection('about')}
-                  className="text-gray-600 hover:text-red-400 transition-colors font-medium"
-                >
-                  About
-                </button>
-                <button 
-                  onClick={() => scrollToSection('projects')}
-                  className="text-gray-600 hover:text-red-400 transition-colors font-medium"
-                >
-                  Projects
-                </button>
-                <button 
-                  onClick={() => scrollToSection('skills')}
-                  className="text-gray-600 hover:text-red-400 transition-colors font-medium"
-                >
-                  Skills
-                </button>
-                <Link 
-                  to="/resume"
-                  className="text-gray-600 hover:text-red-400 transition-colors font-medium"
-                >
-                  Resume
-                </Link>
-                <Link 
-                  to="/portfolio"
-                  className="text-gray-600 hover:text-red-400 transition-colors font-medium"
-                >
-                  Portfolio
-                </Link>
-              </>
-            ) : (
-              <>
-                <Link 
-                  to="/"
-                  className="text-gray-600 hover:text-red-400 transition-colors font-medium"
-                >
-                  Home
-                </Link>
-                <Link 
-                  to="/portfolio"
-                  className="text-gray-600 hover:text-red-400 transition-colors font-medium"
-                >
-                  Portfolio
-                </Link>
-                <Link 
-                  to="/resume"
-                  className="text-gray-600 hover:text-red-400 transition-colors font-medium"
-                >
-                  Resume
-                </Link>
-              </>
-            )}
-            {isHomePage ? (
-              <button 
-                onClick={() => scrollToSection('contact')}
-                className="bg-red-400 text-white px-4 py-2 hover:bg-red-500 transition-colors font-medium border-2 border-black transform hover:rotate-1"
-              >
-                Contact
-              </button>
-            ) : (
-              <Link 
-                to="/#contact"
-                className="bg-red-400 text-white px-4 py-2 hover:bg-red-500 transition-colors font-medium border-2 border-black transform hover:rotate-1"
-              >
-                Contact
-              </Link>
-            )}
+            <button 
+              onClick={() => scrollToSection('about')}
+              className="text-gray-600 hover:text-red-400 transition-colors font-medium"
+            >
+              About
+            </button>
+            <button 
+              onClick={() => scrollToSection('projects')}
+              className="text-gray-600 hover:text-red-400 transition-colors font-medium"
+            >
+              Projects
+            </button>
+            <button 
+              onClick={() => scrollToSection('skills')}
+              className="text-gray-600 hover:text-red-400 transition-colors font-medium"
+            >
+              Skills
+            </button>
+            <Link 
+              to="/resume"
+              className="text-gray-600 hover:text-red-400 transition-colors font-medium"
+            >
+              Resume
+            </Link>
+            <Link 
+              to="/portfolio"
+              className="text-gray-600 hover:text-red-400 transition-colors font-medium"
+            >
+              Portfolio
+            </Link>
+            <button 
+              onClick={() => scrollToSection('contact')}
+              className="bg-red-400 text-white px-4 py-2 hover:bg-red-500 transition-colors font-medium border-2 border-black transform hover:rotate-1"
+            >
+              Contact
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -128,83 +99,48 @@ const Navigation = () => {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu - Always show home menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-3">
-              {isHomePage ? (
-                <>
-                  <button 
-                    onClick={() => scrollToSection('about')}
-                    className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
-                  >
-                    About
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('projects')}
-                    className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
-                  >
-                    Projects
-                  </button>
-                  <button 
-                    onClick={() => scrollToSection('skills')}
-                    className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
-                  >
-                    Skills
-                  </button>
-                  <Link 
-                    to="/resume"
-                    className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Resume
-                  </Link>
-                  <Link 
-                    to="/portfolio"
-                    className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Portfolio
-                  </Link>
-                  <button 
-                    onClick={() => scrollToSection('contact')}
-                    className="text-left bg-red-400 text-white px-4 py-2 hover:bg-red-500 transition-colors font-medium border-2 border-black transform hover:rotate-1 w-fit"
-                  >
-                    Contact
-                  </button>
-                </>
-              ) : (
-                <>
-                  <Link 
-                    to="/"
-                    className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Home
-                  </Link>
-                  <Link 
-                    to="/portfolio"
-                    className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Portfolio
-                  </Link>
-                  <Link 
-                    to="/resume"
-                    className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Resume
-                  </Link>
-                  <Link 
-                    to="/#contact"
-                    className="text-left bg-red-400 text-white px-4 py-2 hover:bg-red-500 transition-colors font-medium border-2 border-black transform hover:rotate-1 w-fit"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    Contact
-                  </Link>
-                </>
-              )}
+              <button 
+                onClick={() => scrollToSection('about')}
+                className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
+              >
+                About
+              </button>
+              <button 
+                onClick={() => scrollToSection('projects')}
+                className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
+              >
+                Projects
+              </button>
+              <button 
+                onClick={() => scrollToSection('skills')}
+                className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
+              >
+                Skills
+              </button>
+              <Link 
+                to="/resume"
+                className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Resume
+              </Link>
+              <Link 
+                to="/portfolio"
+                className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Portfolio
+              </Link>
+              <button 
+                onClick={() => scrollToSection('contact')}
+                className="text-left bg-red-400 text-white px-4 py-2 hover:bg-red-500 transition-colors font-medium border-2 border-black transform hover:rotate-1 w-fit"
+              >
+                Contact
+              </button>
             </div>
           </div>
         )}
