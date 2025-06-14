@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -256,8 +257,8 @@ const ProjectDetail = () => {
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               {project.id === 2 ? (
-                // Grid layout for project 2
-                <div className="w-full h-96">
+                // Grid layout for project 2 with increased height
+                <div className="w-full h-[500px]">
                   <div className="grid grid-cols-2 gap-4 h-full">
                     {/* Single image on the left */}
                     <div className="h-full overflow-hidden rounded-lg">
