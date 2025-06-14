@@ -1,4 +1,5 @@
 
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -39,7 +40,7 @@ const ProjectDetail = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-rose-100">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
       <Navigation />
       <div className="pt-20">
         <div className="container mx-auto px-6 py-16">
@@ -101,7 +102,7 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          {/* Project Image - Updated with new image */}
+          {/* Project Image - Updated with pink background */}
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               <div className="w-full max-w-4xl mx-auto">
@@ -182,3 +183,4 @@ const ProjectDetail = () => {
 };
 
 export default ProjectDetail;
+
