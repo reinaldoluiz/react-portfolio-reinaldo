@@ -1,4 +1,3 @@
-
 import { Download, MapPin, Phone, Mail, Calendar, Linkedin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -229,11 +228,11 @@ const Resume = () => {
 
         {/* Personal Information Section */}
         <div className="mb-12">
-          <div className="text-center mb-8">
+          <div className="text-left mb-8">
             <h2 className="text-5xl md:text-6xl font-bold text-gray-800 transform rotate-1 inline-block mb-4">
               {data.personalInfo.name}
             </h2>
-            <div className="flex justify-center items-center gap-2 mb-6">
+            <div className="flex items-center gap-2 mb-6">
               <Linkedin size={24} className="text-red-400" />
               <a 
                 href="https://www.linkedin.com/in/reinaldolluiz/" 
