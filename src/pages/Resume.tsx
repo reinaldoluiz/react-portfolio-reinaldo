@@ -48,9 +48,9 @@ const Resume = () => {
           </ResumeSection>
 
           <ResumeSection title={t.skills.title}>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-6 print:grid-cols-3 print:gap-4">
               {t.skills.categories.map((category, index) => (
-                <div key={index}>
+                <div key={index} className="print:break-inside-avoid">
                   <h3 className="font-semibold text-gray-800 mb-2">{category.title}</h3>
                   <ul className="text-sm text-gray-600 space-y-1">
                     {category.skills.map((skill, skillIndex) => (
@@ -91,13 +91,14 @@ const Resume = () => {
           </ResumeSection>
 
           <ResumeSection title={t.languages.title}>
-            <div className="grid md:grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-3 gap-4 print:grid-cols-3 print:gap-2 print:flex print:flex-wrap">
               {t.languages.items.map((lang, index) => (
-                <LanguageCard
-                  key={index}
-                  language={lang.language}
-                  level={lang.level}
-                />
+                <div key={index} className="print:flex-1 print:min-w-0">
+                  <LanguageCard
+                    language={lang.language}
+                    level={lang.level}
+                  />
+                </div>
               ))}
             </div>
           </ResumeSection>
