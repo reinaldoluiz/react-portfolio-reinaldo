@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -257,32 +256,32 @@ const ProjectDetail = () => {
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               {project.id === 2 ? (
-                // Grid layout for project 2 with 4 different images
+                // Grid layout for project 2 with 4 different parts of the image
                 <div className="w-full h-[600px]">
                   <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
-                    {/* Top left - focus on left side of project 2 image */}
+                    {/* Top left - focus on computer with zoom */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg"
+                      style={{
+                        backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                        backgroundSize: '200%',
+                        backgroundPosition: '30% 40%',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    
+                    {/* Top right - focus on right side of image */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '0% 0%',
+                        backgroundPosition: '100% 0%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
                     
-                    {/* Top right - project 3 image */}
-                    <div 
-                      className="h-full rounded-lg shadow-lg"
-                      style={{
-                        backgroundImage: `url('/lovable-uploads/898d43f4-a54b-415e-8512-7d437380d908.png')`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat'
-                      }}
-                    />
-                    
-                    {/* Bottom left - focus on bottom left of project 2 */}
+                    {/* Bottom left - focus on bottom left */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
@@ -293,7 +292,7 @@ const ProjectDetail = () => {
                       }}
                     />
                     
-                    {/* Bottom right - focus on center/bottom right of project 2 */}
+                    {/* Bottom right - focus on center/bottom right */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
