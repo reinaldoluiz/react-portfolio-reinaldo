@@ -39,31 +39,34 @@ const ProjectDetail = () => {
     },
     {
       id: 2,
-      title: "FinTech Dashboard",
-      subtitle: "Investment Tracking Platform",
-      description: "A comprehensive financial dashboard for investment tracking - like having a compass for your financial journey. Features real-time data visualization and portfolio management tools.",
-      year: "2024",
+      title: "Pull-Ups E-commerce",
+      subtitle: "Kimberly-Clark Training Pants Platform",
+      description: "Complete e-commerce redesign for Pull-Ups training pants, creating an engaging and educational platform for parents. The project focused on combining product discovery with educational content about potty training.",
+      year: "2023",
       duration: "6 months",
-      team: "2 Designers, 3 Developers, Product Manager",
-      role: "Senior UX Designer",
+      team: "UX/UI Designer, Developer, Product Manager, Content Strategist",
+      role: "Lead UX/UI Designer",
       image: "/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png",
-      color: "bg-blue-100",
-      tools: ["Adobe XD", "Data Visualization", "Usability Testing", "Figma"],
-      category: "Design System",
-      problem: "Investors needed a centralized platform to track multiple portfolios and investments across different platforms, with complex data being hard to understand at a glance.",
-      solution: "Designed a clean, intuitive dashboard with advanced data visualization, real-time updates, and customizable widgets for different investor personas.",
+      color: "bg-purple-100",
+      tools: ["Figma", "Adobe Creative Suite", "User Research", "Prototyping", "Google Analytics"],
+      category: "E-commerce",
+      problem: "Parents struggled to find the right training pants for their children while also needing educational support during the potty training process. The existing platform lacked engagement and failed to address the multicultural needs of diverse families.",
+      solution: "Created an integrated e-commerce and educational platform with personalized product recommendations, interactive potty training resources, and culturally diverse content. Implemented a design system that worked across desktop and mobile devices.",
       process: [
-        "Stakeholder Interviews",
-        "User Journey Mapping",
-        "Information Architecture",
+        "Stakeholder Interviews & Requirements Gathering",
+        "User Research with Parents & Children",
+        "Competitive Analysis of E-commerce Platforms",
+        "Information Architecture & User Journey Mapping",
         "Design System Creation",
-        "Prototype Testing & Validation"
+        "Prototyping & User Testing",
+        "Implementation & Launch Support"
       ],
       results: [
-        "60% reduction in task completion time",
-        "45% increase in daily active users",
-        "4.9/5 user satisfaction score",
-        "Winner of Best Finance App 2024"
+        "Improved user engagement with multicultural content",
+        "Streamlined product discovery process",
+        "Enhanced educational resources integration",
+        "Successful launch across multiple markets",
+        "Positive feedback from diverse parent demographics"
       ]
     },
     {
