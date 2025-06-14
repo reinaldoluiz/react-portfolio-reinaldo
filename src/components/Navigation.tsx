@@ -82,6 +82,12 @@ const Navigation = () => {
             >
               Portfolio
             </Link>
+            <Link 
+              to="/accessibility"
+              className="text-gray-600 hover:text-red-400 transition-colors font-medium"
+            >
+              Accessibility
+            </Link>
             <button 
               onClick={() => scrollToSection('contact')}
               className="bg-red-400 text-white px-4 py-2 hover:bg-red-500 transition-colors font-medium border-2 border-black transform hover:rotate-1"
@@ -134,6 +140,13 @@ const Navigation = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Portfolio
+              </Link>
+              <Link 
+                to="/accessibility"
+                className="text-left text-gray-600 hover:text-red-400 transition-colors font-medium py-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Accessibility
               </Link>
               <button 
                 onClick={() => scrollToSection('contact')}

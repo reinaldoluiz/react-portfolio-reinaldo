@@ -6,70 +6,70 @@ import Footer from '../components/Footer';
 const Accessibility = () => {
   const accessibilityItems = [
     {
-      category: "Navegação e Estrutura",
+      category: "Navigation and Structure",
       icon: <Keyboard size={20} />,
       items: [
-        { check: true, text: "Navegação por teclado funcional" },
-        { check: true, text: "Ordem lógica de foco" },
-        { check: true, text: "Links descritivos e informativos" },
-        { check: true, text: "Estrutura de cabeçalhos hierárquica" },
-        { check: true, text: "Mapa do site disponível (sitemap.xml)" }
+        { check: true, text: "Functional keyboard navigation" },
+        { check: true, text: "Logical focus order" },
+        { check: true, text: "Descriptive and informative links" },
+        { check: true, text: "Hierarchical heading structure" },
+        { check: true, text: "Site map available (sitemap.xml)" }
       ]
     },
     {
-      category: "Visual e Contraste",
+      category: "Visual and Contrast",
       icon: <Eye size={20} />,
       items: [
-        { check: true, text: "Contraste adequado entre texto e fundo" },
-        { check: true, text: "Texto redimensionável até 200%" },
-        { check: true, text: "Cores não são única forma de informação" },
-        { check: false, text: "Modo escuro disponível" },
-        { check: true, text: "Ícones com textos alternativos" }
+        { check: true, text: "Adequate contrast between text and background" },
+        { check: true, text: "Text resizable up to 200%" },
+        { check: true, text: "Colors are not the only form of information" },
+        { check: false, text: "Dark mode available" },
+        { check: true, text: "Icons with alternative text" }
       ]
     },
     {
-      category: "Compatibilidade com Leitores de Tela",
+      category: "Screen Reader Compatibility",
       icon: <Volume2 size={20} />,
       items: [
-        { check: true, text: "Imagens com texto alternativo" },
-        { check: true, text: "Formulários com labels apropriados" },
-        { check: true, text: "Landmarks ARIA implementados" },
-        { check: false, text: "Descrições longas para gráficos complexos" },
-        { check: true, text: "Status de carregamento comunicados" }
+        { check: true, text: "Images with alternative text" },
+        { check: true, text: "Forms with appropriate labels" },
+        { check: true, text: "ARIA landmarks implemented" },
+        { check: false, text: "Long descriptions for complex graphics" },
+        { check: true, text: "Loading status communicated" }
       ]
     },
     {
-      category: "Usabilidade Inclusiva",
+      category: "Inclusive Usability",
       icon: <Users size={20} />,
       items: [
-        { check: true, text: "Linguagem clara e simples" },
-        { check: true, text: "Instruções de formulário claras" },
-        { check: false, text: "Ajuda contextual disponível" },
-        { check: true, text: "Tempo suficiente para interações" },
-        { check: true, text: "Evita conteúdo que pisca" }
+        { check: true, text: "Clear and simple language" },
+        { check: true, text: "Clear form instructions" },
+        { check: false, text: "Contextual help available" },
+        { check: true, text: "Sufficient time for interactions" },
+        { check: true, text: "Avoids flashing content" }
       ]
     },
     {
-      category: "Responsividade e Dispositivos",
+      category: "Responsiveness and Devices",
       icon: <Smartphone size={20} />,
       items: [
-        { check: true, text: "Layout responsivo funcional" },
-        { check: true, text: "Touch targets de tamanho adequado" },
-        { check: true, text: "Funciona em modo paisagem e retrato" },
-        { check: true, text: "Zoom até 400% sem scroll horizontal" },
-        { check: false, text: "Suporte a gestos alternativos" }
+        { check: true, text: "Functional responsive layout" },
+        { check: true, text: "Adequate touch target sizes" },
+        { check: true, text: "Works in landscape and portrait modes" },
+        { check: true, text: "Zoom up to 400% without horizontal scroll" },
+        { check: false, text: "Alternative gesture support" }
       ]
     },
     {
-      category: "Padrões Web e SEO",
+      category: "Web Standards and SEO",
       icon: <Globe size={20} />,
       items: [
-        { check: true, text: "HTML semântico válido" },
-        { check: true, text: "Sitemap XML para motores de busca" },
-        { check: true, text: "Conformidade WCAG 2.1 AA (parcial)" },
-        { check: false, text: "Testes com usuários reais" },
-        { check: true, text: "Documentação de acessibilidade" },
-        { check: false, text: "Auditoria externa completa" }
+        { check: true, text: "Valid semantic HTML" },
+        { check: true, text: "XML Sitemap for search engines" },
+        { check: true, text: "WCAG 2.1 AA compliance (partial)" },
+        { check: false, text: "Testing with real users" },
+        { check: true, text: "Accessibility documentation" },
+        { check: false, text: "Complete external audit" }
       ]
     }
   ];
@@ -88,18 +88,18 @@ const Accessibility = () => {
           {/* Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 transform rotate-1 inline-block mb-4">
-              Checkpoint de Acessibilidade
+              Accessibility Checkpoint
             </h1>
             <div className="w-32 h-1 bg-green-400 mx-auto transform -rotate-1 mb-6"></div>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-              Monitorando nossa jornada para criar experiências digitais inclusivas e acessíveis para todos!
+              Monitoring our journey to create inclusive and accessible digital experiences for everyone!
             </p>
             
             {/* Score */}
             <div className="bg-white p-6 rounded-lg shadow-lg inline-block transform rotate-1 border-2 border-gray-300">
               <div className="text-4xl font-bold text-green-600 mb-2">{percentage}%</div>
               <div className="text-gray-600">
-                {checkedItems} de {totalItems} itens implementados
+                {checkedItems} of {totalItems} items implemented
               </div>
               <div className="w-full bg-gray-200 rounded-full h-3 mt-3">
                 <div 
@@ -142,7 +142,7 @@ const Accessibility = () => {
                   {/* Category Progress */}
                   <div className="mt-4 pt-4 border-t border-gray-200">
                     <div className="flex justify-between text-sm text-gray-600 mb-1">
-                      <span>Progresso da categoria</span>
+                      <span>Category progress</span>
                       <span>
                         {category.items.filter(item => item.check).length}/{category.items.length}
                       </span>
@@ -165,14 +165,14 @@ const Accessibility = () => {
           <div className="text-center mt-12">
             <div className="bg-green-100 p-8 transform rotate-1 border-2 border-gray-300 inline-block max-w-2xl">
               <h3 className="text-xl font-bold text-gray-800 mb-3">
-                🎉 Sitemap Implementado!
+                🎉 Sitemap Implemented!
               </h3>
               <div className="text-left space-y-2 text-gray-700 text-sm">
-                <p>• <strong>Sitemap XML</strong> criado e disponível em <code>/sitemap.xml</code></p>
-                <p>• Inclui todas as páginas principais do site</p>
-                <p>• Melhora a indexação pelos motores de busca</p>
-                <p>• Facilita a navegação para tecnologias assistivas</p>
-                <p>• Atualizado automaticamente com novas páginas</p>
+                <p>• <strong>XML Sitemap</strong> created and available at <code>/sitemap.xml</code></p>
+                <p>• Includes all main site pages</p>
+                <p>• Improves search engine indexing</p>
+                <p>• Facilitates navigation for assistive technologies</p>
+                <p>• Automatically updated with new pages</p>
               </div>
             </div>
           </div>
@@ -181,14 +181,14 @@ const Accessibility = () => {
           <div className="text-center mt-8">
             <div className="bg-yellow-100 p-8 transform -rotate-1 border-2 border-gray-300 inline-block max-w-2xl">
               <h3 className="text-xl font-bold text-gray-800 mb-3">
-                Próximos Passos
+                Next Steps
               </h3>
               <div className="text-left space-y-2 text-gray-700 text-sm">
-                <p>• Implementar modo escuro para melhor contraste</p>
-                <p>• Adicionar descrições longas para gráficos complexos</p>
-                <p>• Criar ajuda contextual nas seções principais</p>
-                <p>• Realizar testes com usuários reais</p>
-                <p>• Solicitar auditoria externa de acessibilidade</p>
+                <p>• Implement dark mode for better contrast</p>
+                <p>• Add long descriptions for complex graphics</p>
+                <p>• Create contextual help in main sections</p>
+                <p>• Conduct testing with real users</p>
+                <p>• Request external accessibility audit</p>
               </div>
             </div>
           </div>
