@@ -18,8 +18,8 @@ const Portfolio = () => {
     },
     {
       id: 2,
-      title: "FinTech Dashboard", 
-      description: "A comprehensive financial dashboard for investment tracking - like having a compass for your financial journey.",
+      title: "Pull-Ups E-commerce", 
+      description: "Complete e-commerce redesign for Pull-Ups training pants, creating an engaging and educational platform for parents. The project focused on combining product discovery with educational content about potty training.",
       year: "2024",
       image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
       color: "bg-blue-100",

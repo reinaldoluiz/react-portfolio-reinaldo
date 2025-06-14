@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -12,8 +13,8 @@ const Projects = () => {
       category: "UI Design"
     },
     {
-      title: "Santander Banking App Redesign", 
-      description: "End-to-end UX process redesign of mobile banking application, improving user journey and updating design system components for better usability.",
+      title: "Pull-Ups E-commerce", 
+      description: "Complete e-commerce redesign for Pull-Ups training pants, creating an engaging and educational platform for parents. The project focused on combining product discovery with educational content about potty training.",
       year: "2021",
       image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
       color: "bg-blue-100",
