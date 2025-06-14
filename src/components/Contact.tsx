@@ -39,40 +39,24 @@ const Contact = () => {
             <div>
               <div className="bg-white p-8 transform rotate-1 border-2 border-gray-300 shadow-lg">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-                  Send a Message!
+                  Ready to Connect?
                 </h3>
-                <form className="space-y-6">
-                  <div>
-                    <input 
-                      type="text"
-                      placeholder="Your Name" 
-                      className="w-full p-4 border-2 border-gray-300 bg-gray-50 focus:bg-white focus:border-blue-400 focus:outline-none transition-colors transform -rotate-1 focus:rotate-0"
-                    />
-                  </div>
+                <div className="text-center">
+                  <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+                    Click the button below to send me an email directly through your preferred email client!
+                  </p>
                   
-                  <div>
-                    <input 
-                      type="email"
-                      placeholder="Your Email" 
-                      className="w-full p-4 border-2 border-gray-300 bg-gray-50 focus:bg-white focus:border-blue-400 focus:outline-none transition-colors transform rotate-1 focus:rotate-0"
-                    />
-                  </div>
-                  
-                  <div>
-                    <textarea 
-                      placeholder="Tell me about your project adventure..." 
-                      rows={4}
-                      className="w-full p-4 border-2 border-gray-300 bg-gray-50 focus:bg-white focus:border-blue-400 focus:outline-none transition-colors resize-none transform -rotate-1 focus:rotate-0"
-                    />
-                  </div>
-                  
-                  <button 
-                    type="submit"
-                    className="w-full bg-red-400 hover:bg-red-500 text-white p-4 text-lg font-bold transform rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg"
+                  <a 
+                    href="mailto:reinaldo@email.com?subject=Design Project Inquiry&body=Hi Reinaldo,%0D%0A%0D%0AI'm interested in discussing a design project with you.%0D%0A%0D%0AProject details:%0D%0A%0D%0ABest regards,"
+                    className="inline-block w-full bg-red-400 hover:bg-red-500 text-white p-4 text-lg font-bold transform rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg text-center"
                   >
-                    🚀 Send Message & Start the Journey!
-                  </button>
-                </form>
+                    📧 Send Email & Start the Journey!
+                  </a>
+                  
+                  <p className="text-sm text-gray-500 mt-4">
+                    This will open your default email app with a pre-filled message
+                  </p>
+                </div>
               </div>
             </div>
           </div>
