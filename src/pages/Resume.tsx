@@ -1,5 +1,4 @@
-
-import { Download, MapPin, Phone, Mail, Calendar } from "lucide-react";
+import { Download, MapPin, Phone, Mail, Calendar, Linkedin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -9,6 +8,11 @@ const Resume = () => {
     pt: {
       title: "Currículo",
       downloadText: "Baixar PDF",
+      personalInfo: {
+        name: "Reinaldo Luiz",
+        aboutTitle: "SOBRE",
+        aboutText: "Sou Reinaldo, um brasileiro atualmente na Espanha estudando mestrado em design UX. Tenho conhecimento de todas as etapas de desenvolvimento e habilidades de experiência do usuário em frontend para a construção visual de páginas. Sou um profissional criativo e adaptável com experiência em UX e design gráfico. Trago comigo habilidades valiosas em resolução de problemas, comunicação e trabalho em equipe. Estou sempre me esforçando para aprender e me adaptar a novos desafios, e acredito que minha atenção aos detalhes e capacidade de pensar criticamente podem trazer valor em qualquer ambiente de trabalho. Meu objetivo é contribuir positivamente para a equipe e ajudar a alcançar resultados eficazes."
+      },
       contact: {
         location: "São Paulo, Brasil",
         phone: "+55 (11) 99999-9999",
@@ -63,6 +67,11 @@ const Resume = () => {
     en: {
       title: "Resume",
       downloadText: "Download PDF",
+      personalInfo: {
+        name: "Reinaldo Luiz",
+        aboutTitle: "ABOUT",
+        aboutText: "I am Reinaldo, a Brazilian currently in Spain studying for a master's degree in UX design. I have knowledge of all stages of development and user experience skills in frontend for the visual construction of pages. I am a creative and adaptable professional with experience in UX and graphic design. I bring with me valuable skills in problem-solving, communication and teamwork. I am always striving to learn and adapt to new challenges, and I believe that my attention to detail and ability to think critically can bring value in any work environment. My goal is to contribute positively to the team and help achieve effective results."
+      },
       contact: {
         location: "São Paulo, Brazil",
         phone: "+55 (11) 99999-9999",
@@ -117,6 +126,11 @@ const Resume = () => {
     es: {
       title: "Currículum",
       downloadText: "Descargar PDF",
+      personalInfo: {
+        name: "Reinaldo Luiz",
+        aboutTitle: "ACERCA DE",
+        aboutText: "Soy Reinaldo, un brasileño actualmente en España estudiando una maestría en diseño UX. Tengo conocimiento de todas las etapas de desarrollo y habilidades de experiencia de usuario en frontend para la construcción visual de páginas. Soy un profesional creativo y adaptable con experiencia en UX y diseño gráfico. Traigo conmigo habilidades valiosas en resolución de problemas, comunicación y trabajo en equipo. Siempre me esfuerzo por aprender y adaptarme a nuevos desafíos, y creo que mi atención al detalle y capacidad de pensar críticamente pueden aportar valor en cualquier ambiente de trabajo. Mi objetivo es contribuir positivamente al equipo y ayudar a lograr resultados efectivos."
+      },
       contact: {
         location: "São Paulo, Brasil",
         phone: "+55 (11) 99999-9999",
@@ -210,6 +224,35 @@ const Resume = () => {
             <Download size={20} />
             {data.downloadText}
           </button>
+        </div>
+
+        {/* Personal Information Section */}
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <h2 className="text-5xl md:text-6xl font-bold text-gray-800 transform rotate-1 inline-block mb-4">
+              {data.personalInfo.name}
+            </h2>
+            <div className="flex justify-center items-center gap-2 mb-6">
+              <Linkedin size={24} className="text-red-400" />
+              <a 
+                href="https://www.linkedin.com/in/reinaldolluiz/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-red-400 hover:text-red-500 font-semibold underline"
+              >
+                linkedin.com/in/reinaldolluiz/
+              </a>
+            </div>
+          </div>
+          
+          <div className="bg-purple-100 p-8 transform -rotate-1 border-2 border-gray-300 mb-8">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4 transform rotate-1 inline-block">
+              {data.personalInfo.aboutTitle}
+            </h3>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              {data.personalInfo.aboutText}
+            </p>
+          </div>
         </div>
 
         {/* Contact Info */}
