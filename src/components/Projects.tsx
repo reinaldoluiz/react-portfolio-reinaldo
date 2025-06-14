@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
@@ -18,7 +17,7 @@ const Projects = () => {
       year: "2021",
       image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
       color: "bg-blue-100",
-      tools: ["User Research", "Data Analysis", "Prototyping", "Design Systems"]
+      tools: ["Research", "UI Design", "Design System"]
     },
     {
       title: "HDI Insurance Digital Platform",
