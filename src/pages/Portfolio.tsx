@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
@@ -123,7 +124,7 @@ const Portfolio = () => {
                           <img 
                             src={project.image} 
                             alt={project.title}
-                            className="w-full h-48 object-cover mx-auto"
+                            className="w-full h-auto mx-auto"
                           />
                         </div>
 
