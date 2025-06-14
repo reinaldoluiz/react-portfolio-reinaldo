@@ -65,14 +65,14 @@ const Portfolio = () => {
       image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
       color: "bg-purple-100",
       tools: ["Illustrator", "InDesign", "Brand Strategy"],
-      category: "Design Gráfico"
+      category: "Graphic Design"
     }
   ];
 
-  const categories = ["Todos", "Research", "UI Design", "Design System", "Design Gráfico"];
+  const categories = ["All", "Research", "UI Design", "Design System", "Graphic Design"];
 
   const filterProjectsByCategory = (category: string) => {
-    if (category === "Todos") return projects;
+    if (category === "All") return projects;
     return projects.filter(project => project.category === category);
   };
 
@@ -93,7 +93,7 @@ const Portfolio = () => {
           </div>
 
           {/* Categories Tabs */}
-          <Tabs defaultValue="Todos" className="w-full max-w-4xl mx-auto mb-16">
+          <Tabs defaultValue="All" className="w-full max-w-4xl mx-auto mb-16">
             <TabsList className="grid w-full grid-cols-5 bg-white">
               {categories.map((category) => (
                 <TabsTrigger 
@@ -154,7 +154,7 @@ const Portfolio = () => {
                           to={`/portfolio/${project.id}`}
                           className="bg-red-400 hover:bg-red-500 text-white px-4 py-2 text-sm font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black inline-block"
                         >
-                          Ver Detalhes →
+                          View Details →
                         </Link>
                       </div>
                     </div>

@@ -60,7 +60,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/accessibility" className="text-gray-600 hover:text-gray-800 transition-colors">
-                  Acessibilidade
+                  Accessibility
                 </Link>
               </li>
               <li>
@@ -73,26 +73,26 @@ const Footer = () => {
 
           {/* Accessibility Section */}
           <div>
-            <h4 className="font-semibold text-gray-800 mb-3">Acessibilidade</h4>
+            <h4 className="font-semibold text-gray-800 mb-3">Accessibility</h4>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2 text-gray-600">
                 <Eye size={16} />
-                <span>Design inclusivo</span>
+                <span>Inclusive design</span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <Users size={16} />
-                <span>Para todos os usuários</span>
+                <span>For all users</span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
                 <Volume2 size={16} />
-                <span>Compatível com leitores</span>
+                <span>Screen reader compatible</span>
               </div>
               <div className="mt-3">
                 <Link 
                   to="/accessibility"
                   className="text-blue-600 hover:text-blue-800 transition-colors font-medium"
                 >
-                  Ver Checkpoint →
+                  View Checkpoint →
                 </Link>
               </div>
             </div>
