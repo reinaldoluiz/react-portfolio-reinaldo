@@ -32,7 +32,7 @@ const Hero = () => {
             </p>
           </div>
           
-          <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
             +8 years crafting digital experiences from concept to production. Currently based in Barcelona, Spain, pursuing a Master's in UX Design while helping teams create user-centered solutions worldwide.
           </p>
           
