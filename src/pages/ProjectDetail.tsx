@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -332,13 +333,53 @@ const ProjectDetail = () => {
                   </div>
                 </div>
               ) : project.id === 3 ? (
-                // Single image layout for project 3 (Santander Auto)
-                <div className="w-full max-w-4xl mx-auto">
-                  <img 
-                    src={project.image} 
-                    alt={project.title}
-                    className="w-full h-auto object-contain rounded-lg shadow-lg"
-                  />
+                // Grid layout for project 3 (Santander Auto) with new uploaded images
+                <div className="w-full h-[500px]">
+                  <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
+                    {/* Top left - Reinaldo Luiz Santander mockup (first image) */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white"
+                      style={{
+                        backgroundImage: `url('/lovable-uploads/e171f6c0-f022-4ab0-a8cb-67dc5c32b757.png')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    
+                    {/* Top right - Mobile app screens grid */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white"
+                      style={{
+                        backgroundImage: `url('/lovable-uploads/37f81d0f-a0cc-4902-a480-dddccff83c3a.png')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    
+                    {/* Bottom left - Desktop landing page with phone */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white"
+                      style={{
+                        backgroundImage: `url('/lovable-uploads/36b6753b-9e52-4aa3-8366-aed818a9bb35.png')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    
+                    {/* Bottom right - Mobile app features */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white"
+                      style={{
+                        backgroundImage: `url('/lovable-uploads/d28ebb13-9a16-4b7f-9d15-01bb098205b3.png')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                  </div>
                 </div>
               ) : (
                 // Grid layout for projects 4, 5, and 6 using placeholder images
