@@ -257,8 +257,8 @@ const ProjectDetail = () => {
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               <div className="w-full max-w-4xl mx-auto">
                 <div className="grid grid-cols-2 gap-4 h-96">
-                  {/* Large image on the left */}
-                  <div className="row-span-2">
+                  {/* Single image on the left */}
+                  <div>
                     <img 
                       src={project.image} 
                       alt={`${project.title} - Main view`}
@@ -266,7 +266,7 @@ const ProjectDetail = () => {
                     />
                   </div>
                   
-                  {/* Two smaller images on the right */}
+                  {/* Two images stacked on the right */}
                   <div className="grid grid-rows-2 gap-4">
                     <div>
                       <img 
