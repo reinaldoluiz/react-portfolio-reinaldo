@@ -124,16 +124,24 @@ const Resume = () => {
       ],
       skillsCategories: [
         {
-          title: "Design",
-          skills: "Figma, Adobe CC, Sketch, Prototipagem"
+          title: "Design & Prototipagem",
+          skills: "Figma, Adobe Creative Suite, Sketch, Prototipagem, Sistemas de Design, Wireframing"
         },
         {
-          title: "Desenvolvimento",
-          skills: "HTML/CSS, JavaScript, React"
+          title: "Desenvolvimento Frontend",
+          skills: "HTML5, CSS3, JavaScript, React, Bootstrap, Ruby on Rails, Git, GitHub"
         },
         {
-          title: "Pesquisa",
-          skills: "Teste de Usuário, Analytics, Entrevistas"
+          title: "UX Research & Testing",
+          skills: "Teste de Usuário, A/B Testing, Analytics, Entrevistas, Personas, Jornada do Usuário"
+        },
+        {
+          title: "Metodologias & Gestão",
+          skills: "Design Thinking, Metodologias Ágeis, Gestão de Projetos, Colaboração Multidisciplinar"
+        },
+        {
+          title: "Ferramentas & Plataformas",
+          skills: "Salesforce, Vlocity, LWC, Heroku, SQL, API, JSON, Adobe Photoshop, Illustrator"
         }
       ]
     },
@@ -256,16 +264,24 @@ const Resume = () => {
       ],
       skillsCategories: [
         {
-          title: "Design",
-          skills: "Figma, Adobe CC, Sketch, Prototyping"
+          title: "Design & Prototyping",
+          skills: "Figma, Adobe Creative Suite, Sketch, Prototyping, Design Systems, Wireframing"
         },
         {
-          title: "Development",
-          skills: "HTML/CSS, JavaScript, React"
+          title: "Frontend Development",
+          skills: "HTML5, CSS3, JavaScript, React, Bootstrap, Ruby on Rails, Git, GitHub"
         },
         {
-          title: "Research",
-          skills: "User Testing, Analytics, Interviews"
+          title: "UX Research & Testing",
+          skills: "User Testing, A/B Testing, Analytics, Interviews, Personas, User Journey Mapping"
+        },
+        {
+          title: "Methodologies & Management",
+          skills: "Design Thinking, Agile Methodologies, Project Management, Cross-functional Collaboration"
+        },
+        {
+          title: "Tools & Platforms",
+          skills: "Salesforce, Vlocity, LWC, Heroku, SQL, API, JSON, Adobe Photoshop, Illustrator"
         }
       ]
     },
@@ -309,7 +325,7 @@ const Resume = () => {
           company: "Santander, São Paulo - Brasil • Ene 2021 - Dic 2021",
           tasks: [
             "• Como Product Designer, participé en el proceso UX end-to-end. Esto incluyó análisis de datos para generar insights para inputs de negocio y mejora del journey del usuario. Actualicé el Sistema de Diseño, creando componentes, íconos y asegurando handoff suave para entrega del layout final. Participé activamente en reuniones de decisión con equipos de business y desarrollo.",
-            "• Uno de mis logros notables fue liderar un proyecto de rediseño de la app para mejorar el journey del usuario. Durante este proceso, consideré recomendaciones y requisitos de business y desarrollo. Al incorporar input de múltiples perspectivas, pude crear rediseño centrado en el usuario que se alineaba con objetivos de negocio y viabilidade técnica."
+            "• Uno de mis logros notables fue liderar un proyecto de rediseño de la app para mejorar el journey del usuario. Durante este proceso, consideré recomendaciones y requisitos de business y desarrollo. Al incorporar input de múltiples perspectivas, pude crear rediseño centrado en el usuario que se alineaba con objetivos de negocio y viabilidad técnica."
           ]
         },
         {
@@ -354,7 +370,7 @@ const Resume = () => {
           institution: "Mackenzie • Ene 2004 - Dic 2009, Brasil",
           details: [
             "• Design Studios: Trabajar en proyectos de diseño con orientación del cuerpo docente",
-            "• Workshops y Sesiones de Desarrollo: Aprender habilidades técnicas y tendências de la industria",
+            "• Workshops y Sesiones de Desarrollo: Aprender habilidades técnicas y tendencias de la industria",
             "• Sesiones de Crítica: Presentar trabajos para feedback y mejora",
             "• Investigación en Diseño: Conducir estudios para informar decisiones de diseño",
             "• Proyectos Colaborativos: Trabajar juntos en desafíos interdisciplinarios"
@@ -388,16 +404,24 @@ const Resume = () => {
       ],
       skillsCategories: [
         {
-          title: "Diseño",
-          skills: "Figma, Adobe CC, Sketch, Prototipado"
+          title: "Diseño y Prototipado",
+          skills: "Figma, Adobe Creative Suite, Sketch, Prototipado, Sistemas de Diseño, Wireframing"
         },
         {
-          title: "Desarrollo",
-          skills: "HTML/CSS, JavaScript, React"
+          title: "Desarrollo Frontend",
+          skills: "HTML5, CSS3, JavaScript, React, Bootstrap, Ruby on Rails, Git, GitHub"
         },
         {
-          title: "Investigación",
-          skills: "Pruebas de Usuario, Analytics, Entrevistas"
+          title: "Investigación UX y Testing",
+          skills: "Pruebas de Usuario, A/B Testing, Analytics, Entrevistas, Personas, Mapeo de Journey"
+        },
+        {
+          title: "Metodologías y Gestión",
+          skills: "Design Thinking, Metodologías Ágiles, Gestión de Proyectos, Colaboración Multidisciplinar"
+        },
+        {
+          title: "Herramientas y Plataformas",
+          skills: "Salesforce, Vlocity, LWC, Heroku, SQL, API, JSON, Adobe Photoshop, Illustrator"
         }
       ]
     }
