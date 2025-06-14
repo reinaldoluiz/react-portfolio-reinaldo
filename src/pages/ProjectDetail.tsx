@@ -101,14 +101,16 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          {/* Project Image */}
+          {/* Project Image - Cropped and adjusted */}
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
-              <img 
-                src={project.image} 
-                alt={project.title}
-                className="w-full max-w-2xl h-96 object-contain mx-auto"
-              />
+              <div className="w-full max-w-2xl mx-auto h-96 overflow-hidden rounded-lg">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
           </div>
 
