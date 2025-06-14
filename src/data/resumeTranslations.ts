@@ -44,47 +44,76 @@ export const resumeTranslations = {
       title: "Professional Experience",
       items: [
         {
-          title: "Product Designer",
-          company: "Tech Mahindra (Remote)",
-          period: "2024 - Present",
-          responsibilities: [
-            "Lead digital product design for global clients",
-            "Development of scalable design systems",
-            "Collaboration with multicultural and multidisciplinary teams",
-            "Implementation of agile design methodologies"
-          ]
-        },
-        {
-          title: "UX/UI Designer",
-          company: "HDI Seguros",
-          period: "2023 - 2024",
-          responsibilities: [
-            "Redesign of digital insurance platform",
-            "40% improvement in user experience",
-            "Implementation of A/B testing and metrics analysis",
-            "Responsive interface development"
-          ]
-        },
-        {
-          title: "Senior UI/UX Designer",
-          company: "Kimberly-Clark",
-          period: "2020 - 2023",
-          responsibilities: [
-            "Design of digital experiences for global brands",
-            "Creation of unified design system for multiple brands",
-            "Leadership of digital transformation projects",
-            "Mentoring junior designers on the team"
-          ]
-        },
-        {
           title: "UI/UX Designer",
-          company: "Santander",
-          period: "2018 - 2020",
+          company: "Tech Mahindra (Remote, United States)",
+          period: "Oct 2021 - Jan 2025",
           responsibilities: [
-            "Interface design for banking applications",
-            "Focus on usability and security",
-            "Collaboration with agile development teams",
-            "Usability testing with real users"
+            "Worked with global clients including Kimberly-Clark on product design projects",
+            "Conducted user testing, ensured accessibility, and aligned stakeholder objectives",
+            "Collaborated with multicultural teams on worldwide projects",
+            "Developed and implemented design systems meeting improvement and usability criteria",
+            "Created landing pages, e-commerce sites, and systems for North and South American products",
+            "Updated components and applied BrandBook correctly across all deliverables"
+          ]
+        },
+        {
+          title: "UX Leader",
+          company: "HDI Insurance (São Paulo, Brazil)",
+          period: "Jan 2021 - Dec 2021",
+          responsibilities: [
+            "Managed agency project handling while adhering to brand identity and design system",
+            "Coordinated UX team work with business area and developers",
+            "Created icons and components for design consistency",
+            "Collaborated with designers and development teams on design system implementation",
+            "Applied usability testing, UX and UI design skills to create user-friendly products"
+          ]
+        },
+        {
+          title: "Product Designer",
+          company: "Santander (São Paulo, Brazil)",
+          period: "Jan 2021 - Dec 2021",
+          responsibilities: [
+            "Involved in end-to-end UX process including data analysis for business insights",
+            "Updated Design System, creating components and icons",
+            "Participated in decision-making meetings with business and development teams",
+            "Led app redesign project to improve user journey",
+            "Incorporated feedback from multiple perspectives for user-centered design"
+          ]
+        },
+        {
+          title: "Product Designer",
+          company: "Deloitte (Brazil)",
+          period: "Mar 2020 - Dec 2020",
+          responsibilities: [
+            "Produced functional and conceptual concepts with POs, end users, and training professionals",
+            "Translated concepts into functional prototypes and prioritized development sequence",
+            "Documented User Stories, including requirements gathering and user persona creation",
+            "Tracked projects from development to production ensuring design standards compliance",
+            "Worked with Salesforce, Vlocity Omniscript and LWC solutions for clients like Claro and Caixa Seguradora"
+          ]
+        },
+        {
+          title: "UX/UI Designer & Front-end Developer",
+          company: "Finnet (Brazil)",
+          period: "Mar 2019 - Sep 2020",
+          responsibilities: [
+            "Brought extensive UX, UI and front-end development experience to the team",
+            "Applied user-centered design, usability, accessibility and testing methodologies",
+            "Created effective design processes including UX flows, user journey maps, and wireframes",
+            "Designed for both mobile and desktop screens using responsive design principles",
+            "Established design standards including UI style guides and design systems"
+          ]
+        },
+        {
+          title: "UX/UI Designer & Front-end Developer",
+          company: "Hortatech (Brazil)",
+          period: "Sep 2018 - Sep 2019",
+          responsibilities: [
+            "Specialized in creating web projects providing incredible user experience",
+            "Built wireframes, conducted user testing and A/B testing",
+            "Performed user research to better understand user demands",
+            "Developed visually appealing designs using Adobe XD, Photoshop and Illustrator",
+            "Implemented designs using JavaScript, HTML, CSS, Bootstrap and responsive design concepts"
           ]
         }
       ]
@@ -149,47 +178,76 @@ export const resumeTranslations = {
       title: "Experiência Profissional",
       items: [
         {
+          title: "Designer UI/UX",
+          company: "Tech Mahindra (Remoto, Estados Unidos)",
+          period: "Out 2021 - Jan 2025",
+          responsibilities: [
+            "Trabalhei com clientes globais incluindo Kimberly-Clark em projetos de design de produtos",
+            "Realizei testes de usuário, assegurei acessibilidade e alinhei objetivos dos stakeholders",
+            "Colaborei com equipes multiculturais em projetos mundiais",
+            "Desenvolvi e implementei sistemas de design que atenderam critérios de melhoria e usabilidade",
+            "Criei páginas de destino, sites de e-commerce e sistemas para produtos da América do Norte e Sul",
+            "Atualizei componentes e apliquei corretamente o BrandBook em todas as entregas"
+          ]
+        },
+        {
+          title: "Líder de UX",
+          company: "HDI Seguros (São Paulo, Brasil)",
+          period: "Jan 2021 - Dez 2021",
+          responsibilities: [
+            "Gerenciei o manejo de projetos da agência aderindo à identidade de marca e sistema de design",
+            "Coordenei o trabalho da equipe de UX com a área de negócios e desenvolvedores",
+            "Criei ícones e componentes para manter consistência no design",
+            "Colaborei com designers e equipes de desenvolvimento na implementação de sistemas de design",
+            "Apliquei testes de usabilidade, design UX e UI para criar produtos amigáveis ao usuário"
+          ]
+        },
+        {
+          title: "Designer de Produtos",
+          company: "Santander (São Paulo, Brasil)",
+          period: "Jan 2021 - Dez 2021",
+          responsibilities: [
+            "Envolvido no processo de UX de ponta a ponta incluindo análise de dados para insights de negócio",
+            "Atualizei o Sistema de Design, criando componentes e ícones",
+            "Participei de reuniões de tomada de decisão com equipes de negócios e desenvolvimento",
+            "Liderei projeto de redesign do app para melhorar a jornada do usuário",
+            "Incorporei feedback de múltiplas perspectivas para design centrado no usuário"
+          ]
+        },
+        {
           title: "Product Designer",
-          company: "Tech Mahindra (Remote)",
-          period: "2024 - Presente",
+          company: "Deloitte (Brasil)",
+          period: "Mar 2020 - Dez 2020",
           responsibilities: [
-            "Lidero o design de produtos digitais para clientes globais",
-            "Desenvolvimento de design systems escaláveis",
-            "Colaboração com equipes multiculturais e multidisciplinares",
-            "Implementação de metodologias ágeis de design"
+            "Produzi conceitos funcionais e conceituais com POs, usuários finais e profissionais de formação",
+            "Traduzi conceitos em protótipos funcionais e priorizei sequência de desenvolvimento",
+            "Documentei Histórias de Usuário, incluindo coleta de requisitos e criação de personas",
+            "Acompanhei projetos do desenvolvimento à produção garantindo padrões de design",
+            "Trabalhei com soluções Salesforce, Vlocity Omniscript e LWC para clientes como Claro e Caixa Seguradora"
           ]
         },
         {
-          title: "UX/UI Designer",
-          company: "HDI Seguros",
-          period: "2023 - 2024",
+          title: "UX/UI Designer & Desenvolvedor Front-end",
+          company: "Finnet (Brasil)",
+          period: "Mar 2019 - Set 2020",
           responsibilities: [
-            "Redesign da plataforma digital de seguros",
-            "Melhoria da experiência do usuário em 40%",
-            "Implementação de testes A/B e análise de métricas",
-            "Desenvolvimento de interface responsiva"
+            "Trouxe extensa experiência em UX, UI e desenvolvimento front-end para a equipe",
+            "Apliquei design centrado no usuário, usabilidade, acessibilidade e metodologias de teste",
+            "Criei processos de design efetivos incluindo fluxos UX, mapas de jornada e wireframes",
+            "Projetei para telas móveis e desktop usando princípios de design responsivo",
+            "Estabeleci padrões de design incluindo guias de estilo UI e sistemas de design"
           ]
         },
         {
-          title: "Senior UI/UX Designer",
-          company: "Kimberly-Clark",
-          period: "2020 - 2023",
+          title: "UX/UI Designer & Desenvolvedor Front-end",
+          company: "Hortatech (Brasil)",
+          period: "Set 2018 - Set 2019",
           responsibilities: [
-            "Design de experiências digitais para marcas globais",
-            "Criação de design system unificado para múltiplas marcas",
-            "Liderança de projetos de transformação digital",
-            "Mentoria de designers juniores da equipe"
-          ]
-        },
-        {
-          title: "UI/UX Designer",
-          company: "Santander",
-          period: "2018 - 2020",
-          responsibilities: [
-            "Design de interfaces para aplicações bancárias",
-            "Foco em usabilidade e segurança",
-            "Colaboração com equipes de desenvolvimento ágil",
-            "Testes de usabilidade com usuários reais"
+            "Especializei-me em criar projetos web proporcionando experiência incrível ao usuário",
+            "Construí wireframes, conduzi testes de usuário e testes A/B",
+            "Realizei pesquisa de usuário para melhor compreender demandas dos usuários",
+            "Desenvolvi designs visualmente atraentes usando Adobe XD, Photoshop e Illustrator",
+            "Implementei designs usando JavaScript, HTML, CSS, Bootstrap e conceitos de design responsivo"
           ]
         }
       ]
@@ -254,47 +312,76 @@ export const resumeTranslations = {
       title: "Experiencia Profesional",
       items: [
         {
+          title: "Diseñador UI/UX",
+          company: "Tech Mahindra (Remoto, Estados Unidos)",
+          period: "Oct 2021 - Ene 2025",
+          responsibilities: [
+            "Trabajé con clientes globales incluyendo Kimberly-Clark en proyectos de diseño de productos",
+            "Realicé pruebas de usuario, aseguré accesibilidad y alineé objetivos de stakeholders",
+            "Colaboré con equipos multiculturales en proyectos a nivel mundial",
+            "Desarrollé e implementé sistemas de diseño que cumplieron criterios de mejora y usabilidad",
+            "Creé páginas de destino, sitios de comercio electrónico y sistemas para productos de América del Norte y del Sur",
+            "Actualicé componentes y apliqué correctamente el BrandBook en todas las entregas"
+          ]
+        },
+        {
+          title: "Líder de UX",
+          company: "HDI Insurance (São Paulo, Brasil)",
+          period: "Ene 2021 - Dic 2021",
+          responsibilities: [
+            "Gestioné el manejo de proyectos de la agencia adhiriéndome a la identidad de marca y sistema de diseño",
+            "Coordiné el trabajo del equipo de UX con el área de negocios y desarrolladores",
+            "Creé íconos y componentes para mantener consistencia en el diseño",
+            "Colaboré con diseñadores y equipos de desarrollo en implementación de sistemas de diseño",
+            "Apliqué pruebas de usabilidad, diseño UX y UI para crear productos amigables para el usuario"
+          ]
+        },
+        {
+          title: "Diseñador de Productos",
+          company: "Santander (São Paulo, Brasil)",
+          period: "Ene 2021 - Dic 2021",
+          responsibilities: [
+            "Involucrado en el proceso de UX de principio a fin incluyendo análisis de datos para insights de negocio",
+            "Actualicé el Sistema de Diseño, creando componentes e íconos",
+            "Participé en reuniones de toma de decisiones con equipos de negocios y desarrollo",
+            "Lideré proyecto de rediseño de la aplicación para mejorar el recorrido del usuario",
+            "Incorporé aportes de múltiples perspectivas para diseño centrado en el usuario"
+          ]
+        },
+        {
           title: "Product Designer",
-          company: "Tech Mahindra (Remoto)",
-          period: "2024 - Presente",
+          company: "Deloitte (Brasil)",
+          period: "Mar 2020 - Dic 2020",
           responsibilities: [
-            "Lidero el diseño de productos digitales para clientes globales",
-            "Desarrollo de design systems escalables",
-            "Colaboración con equipos multiculturales y multidisciplinarios",
-            "Implementación de metodologías ágiles de diseño"
+            "Produje conceptos funcionales y conceptuales con POs, usuarios finales y profesionales de formación",
+            "Traduje conceptos en prototipos funcionales y prioricé secuencia de desarrollo",
+            "Documenté Historias de Usuario, incluyendo recopilación de requisitos y creación de personas",
+            "Seguí proyectos desde desarrollo hasta producción asegurando cumplimiento de estándares de diseño",
+            "Trabajé con soluciones Salesforce, Vlocity Omniscript y LWC para clientes como Claro y Caixa Seguradora"
           ]
         },
         {
-          title: "UX/UI Designer",
-          company: "HDI Seguros",
-          period: "2023 - 2024",
+          title: "UX/UI Designer & Desarrollador Front-end",
+          company: "Finnet (Brasil)",
+          period: "Mar 2019 - Sep 2020",
           responsibilities: [
-            "Rediseño de la plataforma digital de seguros",
-            "Mejora del 40% en la experiencia del usuario",
-            "Implementación de pruebas A/B y análisis de métricas",
-            "Desarrollo de interfaz responsiva"
+            "Aporté amplia experiencia en UX, UI y desarrollo front-end al equipo",
+            "Apliqué diseño centrado en el usuario, usabilidad, accesibilidad y metodologías de pruebas",
+            "Creé procesos de diseño efectivos incluyendo flujos UX, mapas de recorrido y wireframes",
+            "Diseñé para pantallas móviles y de escritorio usando principios de diseño responsivo",
+            "Establecí estándares de diseño incluyendo guías de estilo UI y sistemas de diseño"
           ]
         },
         {
-          title: "Senior UI/UX Designer",
-          company: "Kimberly-Clark",
-          period: "2020 - 2023",
+          title: "UX/UI Designer & Desarrollador Front-end",
+          company: "Hortatech (Brasil)",
+          period: "Sep 2018 - Sep 2019",
           responsibilities: [
-            "Diseño de experiencias digitales para marcas globales",
-            "Creación de design system unificado para múltiples marcas",
-            "Liderazgo de proyectos de transformación digital",
-            "Mentoría de diseñadores junior del equipo"
-          ]
-        },
-        {
-          title: "UI/UX Designer",
-          company: "Santander",
-          period: "2018 - 2020",
-          responsibilities: [
-            "Diseño de interfaces para aplicaciones bancarias",
-            "Enfoque en usabilidad y seguridad",
-            "Colaboración con equipos de desarrollo ágil",
-            "Pruebas de usabilidad con usuarios reales"
+            "Me especialicé en crear proyectos web que proporcionan experiencia increíble al usuario",
+            "Construí wireframes, realicé pruebas de usuario y pruebas A/B",
+            "Llevé a cabo investigación de usuario para comprender mejor las demandas de los usuarios",
+            "Desarrollé diseños visualmente atractivos usando Adobe XD, Photoshop e Illustrator",
+            "Implementé diseños usando JavaScript, HTML, CSS, Bootstrap y conceptos de diseño responsivo"
           ]
         }
       ]
@@ -359,47 +446,76 @@ export const resumeTranslations = {
       title: "Experiència Professional",
       items: [
         {
+          title: "Dissenyador UI/UX",
+          company: "Tech Mahindra (Remot, Estats Units)",
+          period: "Oct 2021 - Gen 2025",
+          responsibilities: [
+            "Vaig treballar amb clients globals incloent Kimberly-Clark en projectes de disseny de productes",
+            "Vaig realitzar proves d'usuari, vaig assegurar accessibilitat i vaig alinear objectius dels stakeholders",
+            "Vaig col·laborar amb equips multiculturals en projectes a nivell mundial",
+            "Vaig desenvolupar i implementar sistemes de disseny que van complir criteris de millora i usabilitat",
+            "Vaig crear pàgines de destinació, llocs de comerç electrònic i sistemes per a productes d'Amèrica del Nord i del Sud",
+            "Vaig actualitzar components i vaig aplicar correctament el BrandBook en totes les entregues"
+          ]
+        },
+        {
+          title: "Líder de UX",
+          company: "HDI Insurance (São Paulo, Brasil)",
+          period: "Gen 2021 - Des 2021",
+          responsibilities: [
+            "Vaig gestionar el maneig de projectes de l'agència adherint-me a la identitat de marca i sistema de disseny",
+            "Vaig coordinar el treball de l'equip de UX amb l'àrea de negocis i desenvolupadors",
+            "Vaig crear icones i components per mantenir consistència en el disseny",
+            "Vaig col·laborar amb dissenyadors i equips de desenvolupament en implementació de sistemes de disseny",
+            "Vaig aplicar proves d'usabilitat, disseny UX i UI per crear productes amigables per a l'usuari"
+          ]
+        },
+        {
+          title: "Dissenyador de Productes",
+          company: "Santander (São Paulo, Brasil)",
+          period: "Gen 2021 - Des 2021",
+          responsibilities: [
+            "Involucrat en el procés de UX de principi a fi incloent anàlisi de dades per a insights de negoci",
+            "Vaig actualitzar el Sistema de Disseny, creant components i icones",
+            "Vaig participar en reunions de presa de decisions amb equips de negocis i desenvolupament",
+            "Vaig liderar projecte de redisseny de l'aplicació per millorar el recorregut de l'usuari",
+            "Vaig incorporar aportacions de múltiples perspectives per a disseny centrat en l'usuari"
+          ]
+        },
+        {
           title: "Product Designer",
-          company: "Tech Mahindra (Remot)",
-          period: "2024 - Present",
+          company: "Deloitte (Brasil)",
+          period: "Mar 2020 - Des 2020",
           responsibilities: [
-            "Lidero el disseny de productes digitals per a clients globals",
-            "Desenvolupament de design systems escalables",
-            "Col·laboració amb equips multiculturals i multidisciplinaris",
-            "Implementació de metodologies àgils de disseny"
+            "Vaig produir conceptes funcionals i conceptuals amb POs, usuaris finals i professionals de formació",
+            "Vaig traduir conceptes en prototips funcionals i vaig prioritzar seqüència de desenvolupament",
+            "Vaig documentar Històries d'Usuari, incloent recopilació de requisits i creació de persones",
+            "Vaig seguir projectes des de desenvolupament fins a producció assegurant compliment d'estàndards de disseny",
+            "Vaig treballar amb solucions Salesforce, Vlocity Omniscript i LWC per a clients com Claro i Caixa Seguradora"
           ]
         },
         {
-          title: "UX/UI Designer",
-          company: "HDI Seguros",
-          period: "2023 - 2024",
+          title: "UX/UI Designer & Desenvolupador Front-end",
+          company: "Finnet (Brasil)",
+          period: "Mar 2019 - Set 2020",
           responsibilities: [
-            "Redisseny de la plataforma digital d'assegurances",
-            "Millora del 40% en l'experiència de l'usuari",
-            "Implementació de proves A/B i anàlisi de mètriques",
-            "Desenvolupament d'interfície responsiva"
+            "Vaig aportar àmplia experiència en UX, UI i desenvolupament front-end a l'equip",
+            "Vaig aplicar disseny centrat en l'usuari, usabilitat, accessibilitat i metodologies de proves",
+            "Vaig crear processos de disseny efectius incloent fluxos UX, mapes de recorregut i wireframes",
+            "Vaig dissenyar per a pantalles mòbils i d'escriptori usant principis de disseny responsiu",
+            "Vaig establir estàndards de disseny incloent guies d'estil UI i sistemes de disseny"
           ]
         },
         {
-          title: "Senior UI/UX Designer",
-          company: "Kimberly-Clark",
-          period: "2020 - 2023",
+          title: "UX/UI Designer & Desenvolupador Front-end",
+          company: "Hortatech (Brasil)",
+          period: "Set 2018 - Set 2019",
           responsibilities: [
-            "Disseny d'experiències digitals per a marques globals",
-            "Creació de design system unificat per a múltiples marques",
-            "Lideratge de projectes de transformació digital",
-            "Mentoria de dissenyadors júniors de l'equip"
-          ]
-        },
-        {
-          title: "UI/UX Designer",
-          company: "Santander",
-          period: "2018 - 2020",
-          responsibilities: [
-            "Disseny d'interfícies per a aplicacions bancàries",
-            "Enfocament en usabilitat i seguretat",
-            "Col·laboració amb equips de desenvolupament àgil",
-            "Proves d'usabilitat amb usuaris reals"
+            "Em vaig especialitzar en crear projectes web que proporcionen experiència increïble a l'usuari",
+            "Vaig construir wireframes, vaig realitzar proves d'usuari i proves A/B",
+            "Vaig dur a terme recerca d'usuari per comprendre millor les demandes dels usuaris",
+            "Vaig desenvolupar dissenys visualment atractius usant Adobe XD, Photoshop i Illustrator",
+            "Vaig implementar dissenys usant JavaScript, HTML, CSS, Bootstrap i conceptes de disseny responsiu"
           ]
         }
       ]
