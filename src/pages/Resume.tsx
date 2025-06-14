@@ -1,3 +1,4 @@
+
 import { Download, MapPin, Phone, Mail, Calendar } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -185,12 +186,6 @@ const Resume = () => {
           <div className="mb-8">
             <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 bg-transparent border-b border-gray-200 p-0 h-auto rounded-none">
               <TabsTrigger 
-                value="pt" 
-                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
-              >
-                Português
-              </TabsTrigger>
-              <TabsTrigger 
                 value="en"
                 className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
               >
@@ -201,6 +196,12 @@ const Resume = () => {
                 className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
               >
                 Español
+              </TabsTrigger>
+              <TabsTrigger 
+                value="pt" 
+                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
+              >
+                Português
               </TabsTrigger>
             </TabsList>
           </div>
@@ -287,17 +288,17 @@ const Resume = () => {
     <div className="min-h-screen bg-white">
       <Navigation />
       <div className="pt-20">
-        <Tabs defaultValue="pt" className="w-full">
-          <TabsContent value="pt">
-            {renderResumeContent('pt')}
-          </TabsContent>
-          
+        <Tabs defaultValue="en" className="w-full">
           <TabsContent value="en">
             {renderResumeContent('en')}
           </TabsContent>
           
           <TabsContent value="es">
             {renderResumeContent('es')}
+          </TabsContent>
+          
+          <TabsContent value="pt">
+            {renderResumeContent('pt')}
           </TabsContent>
         </Tabs>
       </div>
