@@ -24,7 +24,7 @@ const Portfolio = () => {
       image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
       color: "bg-blue-100",
       tools: ["Research", "UI Design", "Design System"],
-      category: "Design System"
+      categories: ["Research", "UI Design", "Design System"]
     },
     {
       id: 3,
@@ -72,7 +72,13 @@ const Portfolio = () => {
 
   const filterProjectsByCategory = (category: string) => {
     if (category === "All") return projects;
-    return projects.filter(project => project.category === category);
+    return projects.filter(project => {
+      // Handle project 2 with multiple categories
+      if (project.categories) {
+        return project.categories.includes(category);
+      }
+      return project.category === category;
+    });
   };
 
   return (
@@ -122,8 +128,22 @@ const Portfolio = () => {
                         </div>
 
                         {/* Category Badge */}
-                        <div className="bg-red-200 px-3 py-1 inline-block transform rotate-2 mb-3">
-                          <p className="text-xs font-bold text-gray-800">{project.category}</p>
+                        <div className="mb-3">
+                          {project.categories ? (
+                            // Multiple categories for project 2
+                            <div className="flex flex-wrap gap-1">
+                              {project.categories.map((cat, catIndex) => (
+                                <div key={catIndex} className="bg-red-200 px-2 py-1 inline-block transform rotate-2">
+                                  <p className="text-xs font-bold text-gray-800">{cat}</p>
+                                </div>
+                              ))}
+                            </div>
+                          ) : (
+                            // Single category for other projects
+                            <div className="bg-red-200 px-3 py-1 inline-block transform rotate-2">
+                              <p className="text-xs font-bold text-gray-800">{project.category}</p>
+                            </div>
+                          )}
                         </div>
 
                         {/* Project Info */}

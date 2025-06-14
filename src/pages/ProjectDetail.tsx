@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -50,7 +49,7 @@ const ProjectDetail = () => {
       image: "/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png",
       color: "bg-purple-100",
       tools: ["Research", "UI Design", "Design System"],
-      category: "Design System",
+      categories: ["Research", "UI Design", "Design System"],
       problem: "Parents struggled to find the right training pants for their children while also needing educational support during the potty training process. The existing platform lacked engagement and failed to address the multicultural needs of diverse families.",
       solution: "Created an integrated e-commerce and educational platform with personalized product recommendations, interactive potty training resources, and culturally diverse content. Implemented a design system that worked across desktop and mobile devices.",
       process: [
@@ -210,9 +209,21 @@ const ProjectDetail = () => {
           {/* Project Header */}
           <div className="text-center mb-16">
             <div className="mb-6">
-              <div className="bg-red-200 px-4 py-2 inline-block transform rotate-2">
-                <p className="text-sm font-bold text-gray-800">{project.category}</p>
-              </div>
+              {project.categories ? (
+                // Multiple categories for project 2
+                <div className="flex justify-center flex-wrap gap-2">
+                  {project.categories.map((cat, catIndex) => (
+                    <div key={catIndex} className="bg-red-200 px-4 py-2 inline-block transform rotate-2">
+                      <p className="text-sm font-bold text-gray-800">{cat}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                // Single category for other projects
+                <div className="bg-red-200 px-4 py-2 inline-block transform rotate-2">
+                  <p className="text-sm font-bold text-gray-800">{project.category}</p>
+                </div>
+              )}
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 transform -rotate-1 inline-block mb-4">
               {project.title}
@@ -438,4 +449,3 @@ const ProjectDetail = () => {
 };
 
 export default ProjectDetail;
-
