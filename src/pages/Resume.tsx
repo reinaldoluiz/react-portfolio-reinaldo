@@ -8,13 +8,13 @@ const Resume = () => {
       <div className="container mx-auto px-6 py-8 max-w-4xl">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
-          <Link to="/" className="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+          <Link to="/" className="flex items-center text-red-400 hover:text-red-500 font-medium">
             <ArrowLeft className="h-4 w-4 mr-2" />
             Voltar ao Portfolio
           </Link>
           <button 
             onClick={() => window.print()} 
-            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+            className="bg-red-400 text-white px-4 py-2 rounded hover:bg-red-500 transition-colors border-2 border-black transform hover:rotate-1"
           >
             Imprimir CV
           </button>
@@ -33,7 +33,7 @@ const Resume = () => {
             </div>
             <div className="flex items-center">
               <Linkedin className="h-4 w-4 mr-1" />
-              <a href="https://linkedin.com/in/reinaldoluiz" className="text-blue-600 hover:underline">
+              <a href="https://linkedin.com/in/reinaldoluiz" className="text-red-400 hover:underline">
                 linkedin.com/in/reinaldoluiz
               </a>
             </div>
@@ -46,7 +46,7 @@ const Resume = () => {
 
         {/* Introduction */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-red-400 pb-2">
             Introdução
           </h2>
           <p className="text-gray-700 leading-relaxed">
@@ -60,7 +60,7 @@ const Resume = () => {
 
         {/* Key Skills */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-red-400 pb-2">
             Competências Principais
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -99,16 +99,16 @@ const Resume = () => {
 
         {/* Experience */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-red-400 pb-2">
             Experiência Profissional
           </h2>
           
           <div className="space-y-6">
-            <div className="border-l-4 border-blue-600 pl-4">
+            <div className="border-l-4 border-red-400 pl-4">
               <div className="flex justify-between items-start mb-2">
                 <div>
                   <h3 className="font-semibold text-gray-800">Product Designer</h3>
-                  <p className="text-blue-600">Tech Mahindra (Remote)</p>
+                  <p className="text-red-400">Tech Mahindra (Remote)</p>
                 </div>
                 <span className="text-sm text-gray-500">2024 - Presente</span>
               </div>
@@ -120,11 +120,11 @@ const Resume = () => {
               </ul>
             </div>
 
-            <div className="border-l-4 border-blue-600 pl-4">
+            <div className="border-l-4 border-red-400 pl-4">
               <div className="flex justify-between items-start mb-2">
                 <div>
                   <h3 className="font-semibold text-gray-800">UX/UI Designer</h3>
-                  <p className="text-blue-600">HDI Seguros</p>
+                  <p className="text-red-400">HDI Seguros</p>
                 </div>
                 <span className="text-sm text-gray-500">2023 - 2024</span>
               </div>
@@ -136,11 +136,11 @@ const Resume = () => {
               </ul>
             </div>
 
-            <div className="border-l-4 border-blue-600 pl-4">
+            <div className="border-l-4 border-red-400 pl-4">
               <div className="flex justify-between items-start mb-2">
                 <div>
                   <h3 className="font-semibold text-gray-800">Senior UI/UX Designer</h3>
-                  <p className="text-blue-600">Kimberly-Clark</p>
+                  <p className="text-red-400">Kimberly-Clark</p>
                 </div>
                 <span className="text-sm text-gray-500">2020 - 2023</span>
               </div>
@@ -152,11 +152,11 @@ const Resume = () => {
               </ul>
             </div>
 
-            <div className="border-l-4 border-blue-600 pl-4">
+            <div className="border-l-4 border-red-400 pl-4">
               <div className="flex justify-between items-start mb-2">
                 <div>
                   <h3 className="font-semibold text-gray-800">UI/UX Designer</h3>
-                  <p className="text-blue-600">Santander</p>
+                  <p className="text-red-400">Santander</p>
                 </div>
                 <span className="text-sm text-gray-500">2018 - 2020</span>
               </div>
@@ -172,15 +172,15 @@ const Resume = () => {
 
         {/* Education */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-red-400 pb-2">
             Formação
           </h2>
           <div className="space-y-4">
-            <div className="border-l-4 border-blue-600 pl-4">
+            <div className="border-l-4 border-red-400 pl-4">
               <div className="flex justify-between items-start">
                 <div>
                   <h3 className="font-semibold text-gray-800">Bacharelado em Design</h3>
-                  <p className="text-blue-600">Universidade Anhembi Morumbi</p>
+                  <p className="text-red-400">Universidade Anhembi Morumbi</p>
                 </div>
                 <span className="text-sm text-gray-500">2014 - 2018</span>
               </div>
@@ -190,7 +190,7 @@ const Resume = () => {
 
         {/* Languages */}
         <section className="mb-8">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-red-400 pb-2">
             Idiomas
           </h2>
           <div className="grid md:grid-cols-3 gap-4">
