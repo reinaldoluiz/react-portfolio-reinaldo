@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -270,13 +271,13 @@ const ProjectDetail = () => {
                       }}
                     />
                     
-                    {/* Top right - moved down to hide computer */}
+                    {/* Top right - focus on About Pulls section with oriental child */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '100% 80%',
+                        backgroundPosition: '30% 40%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
