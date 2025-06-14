@@ -1,4 +1,3 @@
-
 export const resumeTranslations = {
   en: {
     introduction: {
@@ -120,9 +119,38 @@ export const resumeTranslations = {
     },
     education: {
       title: "Education",
-      degree: "Bachelor's Degree in Graphic Design",
-      institution: "Anhembi Morumbi University",
-      period: "2012 - 2016"
+      items: [
+        {
+          degree: "Master of Lifelong Learning in UX/UI, User Experience",
+          institution: "Escola Superior de Disseny ESDi",
+          period: "Apr 2025 - Apr 2026",
+          description: "Study methodologies and techniques for user research and analysis. Focus on critical thinking, creativity, innovation, and strategic thinking. Utilization of cutting-edge UX/UI Design tools."
+        },
+        {
+          degree: "Bachelor of Technology - Computer Technology/Computer Systems Technology",
+          institution: "Faculdade de Tecnologia de São Paulo - FATEC-SP",
+          period: "Jan 2016 - Dec 2020",
+          description: "Focus on Software Engineering, database, information security, project management, mobile and web application programming, and human-computer interaction."
+        },
+        {
+          degree: "Bachelor's Degree - Industrial and Product Design",
+          institution: "Universidade Presbiteriana Mackenzie",
+          period: "Jan 2004 - Dec 2009",
+          description: "Creation and development of graphic and web projects."
+        },
+        {
+          degree: "FullStack Developer - Web Development",
+          institution: "Le Wagon",
+          period: "2018",
+          description: "Nine-week intensive course learning HTML, CSS, Bootstrap, JavaScript, SQL, Git, GitHub, API, JSON, Heroku and Ruby on Rails. Delivered AirBnB clone and Rails prototype projects."
+        },
+        {
+          degree: "Certificate Program - Graphic Design",
+          institution: "Etec José Rocha Mendes",
+          period: "2002 - 2003",
+          description: "Creation of graphic materials and visual identity."
+        }
+      ]
     },
     languages: {
       title: "Languages",
@@ -207,11 +235,11 @@ export const resumeTranslations = {
           company: "Santander (São Paulo, Brasil)",
           period: "Jan 2021 - Dez 2021",
           responsibilities: [
-            "Envolvido no processo de UX de ponta a ponta incluindo análise de dados para insights de negócio",
+            "Involucrado no processo de UX de ponta a ponta incluindo análise de dados para insights de negócio",
             "Atualizei o Sistema de Design, criando componentes e ícones",
             "Participei de reuniões de tomada de decisão com equipes de negócios e desenvolvimento",
             "Liderei projeto de redesign do app para melhorar a jornada do usuário",
-            "Incorporei feedback de múltiplas perspectivas para design centrado no usuário"
+            "Incorporou feedback de múltiplas perspectivas para design centrado no usuário"
           ]
         },
         {
@@ -220,7 +248,7 @@ export const resumeTranslations = {
           period: "Mar 2020 - Dez 2020",
           responsibilities: [
             "Produzi conceitos funcionais e conceituais com POs, usuários finais e profissionais de formação",
-            "Traduzi conceitos em protótipos funcionais e priorizei sequência de desenvolvimento",
+            "Traduzi conceitos em protótipos funcionais e priorizou sequência de desenvolvimento",
             "Documentei Histórias de Usuário, incluindo coleta de requisitos e criação de personas",
             "Acompanhei projetos do desenvolvimento à produção garantindo padrões de design",
             "Trabalhei com soluções Salesforce, Vlocity Omniscript e LWC para clientes como Claro e Caixa Seguradora"
@@ -231,11 +259,11 @@ export const resumeTranslations = {
           company: "Finnet (Brasil)",
           period: "Mar 2019 - Set 2020",
           responsibilities: [
-            "Trouxe extensa experiência em UX, UI e desenvolvimento front-end para a equipe",
-            "Apliquei design centrado no usuário, usabilidade, acessibilidade e metodologias de teste",
-            "Criei processos de design efetivos incluindo fluxos UX, mapas de jornada e wireframes",
-            "Projetei para telas móveis e desktop usando princípios de design responsivo",
-            "Estabeleci padrões de design incluindo guias de estilo UI e sistemas de design"
+            "Brought extensive UX, UI and front-end development experience to the team",
+            "Applied user-centered design, usability, accessibility and testing methodologies",
+            "Created effective design processes including UX flows, user journey maps, and wireframes",
+            "Designed for both mobile and desktop screens using responsive design principles",
+            "Established design standards including UI style guides and design systems"
           ]
         },
         {
@@ -243,20 +271,49 @@ export const resumeTranslations = {
           company: "Hortatech (Brasil)",
           period: "Set 2018 - Set 2019",
           responsibilities: [
-            "Especializei-me em criar projetos web proporcionando experiência incrível ao usuário",
-            "Construí wireframes, conduzi testes de usuário e testes A/B",
-            "Realizei pesquisa de usuário para melhor compreender demandas dos usuários",
-            "Desenvolvi designs visualmente atraentes usando Adobe XD, Photoshop e Illustrator",
-            "Implementei designs usando JavaScript, HTML, CSS, Bootstrap e conceitos de design responsivo"
+            "Specialized in creating web projects providing incredible user experience",
+            "Built wireframes, conducted user testing and A/B testing",
+            "Performed user research to better understand user demands",
+            "Developed visually appealing designs using Adobe XD, Photoshop and Illustrator",
+            "Implemented designs using JavaScript, HTML, CSS, Bootstrap and responsive design concepts"
           ]
         }
       ]
     },
     education: {
       title: "Formação",
-      degree: "Bacharelado em Design Gráfico",
-      institution: "Universidade Anhembi Morumbi",
-      period: "2012 - 2016"
+      items: [
+        {
+          degree: "Master of Lifelong Learning em UX/UI, Experiência do Usuário",
+          institution: "Escola Superior de Disseny ESDi",
+          period: "Abr 2025 - Abr 2026",
+          description: "Estudo de metodologias e técnicas para pesquisa e análise de usuários. Foco em pensamento crítico, criatividade, inovação e pensamento estratégico. Utilização de ferramentas de ponta em Design UX/UI."
+        },
+        {
+          degree: "Bacharelado em Tecnologia - Tecnologia da Computação/Sistemas de Computação",
+          institution: "Faculdade de Tecnologia de São Paulo - FATEC-SP",
+          period: "Jan 2016 - Dez 2020",
+          description: "Foco em Engenharia de Software, banco de dados, segurança da informação, gerenciamento de projetos, programação para aplicações móveis e web, e interação humano-computador."
+        },
+        {
+          degree: "Bacharelado - Design Industrial e de Produtos",
+          institution: "Universidade Presbiteriana Mackenzie",
+          period: "Jan 2004 - Dez 2009",
+          description: "Criação e desenvolvimento de projetos gráficos e web."
+        },
+        {
+          degree: "Desenvolvedor FullStack - Desenvolvimento Web",
+          institution: "Le Wagon",
+          period: "2018",
+          description: "Curso intensivo de nove semanas aprendendo HTML, CSS, Bootstrap, JavaScript, SQL, Git, GitHub, API, JSON, Heroku e Ruby on Rails. Entrega de projetos clone do AirBnB e protótipo Rails."
+        },
+        {
+          degree: "Programa de Certificação - Design Gráfico",
+          institution: "Etec José Rocha Mendes",
+          period: "2002 - 2003",
+          description: "Criação de materiais gráficos e identidade visual."
+        }
+      ]
     },
     languages: {
       title: "Idiomas",
@@ -271,7 +328,7 @@ export const resumeTranslations = {
   es: {
     introduction: {
       title: "Introducción",
-      content: "Diseñador experimentado con más de 8 años de experiencia en UI/UX y desarrollo frontend, especializado en crear soluciones digitales centradas en el usuario. He trabajado con empresas globales como Kimberly-Clark, Santander y HDI Seguros, desarrollando productos digitales que conectan las necesidades de los usuarios con los objetivos de negocio. Mi enfoque combina investigación de usuarios, design thinking e implementación técnica para entregar experiencias excepcionales."
+      content: "Diseñador experimentado con más de 8 años de experiencia en UI/UX y desarrollo frontend, especializado en crear soluciones digitales centradas en el usuario. He trabajado con empresas globales como Kimberly-Clark, Santander y HDI Seguros, desarrollando productos digitales que conectan las necesidades de los usuarios con los objetivos de negocio. Mi enfoque combina investigación de usuarios, design thinking y implementación técnica para entregar experiencias excepcionales."
     },
     skills: {
       title: "Competencias Principales",
@@ -319,7 +376,7 @@ export const resumeTranslations = {
             "Trabajé con clientes globales incluyendo Kimberly-Clark en proyectos de diseño de productos",
             "Realicé pruebas de usuario, aseguré accesibilidad y alineé objetivos de stakeholders",
             "Colaboré con equipos multiculturales en proyectos a nivel mundial",
-            "Desarrollé e implementé sistemas de diseño que cumplieron criterios de mejora y usabilidad",
+            "Desarrollé e implementó sistemas de diseño que cumplieron criterios de mejora y usabilidad",
             "Creé páginas de destino, sitios de comercio electrónico y sistemas para productos de América del Norte y del Sur",
             "Actualicé componentes y apliqué correctamente el BrandBook en todas las entregas"
           ]
@@ -332,7 +389,7 @@ export const resumeTranslations = {
             "Gestioné el manejo de proyectos de la agencia adhiriéndome a la identidad de marca y sistema de diseño",
             "Coordiné el trabajo del equipo de UX con el área de negocios y desarrolladores",
             "Creé íconos y componentes para mantener consistencia en el diseño",
-            "Colaboré con diseñadores y equipos de desarrollo en implementación de sistemas de diseño",
+            "Colabore con diseñadores y equipos de desarrollo en implementación de sistemas de diseño",
             "Apliqué pruebas de usabilidad, diseño UX y UI para crear productos amigables para el usuario"
           ]
         },
@@ -342,7 +399,7 @@ export const resumeTranslations = {
           period: "Ene 2021 - Dic 2021",
           responsibilities: [
             "Involucrado en el proceso de UX de principio a fin incluyendo análisis de datos para insights de negocio",
-            "Actualicé el Sistema de Diseño, creando componentes e íconos",
+            "Actualicé el Sistema de Diseño, creando componentes y íconos",
             "Participé en reuniones de toma de decisiones con equipos de negocios y desarrollo",
             "Lideré proyecto de rediseño de la aplicación para mejorar el recorrido del usuario",
             "Incorporé aportes de múltiples perspectivas para diseño centrado en el usuario"
@@ -353,9 +410,9 @@ export const resumeTranslations = {
           company: "Deloitte (Brasil)",
           period: "Mar 2020 - Dic 2020",
           responsibilities: [
-            "Produje conceptos funcionales y conceptuales con POs, usuarios finales y profesionales de formación",
-            "Traduje conceptos en prototipos funcionales y prioricé secuencia de desarrollo",
-            "Documenté Historias de Usuario, incluyendo recopilación de requisitos y creación de personas",
+            "Produjo conceptos funcionales y conceptuales con POs, usuarios finales y profesionales de formación",
+            "Traduyó conceptos en prototipos funcionales y priorizó secuencia de desarrollo",
+            "Documentó Historias de Usuario, incluyendo recopilación de requisitos y creación de personas",
             "Seguí proyectos desde desarrollo hasta producción asegurando cumplimiento de estándares de diseño",
             "Trabajé con soluciones Salesforce, Vlocity Omniscript y LWC para clientes como Claro y Caixa Seguradora"
           ]
@@ -365,11 +422,11 @@ export const resumeTranslations = {
           company: "Finnet (Brasil)",
           period: "Mar 2019 - Sep 2020",
           responsibilities: [
-            "Aporté amplia experiencia en UX, UI y desarrollo front-end al equipo",
+            "Aportó amplia experiencia en UX, UI y desarrollo front-end al equipo",
             "Apliqué diseño centrado en el usuario, usabilidad, accesibilidad y metodologías de pruebas",
-            "Creé procesos de diseño efectivos incluyendo flujos UX, mapas de recorrido y wireframes",
-            "Diseñé para pantallas móviles y de escritorio usando principios de diseño responsivo",
-            "Establecí estándares de diseño incluyendo guías de estilo UI y sistemas de diseño"
+            "Creó procesos de diseño efectivos incluyendo flujos UX, mapas de recorrido y wireframes",
+            "Diseñó para pantallas móviles y de escritorio usando principios de diseño responsivo",
+            "Estableció estándares de diseño incluyendo guías de estilo UI y sistemas de diseño"
           ]
         },
         {
@@ -378,19 +435,48 @@ export const resumeTranslations = {
           period: "Sep 2018 - Sep 2019",
           responsibilities: [
             "Me especialicé en crear proyectos web que proporcionan experiencia increíble al usuario",
-            "Construí wireframes, realicé pruebas de usuario y pruebas A/B",
-            "Llevé a cabo investigación de usuario para comprender mejor las demandas de los usuarios",
-            "Desarrollé diseños visualmente atractivos usando Adobe XD, Photoshop e Illustrator",
-            "Implementé diseños usando JavaScript, HTML, CSS, Bootstrap y conceptos de diseño responsivo"
+            "Construyó wireframes, realizó pruebas de usuario y pruebas A/B",
+            "Realizó investigación de usuario para comprender mejor las demandas de los usuarios",
+            "Desarrolló diseños visualmente atractivos usando Adobe XD, Photoshop y Illustrator",
+            "Implementó diseños usando JavaScript, HTML, CSS, Bootstrap y conceptos de diseño responsivo"
           ]
         }
       ]
     },
     education: {
       title: "Formación",
-      degree: "Licenciatura en Diseño Gráfico",
-      institution: "Universidad Anhembi Morumbi",
-      period: "2012 - 2016"
+      items: [
+        {
+          degree: "Master of Lifelong Learning en UX/UI, Experiencia de Usuario",
+          institution: "Escola Superior de Disseny ESDi",
+          period: "Abr 2025 - Abr 2026",
+          description: "Estudio de metodologías y técnicas para investigación y análisis de usuarios. Enfoque en pensamiento crítico, creatividad, innovación y pensamiento estratégico. Utilización de herramientas de vanguardia en Diseño UX/UI."
+        },
+        {
+          degree: "Licenciatura en Tecnología - Tecnología Informática/Sistemas Informáticos",
+          institution: "Faculdade de Tecnologia de São Paulo - FATEC-SP",
+          period: "Ene 2016 - Dic 2020",
+          description: "Enfoque en Ingeniería de Software, base de datos, seguridad informática, gestión de proyectos, programación para aplicaciones móviles y web, e interacción humano-computadora."
+        },
+        {
+          degree: "Licenciatura - Diseño Industrial y de Productos",
+          institution: "Universidade Presbiteriana Mackenzie",
+          period: "Ene 2004 - Dic 2009",
+          description: "Creación y desarrollo de proyectos gráficos y web."
+        },
+        {
+          degree: "Desarrollador FullStack - Desarrollo Web",
+          institution: "Le Wagon",
+          period: "2018",
+          description: "Curso intensivo de nueve semanas aprendiendo HTML, CSS, Bootstrap, JavaScript, SQL, Git, GitHub, API, JSON, Heroku y Ruby on Rails. Entrega de proyectos clon de AirBnB y prototipo Rails."
+        },
+        {
+          degree: "Programa de Certificación - Diseño Gráfico",
+          institution: "Etec José Rocha Mendes",
+          period: "2002 - 2003",
+          description: "Creación de materiales gráficos y identidad visual."
+        }
+      ]
     },
     languages: {
       title: "Idiomas",
@@ -513,7 +599,7 @@ export const resumeTranslations = {
           responsibilities: [
             "Em vaig especialitzar en crear projectes web que proporcionen experiència increïble a l'usuari",
             "Vaig construir wireframes, vaig realitzar proves d'usuari i proves A/B",
-            "Vaig dur a terme recerca d'usuari per comprendre millor les demandes dels usuaris",
+            "Vaig dur a terme recerca d'usuari per comprendre millor les demandas dels usuaris",
             "Vaig desenvolupar dissenys visualment atractius usant Adobe XD, Photoshop i Illustrator",
             "Vaig implementar dissenys usant JavaScript, HTML, CSS, Bootstrap i conceptes de disseny responsiu"
           ]
@@ -522,9 +608,38 @@ export const resumeTranslations = {
     },
     education: {
       title: "Formació",
-      degree: "Llicenciatura en Disseny Gràfic",
-      institution: "Universitat Anhembi Morumbi",
-      period: "2012 - 2016"
+      items: [
+        {
+          degree: "Master of Lifelong Learning en UX/UI, Experiència d'Usuari",
+          institution: "Escola Superior de Disseny ESDi",
+          period: "Abr 2025 - Abr 2026",
+          description: "Estudi de metodologies i tècniques per a recerca i anàlisi d'usuaris. Enfocament en pensament crític, creativitat, innovació i pensament estratègic. Utilització d'eines d'avantguarda en Disseny UX/UI."
+        },
+        {
+          degree: "Llicenciatura en Tecnologia - Tecnologia Informàtica/Sistemes Informàtics",
+          institution: "Faculdade de Tecnologia de São Paulo - FATEC-SP",
+          period: "Gen 2016 - Des 2020",
+          description: "Enfocament en Enginyeria de Programari, base de dades, seguretat informàtica, gestió de projectes, programació per a aplicacions mòbils i web, i interacció humà-computadora."
+        },
+        {
+          degree: "Llicenciatura - Disseny Industrial i de Productes",
+          institution: "Universidade Presbiteriana Mackenzie",
+          period: "Gen 2004 - Des 2009",
+          description: "Creació i desenvolupament de projectes gràfics i web."
+        },
+        {
+          degree: "Desenvolupador FullStack - Desenvolupament Web",
+          institution: "Le Wagon",
+          period: "2018",
+          description: "Curs intensiu de nou setmanes aprenent HTML, CSS, Bootstrap, JavaScript, SQL, Git, GitHub, API, JSON, Heroku i Ruby on Rails. Lliurament de projectes clon d'AirBnB i prototip Rails."
+        },
+        {
+          degree: "Programa de Certificació - Disseny Gràfic",
+          institution: "Etec José Rocha Mendes",
+          period: "2002 - 2003",
+          description: "Creació de materials gràfics i identitat visual."
+        }
+      ]
     },
     languages: {
       title: "Idiomes",

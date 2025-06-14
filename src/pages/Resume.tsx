@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Navigation from "../components/Navigation";
 import ResumeHeader from "../components/resume/ResumeHeader";
@@ -78,15 +77,20 @@ const Resume = () => {
 
           <ResumeSection title={t.education.title}>
             <div className="space-y-4">
-              <div className="border-l-4 border-red-400 pl-4">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h3 className="font-semibold text-gray-800">{t.education.degree}</h3>
-                    <p className="text-red-400">{t.education.institution}</p>
+              {t.education.items.map((education, index) => (
+                <div key={index} className="border-l-4 border-red-400 pl-4 print:break-inside-avoid">
+                  <div className="flex justify-between items-start mb-2">
+                    <div>
+                      <h3 className="font-semibold text-gray-800">{education.degree}</h3>
+                      <p className="text-red-400">{education.institution}</p>
+                    </div>
+                    <span className="text-sm text-gray-500">{education.period}</span>
                   </div>
-                  <span className="text-sm text-gray-500">{t.education.period}</span>
+                  {education.description && (
+                    <p className="text-sm text-gray-600 mt-2">{education.description}</p>
+                  )}
                 </div>
-              </div>
+              ))}
             </div>
           </ResumeSection>
 
