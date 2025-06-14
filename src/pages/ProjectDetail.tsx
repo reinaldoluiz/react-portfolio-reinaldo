@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -17,7 +16,7 @@ const ProjectDetail = () => {
     duration: "4 months",
     team: "Designer, 2 Developers, PM",
     role: "Lead UX/UI Designer",
-    image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
+    image: "/lovable-uploads/uploaded-image.png",
     color: "bg-green-100",
     tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
     category: "Mobile App",
@@ -101,7 +100,7 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          {/* Project Image - Cropped and adjusted */}
+          {/* Project Image - Using uploaded image */}
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               <div className="w-full max-w-2xl mx-auto h-96 overflow-hidden rounded-lg">
