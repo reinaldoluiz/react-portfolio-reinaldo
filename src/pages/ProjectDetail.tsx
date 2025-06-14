@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -17,7 +18,7 @@ const ProjectDetail = () => {
     team: "Designer, 2 Developers, PM",
     role: "Lead UX/UI Designer",
     image: "/lovable-uploads/53a631d0-16bb-4460-970a-b51729b1668b.png",
-    color: "bg-green-100",
+    color: "bg-pink-100",
     tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
     category: "Mobile App",
     problem: "Users struggle to find and verify eco-friendly products while shopping online. Existing platforms lack transparency about environmental impact and sustainable alternatives.",
@@ -38,7 +39,7 @@ const ProjectDetail = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 to-rose-100">
       <Navigation />
       <div className="pt-20">
         <div className="container mx-auto px-6 py-16">
