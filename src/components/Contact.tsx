@@ -34,23 +34,6 @@ const Contact = () => {
                   Drop me a message and let's map out your next great user experience adventure! 🗺️
                 </p>
               </div>
-              
-              <div className="space-y-4">
-                <div className="bg-blue-100 p-4 transform rotate-1 border-2 border-gray-300">
-                  <p className="text-gray-800 font-bold">📧 Email</p>
-                  <p className="text-gray-700">reinaldo.luiz@email.com</p>
-                </div>
-                
-                <div className="bg-green-100 p-4 transform -rotate-1 border-2 border-gray-300">
-                  <p className="text-gray-800 font-bold">📱 Phone</p>
-                  <p className="text-gray-700">+1 (555) 123-4567</p>
-                </div>
-                
-                <div className="bg-yellow-100 p-4 transform rotate-2 border-2 border-gray-300">
-                  <p className="text-gray-800 font-bold">📍 Location</p>
-                  <p className="text-gray-700">San Francisco, CA</p>
-                </div>
-              </div>
             </div>
             
             <div>
