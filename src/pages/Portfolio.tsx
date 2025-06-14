@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
@@ -23,7 +24,7 @@ const Portfolio = () => {
       year: "2024",
       image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
       color: "bg-blue-100",
-      tools: ["Research", "UI Design", "Design System"],
+      tools: ["Adobe XD", "Data Visualization", "Usability Testing"],
       category: "Design System"
     },
     {

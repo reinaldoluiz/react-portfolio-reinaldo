@@ -18,7 +18,7 @@ const Projects = () => {
       year: "2021",
       image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
       color: "bg-blue-100",
-      tools: ["Research", "UI Design", "Design System"]
+      tools: ["User Research", "Data Analysis", "Prototyping", "Design Systems"]
     },
     {
       title: "HDI Insurance Digital Platform",
