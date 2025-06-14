@@ -1,4 +1,3 @@
-
 import { Download, MapPin, Phone, Mail, Calendar } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -264,7 +263,7 @@ const Resume = () => {
       <Navigation />
       <div className="pt-20">
         <Tabs defaultValue="pt" className="w-full">
-          <div className="container mx-auto px-6 max-w-4xl">
+          <div className="container mx-auto px-6 max-w-4xl mb-8">
             <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 bg-transparent border-b border-gray-200 p-0 h-auto rounded-none">
               <TabsTrigger 
                 value="pt" 
