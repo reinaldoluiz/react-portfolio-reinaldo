@@ -1,590 +1,214 @@
-import { Download, MapPin, Phone, Mail, Calendar, Linkedin } from "lucide-react";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+
+import { ArrowLeft, MapPin, Linkedin, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Resume = () => {
-  const resumeData = {
-    pt: {
-      title: "Currículo",
-      downloadText: "Baixar PDF",
-      personalInfo: {
-        name: "Reinaldo Luiz",
-        aboutTitle: "SOBRE",
-        aboutText: "Sou Reinaldo, um brasileiro atualmente na Espanha estudando mestrado em design UX. Tenho conhecimento de todas as etapas de desenvolvimento e habilidades de experiência do usuário em frontend para a construção visual de páginas. Sou um profissional criativo e adaptável com experiência em UX e design gráfico. Trago comigo habilidades valiosas em resolução de problemas, comunicação e trabalho em equipe. Estou sempre me esforçando para aprender e me adaptar a novos desafios, e acredito que minha atenção aos detalhes e capacidade de pensar criticamente podem trazer valor em qualquer ambiente de trabalho. Meu objetivo é contribuir positivamente para a equipe e ajudar a alcançar resultados eficazes."
-      },
-      contact: {
-        location: "Barcelona, Espanha",
-        experience: "+8 anos de experiência"
-      },
-      sections: {
-        experience: "Experiência",
-        education: "Formação",
-        skills: "Habilidades Principais"
-      },
-      jobs: [
-        {
-          title: "UI/UX Designer",
-          company: "Tech Mahindra, Remote, United States • Out 2021 - Jan 2025",
-          tasks: [
-            "• Clientes atendidos: Kimberly-Clark",
-            "• Como Product Designer na Kimberly-Clark, tive a oportunidade de trabalhar com uma gama diversificada de clientes e projetos. Minha experiência em design UX incluiu testes de usuário, garantindo acessibilidade, alinhamento de objetivos dos stakeholders e colaboração com equipes multiculturais em projetos mundiais. Também trabalhei em estreita colaboração com equipes de desenvolvimento para fazer os ajustes necessários e garantir a entrega de produtos de alta qualidade.",
-            "• Em design UI, fui responsável por desenvolver e implementar sistemas de design que seguiam critérios de melhoria e usabilidade para usuários e equipe de desenvolvimento. Isso incluiu criação de novos sistemas de design, atualização de componentes e aplicação correta do BrandBook. Também criei landing pages, sites de e-commerce e sistemas para todos os produtos da empresa na América do Norte e Sul."
-          ]
-        },
-        {
-          title: "UX Lead",
-          company: "HDI Insurance, São Paulo - Brasil • Jan 2021 - Dez 2021",
-          tasks: [
-            "• Gerenciei projetos de agência mantendo identidade da marca e sistema de design. Responsável por coordenar trabalho da equipe UX com business e desenvolvedores.",
-            "• Gosto de criar ícones e componentes que designers de produto possam usar para manter consistência e tenho experiência colaborando com equipes de design e desenvolvimento para implementar sistemas user-friendly e funcionais. Minhas habilidades em testes de usabilidade, design UX e UI me permitem criar produtos digitais visualmente impressionantes e fáceis de usar."
-          ]
-        },
-        {
-          title: "Product Designer",
-          company: "Santander, São Paulo - Brasil • Jan 2021 - Dez 2021",
-          tasks: [
-            "• Como Product Designer, participei do processo UX end-to-end. Isso incluiu análise de dados para gerar insights para inputs de negócio e melhoria da jornada do usuário. Atualizei o Sistema de Design, criando componentes, ícones e garantindo handoff suave para entrega do layout final. Participei ativamente de reuniões de decisão com equipes de business e desenvolvimento.",
-            "• Um dos meus feitos notáveis foi liderar projeto de redesign do app para melhorar jornada do usuário. Durante este processo, considerei recomendações e requisitos de business e desenvolvimento. Ao incorporar input de múltiplas perspectivas, consegui criar redesign centrado no usuário que se alinhava com objetivos de negócio e viabilidade técnica."
-          ]
-        },
-        {
-          title: "Product Designer",
-          company: "Deloitte, Brasil • Mar 2020 - Dez 2020",
-          tasks: [
-            "• Como UX/UI na Deloitte, fui responsável por produzir conceitos funcionais e conceituais em colaboração com POs, usuários finais e profissionais de treinamento, traduzindo-os em prototipos funcionais priorizados no desenvolvimento. Também ajudei a documentar User Stories, incluindo coleta de requisitos e criação de personas de usuário.",
-            "• Acompanhei projetos do desenvolvimento até publicação em produção, garantindo que resultado final atendesse padrões de design e fosse entregue no prazo aos clientes. Trabalhei com Salesforce, Vlocity Omniscript e LWC como soluções, ajudando empresas como Claro e Caixa Seguradora."
-          ]
-        },
-        {
-          title: "UX/UI Designer & Front-end Developer",
-          company: "Finnet, Brasil • Mar 2019 - Set 2020",
-          tasks: [
-            "• Como Product Designer, trouxe para equipe experiência extensa em UX, UI e desenvolvimento front-end. Meu conhecimento em design centrado no usuário, usabilidade, acessibilidade e metodologias de teste me permite criar processos de design eficazes como fluxos UX, mapas de jornada do usuário, wireframes e ideação e teste de pesquisa.",
-            "• Em design UI, domino princípios de design responsivo e sou capaz de projetar para telas mobile e desktop. Como conheço bem os princípios e requisitos oficiais de design das plataformas Web, iOS e Android, consigo estabelecer padrões de design como guias de estilo UI, estratégias visuais e sistemas de design. Isso garante que todos os produtos gerados sigam padrões consistentes e ofereçam experiência consistente entre plataformas."
-          ]
-        },
-        {
-          title: "UX/UI Designer & Front-end Developer",
-          company: "Hortatech, Brasil • Set 2018 - Set 2019",
-          tasks: [
-            "• Como desenvolvedor front-end e UX/UI, especializo-me em criar projetos web que proporcionam experiência incrível ao usuário. Com meus talentos em design UX, posso construir wireframes, fazer testes de usuário e A/B testing, e conduzir pesquisa de usuário para entender melhor demandas dos usuários. Isso me permite criar produtos digitais otimizados para experiência do usuário e que satisfazem suas necessidades.",
-            "• Domino tecnologias de design UI como Adobe XD, Photoshop e Illustrator, permitindo desenvolver designs visualmente atraentes consistentes com identidade visual da marca. Meu conhecimento em linguagens de programação front-end como JavaScript, HTML, CSS, Bootstrap e conceitos de design responsivo me permite dar vida aos meus designs e otimizá-los."
-          ]
-        }
-      ],
-      education: [
-        {
-          degree: "Mestrado em UX/UI Design",
-          institution: "ESDI • Abr 2025 - Abr 2026, Espanha",
-          details: [
-            "• Estudar metodologias e técnicas que nos permitem pesquisar, analisar e compreender necessidades dos usuários",
-            "• Encorajar pensamento crítico, criatividade e inovação",
-            "• Promover pensamento estratégico",
-            "• Utilizar ferramentas de ponta em UX/UI Design",
-            "• Aprender a projetar, prototipar e testar"
-          ]
-        },
-        {
-          degree: "Bacharelado em Design",
-          institution: "Mackenzie • Jan 2004 - Dez 2009, Brasil",
-          details: [
-            "• Design Studios: Trabalhar em projetos de design com orientação do corpo docente",
-            "• Workshops e Sessões de Desenvolvimento: Aprender habilidades técnicas e tendências da indústria",
-            "• Sessões de Crítica: Apresentar trabalhos para feedback e melhoria",
-            "• Pesquisa em Design: Conduzir estudos para informar decisões de design",
-            "• Projetos Colaborativos: Trabalhar juntos em desafios interdisciplinares"
-          ]
-        },
-        {
-          degree: "Bacharelado em Tecnologia - Tecnologia em Sistemas para Internet",
-          institution: "FATEC-SP • Jan 2016 - Dez 2020, Brasil",
-          details: [
-            "• Várias matérias escolares foram importantes para meu aprimoramento na área de produtos digitais: Engenharia de Software, banco de dados, segurança da informação, gerenciamento de projetos, gestão de equipes, programação para aplicações móveis e web, segurança da informação e interação humano-computador",
-            "• Habilidades: Figma, Sistema front-end, User Experience (UX), User Interface Design, Web design, HTML5"
-          ]
-        },
-        {
-          degree: "Desenvolvedor FullStack",
-          institution: "Le Wagon • 2018, Brasil",
-          details: [
-            "• Curso intensivo de nove semanas no Le Wagon São Paulo (Lote #158) aprendendo HTML, CSS, Bootstrap, JavaScript, SQL, Git, GitHub, API, JSON, Heroku e Ruby on Rails",
-            "• Design, implementação e entrega de produção de um clone do AirBnB e um protótipo Rails para pesquisa de perfumes",
-            "• Habilidades: Figma, Sistema front-end, Web design, Ruby on Rails, CSS, HTML5, Ruby, Adobe Photoshop"
-          ]
-        },
-        {
-          degree: "Programa de Certificação em Design Gráfico",
-          institution: "Etec José Rocha Mendes • 2002 - 2003, Brasil",
-          details: [
-            "• Criação de materiais gráficos e identidade visual",
-            "• Habilidades: Ilustração, Adobe Illustrator, Design gráfico, Adobe Photoshop"
-          ]
-        }
-      ],
-      skillsCategories: [
-        {
-          title: "Design & Prototipagem",
-          skills: "Figma, Adobe Creative Suite, Sketch, Prototipagem, Sistemas de Design, Wireframing"
-        },
-        {
-          title: "Desenvolvimento Frontend",
-          skills: "HTML5, CSS3, JavaScript, React, Bootstrap, Ruby on Rails, Git, GitHub"
-        },
-        {
-          title: "UX Research & Testing",
-          skills: "Teste de Usuário, A/B Testing, Analytics, Entrevistas, Personas, Jornada do Usuário"
-        },
-        {
-          title: "Metodologias & Gestão",
-          skills: "Design Thinking, Metodologias Ágeis, Gestão de Projetos, Colaboração Multidisciplinar"
-        },
-        {
-          title: "Ferramentas & Plataformas",
-          skills: "Salesforce, Vlocity, LWC, Heroku, SQL, API, JSON, Adobe Photoshop, Illustrator"
-        }
-      ]
-    },
-    en: {
-      title: "Resume",
-      downloadText: "Download PDF",
-      personalInfo: {
-        name: "Reinaldo Luiz",
-        aboutTitle: "ABOUT",
-        aboutText: "I am Reinaldo, a Brazilian currently in Spain studying for a master's degree in UX design. I have knowledge of all stages of development and user experience skills in frontend for the visual construction of pages. I am a creative and adaptable professional with experience in UX and graphic design. I bring with me valuable skills in problem-solving, communication and teamwork. I am always striving to learn and adapt to new challenges, and I believe that my attention to detail and ability to think critically can bring value in any work environment. My goal is to contribute positively to the team and help achieve effective results."
-      },
-      contact: {
-        location: "Barcelona, Spain",
-        experience: "+8 years experience"
-      },
-      sections: {
-        experience: "Experience",
-        education: "Education",
-        skills: "Key Skills"
-      },
-      jobs: [
-        {
-          title: "UI/UX Designer",
-          company: "Tech Mahindra, Remote, United States • Oct 2021 - Jan 2025",
-          tasks: [
-            "• Clients Served: Kimberly-Clark",
-            "• As a Product Designer at Kimberly-Clark, I had the opportunity to work with a diverse range of clients and projects. My experience in UX design included conducting user testing, ensuring accessibility, aligning stakeholder goals, and collaborating with multicultural teams on worldwide projects. I also worked closely with development teams to make necessary adjustments and ensure the delivery of high-quality products.",
-            "• In terms of UI design, I was responsible for developing and implementing design systems that adhered to the criteria of improvement and usability for both users and the development team. This included creating new design systems, updating components, and applying the BrandBook correctly. I also designed landing pages, e-commerce sites, and systems for all of the company's products throughout North and South America."
-          ]
-        },
-        {
-          title: "UX Lead",
-          company: "HDI Insurance, São Paulo - Brazil • Jan 2021 - Dec 2021",
-          tasks: [
-            "• Managing project agency management while adhering to brand identity and design system. Responsible for coordinating the UX team's work with the business and developers.",
-            "• I enjoy creating icons and components that product designers can use to maintain consistency and have experience collaborating closely with designers and development teams to implement design systems that are both user-friendly and functional. My skills in usability testing, user experience (UX) design, and user interface (UI) design enable me to create digital products that are both visually stunning and easy to use."
-          ]
-        },
-        {
-          title: "Product Designer",
-          company: "Santander, São Paulo - Brazil • Jan 2021 - Dec 2021",
-          tasks: [
-            "• As a Product Designer, I was involved in the end-to-end UX process. This included data analysis to generate insights for business inputs and user journey enhancement. I updated the Design System, creating components, icons, and ensuring a smooth handoff for the final layout delivery. I actively participated in decision-making meetings with the business and development teams.",
-            "• One of my notable achievements was leading a redesign project for the app to improve the user journey. During this process, I considered business and development recommendations and requirements. By incorporating input from multiple perspectives, I was able to create a user-centric redesign that aligned with both business objectives and technical feasibility."
-          ]
-        },
-        {
-          title: "Product Designer",
-          company: "Deloitte, Brazil • Mar 2020 - Dec 2020",
-          tasks: [
-            "• As a UX/UI at Deloitte, I was responsible for producing functional and conceptual concepts in collaboration with product owners (POs), end-users, and training professionals, which were then translated into functional prototypes and prioritized in the development aftermath. I also helped to document User Stories, which included gathering requirements and creating user personas.",
-            "• I tracked the project from development through production publishing, ensuring that the final result met design standards and was delivered on time to clients. I've worked with Salesforce, Vlocity Omniscript, and LWC as solutions, and I've helped companies like Claro and Caixa Seguradora."
-          ]
-        },
-        {
-          title: "UX/UI Designer & Front-end Developer",
-          company: "Finnet, Brazil • Mar 2019 - Sep 2020",
-          tasks: [
-            "• As a Product Designer, I bring to the team extensive experience in UX, UI, and front-end development. My knowledge of user-centered design, usability, accessibility, and testing methodologies allows me to create effective design processes such as UX flows, user journey maps, wireframes, and research ideation and testing.",
-            "• In terms of UI design, I am well-versed in responsive design principles and am capable of designing for both mobile and desktop screens. Because I am well-versed in the official design principles and requirements of the Web, iOS, and Android platforms, I am able to establish design standards such as UI style guides, visual strategies, and design systems. This guarantees that all products generated follow consistent design standards and deliver a consistent user experience across platforms."
-          ]
-        },
-        {
-          title: "UX/UI Designer & Front-end Developer",
-          company: "Hortatech, Brazil • Sep 2018 - Sep 2019",
-          tasks: [
-            "• As a front-end and UX/UI developer, I specialize in creating web projects that provide an amazing user experience. With my UX design talents, I can construct wireframes, do user testing and A/B testing, and conduct user research to better understand user demands. This allows me to create digital goods that are optimized for the user experience and satisfy their needs.",
-            "• I am well-versed in UI design technologies such as Adobe XD, Photoshop, and Illustrator, allowing me to develop visually attractive designs that are consistent with the brand's visual identity. My knowledge of front-end programming languages such as JavaScript, HTML, CSS, Bootstrap, and responsive design concepts enables me to bring my designs to life and optimize them."
-          ]
-        }
-      ],
-      education: [
-        {
-          degree: "Master in UX/UI Design",
-          institution: "ESDI • Apr 2025 - Apr 2026, Spain",
-          details: [
-            "• Study methodologies and techniques that allow us to research, analyse, and understand users' needs",
-            "• Encourage critical thinking, creativity, and innovation",
-            "• Promote strategic thinking",
-            "• Utilise cutting-edge tools in UX/UI Design",
-            "• Learn to design, prototype, and test"
-          ]
-        },
-        {
-          degree: "Bachelor in Design",
-          institution: "Mackenzie • Jan 2004 - Dec 2009, Brazil",
-          details: [
-            "• Design Studios: Working on design projects with guidance from faculty",
-            "• Workshops and Skill-building Sessions: Learning technical skills and industry trends",
-            "• Critique Sessions: Presenting work for feedback and improvement",
-            "• Design Research: Conducting studies to inform design decisions",
-            "• Collaborative Projects: Working together on interdisciplinary challenges"
-          ]
-        },
-        {
-          degree: "Bachelor of Technology - Computer Technology/Computer Systems Technology",
-          institution: "FATEC-SP • Jan 2016 - Dec 2020, Brazil",
-          details: [
-            "• Several school subjects were important for my improvement in the area of digital products: Software Engineering, database, information security, project management, team management, programming in mobile and web applications, information security and human-computer interaction",
-            "• Skills: Figma, Frontend System, User Experience (UX), User Interface Design, Web design, HTML5"
-          ]
-        },
-        {
-          degree: "FullStack Developer, Web Development",
-          institution: "Le Wagon • 2018, Brazil",
-          details: [
-            "• Studied at Le Wagon São Paulo (Batch #158) Nine-week intensive course learning HTML, CSS, Bootstrap, JavaScript, SQL, Git, GitHub, API, JSON, Heroku and Ruby on Rails",
-            "• Design, implementation and production delivery of an AirBnB clone and a Rails prototype for perfume research",
-            "• Skills: Figma, Frontend System, Web design, Ruby on Rails, CSS, HTML5, Ruby, Adobe Photoshop"
-          ]
-        },
-        {
-          degree: "Certificate program, Graphic Design",
-          institution: "Etec José Rocha Mendes • 2002 - 2003, Brazil",
-          details: [
-            "• Creation of graphic materials and visual identity",
-            "• Skills: Illustration, Adobe Illustrator, Graphic design, Adobe Photoshop"
-          ]
-        }
-      ],
-      skillsCategories: [
-        {
-          title: "Design & Prototyping",
-          skills: "Figma, Adobe Creative Suite, Sketch, Prototyping, Design Systems, Wireframing"
-        },
-        {
-          title: "Frontend Development",
-          skills: "HTML5, CSS3, JavaScript, React, Bootstrap, Ruby on Rails, Git, GitHub"
-        },
-        {
-          title: "UX Research & Testing",
-          skills: "User Testing, A/B Testing, Analytics, Interviews, Personas, User Journey Mapping"
-        },
-        {
-          title: "Methodologies & Management",
-          skills: "Design Thinking, Agile Methodologies, Project Management, Cross-functional Collaboration"
-        },
-        {
-          title: "Tools & Platforms",
-          skills: "Salesforce, Vlocity, LWC, Heroku, SQL, API, JSON, Adobe Photoshop, Illustrator"
-        }
-      ]
-    },
-    es: {
-      title: "Currículum",
-      downloadText: "Descargar PDF",
-      personalInfo: {
-        name: "Reinaldo Luiz",
-        aboutTitle: "ACERCA DE",
-        aboutText: "Soy Reinaldo, un brasileño actualmente en España estudiando una maestría en diseño UX. Tengo conocimiento de todas las etapas de desarrollo y habilidades de experiencia de usuario en frontend para la construcción visual de páginas. Soy un profesional creativo y adaptable con experiencia en UX y diseño gráfico. Traigo conmigo habilidades valiosas en resolución de problemas, comunicación y trabajo en equipo. Siempre me esfuerzo por aprender y adaptarme a nuevos desafíos, y creo que mi atención al detalle y capacidad de pensar críticamente pueden aportar valor en cualquier ambiente de trabajo. Mi objetivo es contribuir positivamente al equipo y ayudar a lograr resultados efectivos."
-      },
-      contact: {
-        location: "Barcelona, España",
-        experience: "+8 años de experiencia"
-      },
-      sections: {
-        experience: "Experiencia",
-        education: "Educación",
-        skills: "Habilidades Clave"
-      },
-      jobs: [
-        {
-          title: "UI/UX Designer",
-          company: "Tech Mahindra, Remote, United States • Oct 2021 - Ene 2025",
-          tasks: [
-            "• Clientes atendidos: Kimberly-Clark",
-            "• Como Product Designer en Kimberly-Clark, tuve la oportunidad de trabajar con una gama diversa de clientes y proyectos. Mi experiencia en diseño UX incluyó pruebas de usuario, garantizar accesibilidad, alinear objetivos de stakeholders y colaborar con equipos multiculturales en proyectos mundiales. También trabajé estrechamente con equipos de desarrollo para hacer ajustes necesarios y garantizar entrega de productos de alta calidad.",
-            "• En términos de diseño UI, fui responsable de desarrollar e implementar sistemas de diseño que siguieran criterios de mejora y usabilidad para usuarios y equipo de desarrollo. Esto incluyó crear nuevos sistemas de diseño, actualizar componentes y aplicar correctamente el BrandBook. También diseñé landing pages, sitios de e-commerce y sistemas para todos los productos de la compañía en Norte y Sudamérica."
-          ]
-        },
-        {
-          title: "UX Lead",
-          company: "HDI Insurance, São Paulo - Brasil • Ene 2021 - Dic 2021",
-          tasks: [
-            "• Gestioné proyectos de agencia manteniendo identidad de marca y sistema de diseño. Responsable de coordinar el trabajo del equipo UX con business y desarrolladores.",
-            "• Disfruto crear íconos y componentes que los diseñadores de producto puedan usar para mantener consistencia y tengo experiencia colaborando estrechamente con equipos de diseño y desarrollo para implementar sistemas user-friendly y funcionales. Mis habilidades en pruebas de usabilidad, diseño UX y UI me permiten crear productos digitales visualmente impresionantes y fáciles de usar."
-          ]
-        },
-        {
-          title: "Product Designer",
-          company: "Santander, São Paulo - Brasil • Ene 2021 - Dic 2021",
-          tasks: [
-            "• Como Product Designer, participé en el proceso UX end-to-end. Esto incluyó análisis de datos para generar insights para inputs de negocio y mejora del journey del usuario. Actualicé el Sistema de Diseño, creando componentes, íconos y asegurando handoff suave para entrega del layout final. Participé activamente en reuniones de decisión con equipos de business y desarrollo.",
-            "• Uno de mis logros notables fue liderar un proyecto de rediseño de la app para mejorar el journey del usuario. Durante este proceso, consideré recomendaciones y requisitos de business y desarrollo. Al incorporar input de múltiples perspectivas, pude crear rediseño centrado en el usuario que se alineaba con objetivos de negocio y viabilidad técnica."
-          ]
-        },
-        {
-          title: "Product Designer",
-          company: "Deloitte, Brasil • Mar 2020 - Dic 2020",
-          tasks: [
-            "• Como UX/UI en Deloitte, fui responsable de producir conceptos funcionales y conceptuales en colaboración con POs, usuarios finales y profesionales de entrenamiento, traduciéndolos en prototipos funcionales priorizados en el desarrollo. También ayudé a documentar User Stories, incluyendo recopilación de requisitos y creación de personas de usuario.",
-            "• Seguí proyectos desde desarrollo hasta publicación en producción, asegurando que resultado final cumpliera estándares de diseño y fuera entregado a tiempo a clientes. Trabajé con Salesforce, Vlocity Omniscript y LWC como soluciones, ayudando a empresas como Claro y Caixa Seguradora."
-          ]
-        },
-        {
-          title: "UX/UI Designer & Front-end Developer",
-          company: "Finnet, Brasil • Mar 2019 - Sep 2020",
-          tasks: [
-            "• Como Product Designer, aporto al equipo experiencia extensa en UX, UI y desarrollo front-end. Mi conocimiento en diseño centrado en el usuario, usabilidad, accesibilidad y metodologías de testing me permite crear procesos de diseño efectivos como flujos UX, mapas de journey del usuario, wireframes e ideación y testing de investigación.",
-            "• En términos de diseño UI, domino principios de diseño responsivo y soy capaz de diseñar para pantallas móviles y desktop. Como conozco bien los principios y requisitos oficiales de diseño de las plataformas Web, iOS y Android, puedo establecer estándares de diseño como guías de estilo UI, estrategias visuales y sistemas de diseño. Esto garantiza que todos los productos generados sigan estándares consistentes y ofrezcan experiencia consistente entre plataformas."
-          ]
-        },
-        {
-          title: "UX/UI Designer & Front-end Developer",
-          company: "Hortatech, Brasil • Sep 2018 - Sep 2019",
-          tasks: [
-            "• Como desarrollador front-end y UX/UI, me especializo en crear proyectos web que proporcionan experiencia increíble al usuario. Con mis talentos en diseño UX, puedo construir wireframes, hacer pruebas de usuario y A/B testing, y conducir investigación de usuario para entender mejor demandas de usuarios. Esto me permite crear productos digitales optimizados para experiencia del usuario y que satisfacen sus necesidades.",
-            "• Domino tecnologías de diseño UI como Adobe XD, Photoshop e Illustrator, permitiéndome desarrollar diseños visualmente atractivos consistentes con identidad visual de la marca. Mi conocimiento en lenguajes de programación front-end como JavaScript, HTML, CSS, Bootstrap y conceptos de diseño responsivo me permite dar vida a mis diseños y optimizarlos."
-          ]
-        }
-      ],
-      education: [
-        {
-          degree: "Maestría en UX/UI Design",
-          institution: "ESDI • Abr 2025 - Abr 2026, España",
-          details: [
-            "• Estudiar metodologías y técnicas que nos permiten investigar, analizar y comprender necesidades de usuarios",
-            "• Fomentar pensamiento crítico, creatividad e innovación",
-            "• Promover pensamiento estratégico",
-            "• Utilizar herramientas de vanguardia en UX/UI Design",
-            "• Aprender a diseñar, prototipar y testear"
-          ]
-        },
-        {
-          degree: "Licenciatura en Diseño",
-          institution: "Mackenzie • Ene 2004 - Dic 2009, Brasil",
-          details: [
-            "• Design Studios: Trabajar en proyectos de diseño con orientación del cuerpo docente",
-            "• Workshops y Sesiones de Desarrollo: Aprender habilidades técnicas y tendencias de la industria",
-            "• Sesiones de Crítica: Presentar trabajos para feedback y mejora",
-            "• Investigación en Diseño: Conducir estudios para informar decisiones de diseño",
-            "• Proyectos Colaborativos: Trabajar juntos en desafíos interdisciplinarios"
-          ]
-        },
-        {
-          degree: "Licenciatura en Tecnología - Tecnología en Sistemas para Internet",
-          institution: "FATEC-SP • Ene 2016 - Dic 2020, Brasil",
-          details: [
-            "• Varias materias escolares fueron importantes para mi mejora en el área de productos digitales: Ingeniería de Software, base de datos, seguridad de la información, gestión de proyectos, gestión de equipos, programación en aplicaciones móviles y web, seguridad de la información e interacción humano-computadora",
-            "• Habilidades: Figma, Sistema frontend, User Experience (UX), User Interface Design, Web design, HTML5"
-          ]
-        },
-        {
-          degree: "Desarrollador FullStack, Desarrollo Web",
-          institution: "Le Wagon • 2018, Brasil",
-          details: [
-            "• Estudié en Le Wagon São Paulo (Lote #158) Curso intensivo de nueve semanas aprendiendo HTML, CSS, Bootstrap, JavaScript, SQL, Git, GitHub, API, JSON, Heroku y Ruby on Rails",
-            "• Diseño, implementación y entrega de producción de un clon de AirBnB y un prototipo Rails para investigación de perfumes",
-            "• Habilidades: Figma, Sistema frontend, Web design, Ruby on Rails, CSS, HTML5, Ruby, Adobe Photoshop"
-          ]
-        },
-        {
-          degree: "Programa de Certificación, Diseño Gráfico",
-          institution: "Etec José Rocha Mendes • 2002 - 2003, Brasil",
-          details: [
-            "• Creación de materiales gráficos e identidad visual",
-            "• Habilidades: Ilustración, Adobe Illustrator, Diseño gráfico, Adobe Photoshop"
-          ]
-        }
-      ],
-      skillsCategories: [
-        {
-          title: "Diseño y Prototipado",
-          skills: "Figma, Adobe Creative Suite, Sketch, Prototipado, Sistemas de Diseño, Wireframing"
-        },
-        {
-          title: "Desarrollo Frontend",
-          skills: "HTML5, CSS3, JavaScript, React, Bootstrap, Ruby on Rails, Git, GitHub"
-        },
-        {
-          title: "Investigación UX y Testing",
-          skills: "Pruebas de Usuario, A/B Testing, Analytics, Entrevistas, Personas, Mapeo de Journey"
-        },
-        {
-          title: "Metodologías y Gestión",
-          skills: "Design Thinking, Metodologías Ágiles, Gestión de Proyectos, Colaboración Multidisciplinar"
-        },
-        {
-          title: "Herramientas y Plataformas",
-          skills: "Salesforce, Vlocity, LWC, Heroku, SQL, API, JSON, Adobe Photoshop, Illustrator"
-        }
-      ]
-    }
-  };
-
-  const renderResumeContent = (lang: 'pt' | 'en' | 'es') => {
-    const data = resumeData[lang];
-    
-    return (
-      <div className="container mx-auto px-6 max-w-4xl">
+  return (
+    <div className="min-h-screen bg-white">
+      <div className="container mx-auto px-6 py-8 max-w-4xl">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 transform -rotate-1 inline-block mb-4">
-            {data.title}
-          </h1>
-          <div className="w-32 h-1 bg-red-400 mx-auto transform rotate-1 mb-6"></div>
-          
-          {/* Language Tabs */}
-          <div className="mb-8">
-            <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 bg-transparent border-b border-gray-200 p-0 h-auto rounded-none">
-              <TabsTrigger 
-                value="en"
-                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
-              >
-                English
-              </TabsTrigger>
-              <TabsTrigger 
-                value="es"
-                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
-              >
-                Español
-              </TabsTrigger>
-              <TabsTrigger 
-                value="pt" 
-                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
-              >
-                Português
-              </TabsTrigger>
-            </TabsList>
-          </div>
-
-          <button className="bg-red-400 hover:bg-red-500 text-white px-6 py-3 font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg flex items-center gap-2 mx-auto">
-            <Download size={20} />
-            {data.downloadText}
+        <div className="flex items-center justify-between mb-8">
+          <Link to="/" className="flex items-center text-blue-600 hover:text-blue-800 font-medium">
+            <ArrowLeft className="h-4 w-4 mr-2" />
+            Voltar ao Portfolio
+          </Link>
+          <button 
+            onClick={() => window.print()} 
+            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors"
+          >
+            Imprimir CV
           </button>
         </div>
 
-        {/* Personal Information Section */}
-        <div className="mb-12">
-          <div className="text-left mb-8">
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-800 transform rotate-1 inline-block mb-4">
-              {data.personalInfo.name}
-            </h2>
-            <div className="flex flex-wrap items-center gap-6 mb-6">
-              <div className="flex items-center gap-2">
-                <MapPin size={20} className="text-red-400" />
-                <span className="text-gray-700 font-medium">{data.contact.location}</span>
+        {/* Personal Info */}
+        <div className="text-center mb-8 pb-8 border-b-2 border-gray-200">
+          <h1 className="text-4xl font-bold text-gray-800 mb-2">Reinaldo Luiz</h1>
+          <p className="text-xl text-gray-600 mb-4">UI/UX Designer & Product Designer</p>
+          
+          {/* Contact Info - Single Line */}
+          <div className="flex items-center justify-center gap-6 text-gray-600">
+            <div className="flex items-center">
+              <MapPin className="h-4 w-4 mr-1" />
+              <span>Barcelona, Spain</span>
+            </div>
+            <div className="flex items-center">
+              <Linkedin className="h-4 w-4 mr-1" />
+              <a href="https://linkedin.com/in/reinaldoluiz" className="text-blue-600 hover:underline">
+                linkedin.com/in/reinaldoluiz
+              </a>
+            </div>
+            <div className="flex items-center">
+              <Calendar className="h-4 w-4 mr-1" />
+              <span>+8 anos de experiência</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Introduction */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">
+            Introdução
+          </h2>
+          <p className="text-gray-700 leading-relaxed">
+            Designer experiente com mais de 8 anos de experiência em UI/UX e desenvolvimento frontend, 
+            especializado em criar soluções digitais centradas no usuário. Tenho trabalhado com empresas 
+            globais como Kimberly-Clark, Santander e HDI Seguros, desenvolvendo produtos digitais que 
+            conectam necessidades dos usuários com objetivos de negócio. Minha abordagem combina pesquisa 
+            de usuário, design thinking e implementação técnica para entregar experiências excepcionais.
+          </p>
+        </section>
+
+        {/* Key Skills */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">
+            Competências Principais
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div>
+              <h3 className="font-semibold text-gray-800 mb-2">Design & Prototipagem</h3>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Figma & Adobe Creative Suite</li>
+                <li>• Design Systems & Style guides</li>
+                <li>• Prototipagem interativa</li>
+                <li>• Wireframing & mockups</li>
+                <li>• Design responsivo</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-800 mb-2">Pesquisa & Estratégia UX</h3>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• User research & personas</li>
+                <li>• Testes de usabilidade</li>
+                <li>• Journey mapping</li>
+                <li>• Análise de dados & métricas</li>
+                <li>• A/B testing</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-800 mb-2">Desenvolvimento Frontend</h3>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• HTML5, CSS3, JavaScript</li>
+                <li>• React & frameworks modernos</li>
+                <li>• Bootstrap & Tailwind CSS</li>
+                <li>• Ruby on Rails</li>
+                <li>• Git & controle de versão</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Experience */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">
+            Experiência Profissional
+          </h2>
+          
+          <div className="space-y-6">
+            <div className="border-l-4 border-blue-600 pl-4">
+              <div className="flex justify-between items-start mb-2">
+                <div>
+                  <h3 className="font-semibold text-gray-800">Product Designer</h3>
+                  <p className="text-blue-600">Tech Mahindra (Remote)</p>
+                </div>
+                <span className="text-sm text-gray-500">2024 - Presente</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Linkedin size={20} className="text-red-400" />
-                <a 
-                  href="https://www.linkedin.com/in/reinaldolluiz/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-red-400 hover:text-red-500 font-semibold underline"
-                >
-                  linkedin.com/in/reinaldolluiz/
-                </a>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Lidero o design de produtos digitais para clientes globais</li>
+                <li>• Desenvolvimento de design systems escaláveis</li>
+                <li>• Colaboração com equipes multiculturais e multidisciplinares</li>
+                <li>• Implementação de metodologias ágeis de design</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-blue-600 pl-4">
+              <div className="flex justify-between items-start mb-2">
+                <div>
+                  <h3 className="font-semibold text-gray-800">UX/UI Designer</h3>
+                  <p className="text-blue-600">HDI Seguros</p>
+                </div>
+                <span className="text-sm text-gray-500">2023 - 2024</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Calendar size={20} className="text-red-400" />
-                <span className="text-gray-700 font-medium">{data.contact.experience}</span>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Redesign da plataforma digital de seguros</li>
+                <li>• Melhoria da experiência do usuário em 40%</li>
+                <li>• Implementação de testes A/B e análise de métricas</li>
+                <li>• Desenvolvimento de interface responsiva</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-blue-600 pl-4">
+              <div className="flex justify-between items-start mb-2">
+                <div>
+                  <h3 className="font-semibold text-gray-800">Senior UI/UX Designer</h3>
+                  <p className="text-blue-600">Kimberly-Clark</p>
+                </div>
+                <span className="text-sm text-gray-500">2020 - 2023</span>
+              </div>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Design de experiências digitais para marcas globais</li>
+                <li>• Criação de design system unificado para múltiplas marcas</li>
+                <li>• Liderança de projetos de transformação digital</li>
+                <li>• Mentoria de designers juniores da equipe</li>
+              </ul>
+            </div>
+
+            <div className="border-l-4 border-blue-600 pl-4">
+              <div className="flex justify-between items-start mb-2">
+                <div>
+                  <h3 className="font-semibold text-gray-800">UI/UX Designer</h3>
+                  <p className="text-blue-600">Santander</p>
+                </div>
+                <span className="text-sm text-gray-500">2018 - 2020</span>
+              </div>
+              <ul className="text-sm text-gray-600 space-y-1">
+                <li>• Design de interfaces para aplicações bancárias</li>
+                <li>• Foco em usabilidade e segurança</li>
+                <li>• Colaboração com equipes de desenvolvimento ágil</li>
+                <li>• Testes de usabilidade com usuários reais</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* Education */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">
+            Formação
+          </h2>
+          <div className="space-y-4">
+            <div className="border-l-4 border-blue-600 pl-4">
+              <div className="flex justify-between items-start">
+                <div>
+                  <h3 className="font-semibold text-gray-800">Bacharelado em Design</h3>
+                  <p className="text-blue-600">Universidade Anhembi Morumbi</p>
+                </div>
+                <span className="text-sm text-gray-500">2014 - 2018</span>
               </div>
             </div>
           </div>
-          
-          <div className="bg-slate-50 p-8 transform -rotate-1 border border-gray-200 mb-8 rounded-lg">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 transform rotate-1 inline-block">
-              {data.personalInfo.aboutTitle}
-            </h3>
-            <p className="text-gray-700 leading-relaxed text-lg">
-              {data.personalInfo.aboutText}
-            </p>
-          </div>
-        </div>
+        </section>
 
-        {/* Experience */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 transform -rotate-1 inline-block">
-            {data.sections.experience}
+        {/* Languages */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-600 pb-2">
+            Idiomas
           </h2>
-          <div className="space-y-8">
-            {data.jobs.map((job, index) => (
-              <div key={index} className={`p-6 transform ${index % 2 === 0 ? '-rotate-1 bg-amber-50' : 'rotate-1 bg-emerald-50'} border border-gray-200 rounded-lg`}>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{job.title}</h3>
-                <p className="text-red-400 font-semibold mb-2">{job.company}</p>
-                <ul className="text-gray-700 space-y-1">
-                  {job.tasks.map((task, taskIndex) => (
-                    <li key={taskIndex}>{task}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="grid md:grid-cols-3 gap-4">
+            <div className="text-center">
+              <h3 className="font-semibold text-gray-800">Português</h3>
+              <p className="text-sm text-gray-600">Nativo</p>
+            </div>
+            <div className="text-center">
+              <h3 className="font-semibold text-gray-800">Inglês</h3>
+              <p className="text-sm text-gray-600">Avançado</p>
+            </div>
+            <div className="text-center">
+              <h3 className="font-semibold text-gray-800">Espanhol</h3>
+              <p className="text-sm text-gray-600">Intermediário</p>
+            </div>
           </div>
-        </div>
-
-        {/* Education */}
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 transform rotate-1 inline-block">
-            {data.sections.education}
-          </h2>
-          <div className="space-y-6">
-            {data.education.map((edu, index) => (
-              <div key={index} className={`p-6 transform ${index % 2 === 0 ? '-rotate-1 bg-rose-50' : 'rotate-1 bg-indigo-50'} border border-gray-200 rounded-lg`}>
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{edu.degree}</h3>
-                <p className="text-red-400 font-semibold mb-3">{edu.institution}</p>
-                <ul className="text-gray-700 space-y-1">
-                  {edu.details.map((detail, detailIndex) => (
-                    <li key={detailIndex}>{detail}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Skills */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 transform -rotate-1 inline-block">
-            {data.sections.skills}
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {data.skillsCategories.map((category, index) => (
-              <div key={index} className={`p-4 transform ${index % 3 === 0 ? 'rotate-1 bg-purple-50' : index % 3 === 1 ? '-rotate-1 bg-teal-50' : 'rotate-1 bg-orange-50'} border border-gray-200 rounded-lg`}>
-                <h3 className="font-bold text-gray-800 mb-2">{category.title}</h3>
-                <p className="text-gray-700 text-sm">{category.skills}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        </section>
       </div>
-    );
-  };
-
-  return (
-    <div className="min-h-screen bg-white">
-      <Navigation />
-      <div className="pt-20">
-        <Tabs defaultValue="en" className="w-full">
-          <TabsContent value="en">
-            {renderResumeContent('en')}
-          </TabsContent>
-          
-          <TabsContent value="es">
-            {renderResumeContent('es')}
-          </TabsContent>
-          
-          <TabsContent value="pt">
-            {renderResumeContent('pt')}
-          </TabsContent>
-        </Tabs>
-      </div>
-      <Footer />
     </div>
   );
 };
