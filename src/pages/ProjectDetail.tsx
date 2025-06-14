@@ -1,3 +1,4 @@
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -256,41 +257,52 @@ const ProjectDetail = () => {
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               {project.id === 2 ? (
-                // Grid layout for project 2 with background images
+                // Grid layout for project 2 with 4 equal images
                 <div className="w-full h-[600px]">
-                  <div className="grid grid-cols-2 gap-6 h-full">
-                    {/* Left section - top part of the image */}
+                  <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
+                    {/* Top left */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '50% 0%',
+                        backgroundPosition: '25% 25%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
                     
-                    {/* Right section - middle and bottom parts */}
-                    <div className="grid grid-rows-2 gap-6 h-full">
-                      <div 
-                        className="h-full rounded-lg shadow-lg"
-                        style={{
-                          backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
-                          backgroundSize: 'cover',
-                          backgroundPosition: '50% 50%',
-                          backgroundRepeat: 'no-repeat'
-                        }}
-                      />
-                      <div 
-                        className="h-full rounded-lg shadow-lg"
-                        style={{
-                          backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
-                          backgroundSize: 'cover',
-                          backgroundPosition: '50% 100%',
-                          backgroundRepeat: 'no-repeat'
-                        }}
-                      />
-                    </div>
+                    {/* Top right */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg"
+                      style={{
+                        backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: '75% 25%',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    
+                    {/* Bottom left */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg"
+                      style={{
+                        backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: '25% 75%',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    
+                    {/* Bottom right */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg"
+                      style={{
+                        backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: '75% 75%',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
                   </div>
                 </div>
               ) : (
