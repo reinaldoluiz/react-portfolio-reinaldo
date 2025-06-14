@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -101,14 +100,15 @@ const ProjectDetail = () => {
             </div>
           </div>
 
-          {/* Project Image - Using uploaded image */}
+          {/* Project Image - Improved quality display */}
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
-              <div className="w-full max-w-2xl mx-auto h-96 overflow-hidden rounded-lg">
+              <div className="w-full max-w-4xl mx-auto">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-auto object-cover object-top rounded-lg shadow-lg"
+                  style={{ imageRendering: 'high-quality' }}
                 />
               </div>
             </div>
