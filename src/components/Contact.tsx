@@ -1,5 +1,30 @@
 
+import { useState } from 'react';
+
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const subject = "Design Project Inquiry";
+    const body = `Hi Reinaldo,%0D%0A%0D%0AI'm ${formData.name} and I'm interested in discussing a design project with you.%0D%0A%0D%0AProject details:%0D%0A${encodeURIComponent(formData.message)}%0D%0A%0D%0ABest regards,%0D%0A${formData.name}%0D%0A${formData.email}`;
+    
+    window.location.href = `mailto:reinaldo@email.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+  };
+
   return (
     <section className="py-32 bg-gradient-to-br from-orange-50 to-pink-50 relative overflow-hidden">
       {/* Decorative sketchy elements */}
@@ -39,24 +64,53 @@ const Contact = () => {
             <div>
               <div className="bg-white p-8 transform rotate-1 border-2 border-gray-300 shadow-lg">
                 <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
-                  Ready to Connect?
+                  Send a Message!
                 </h3>
-                <div className="text-center">
-                  <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                    Click the button below to send me an email directly through your preferred email client!
-                  </p>
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <div>
+                    <input 
+                      type="text"
+                      name="name"
+                      placeholder="Your Name" 
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      className="w-full p-4 border-2 border-gray-300 bg-gray-50 focus:bg-white focus:border-blue-400 focus:outline-none transition-colors transform -rotate-1 focus:rotate-0"
+                    />
+                  </div>
                   
-                  <a 
-                    href="mailto:reinaldo@email.com?subject=Design Project Inquiry&body=Hi Reinaldo,%0D%0A%0D%0AI'm interested in discussing a design project with you.%0D%0A%0D%0AProject details:%0D%0A%0D%0ABest regards,"
-                    className="inline-block w-full bg-red-400 hover:bg-red-500 text-white p-4 text-lg font-bold transform rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg text-center"
+                  <div>
+                    <input 
+                      type="email"
+                      name="email"
+                      placeholder="Your Email" 
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full p-4 border-2 border-gray-300 bg-gray-50 focus:bg-white focus:border-blue-400 focus:outline-none transition-colors transform rotate-1 focus:rotate-0"
+                    />
+                  </div>
+                  
+                  <div>
+                    <textarea 
+                      name="message"
+                      placeholder="Tell me about your project adventure..." 
+                      rows={4}
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      className="w-full p-4 border-2 border-gray-300 bg-gray-50 focus:bg-white focus:border-blue-400 focus:outline-none transition-colors resize-none transform -rotate-1 focus:rotate-0"
+                    />
+                  </div>
+                  
+                  <button 
+                    type="submit"
+                    className="w-full bg-red-400 hover:bg-red-500 text-white p-4 text-lg font-bold transform rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg"
                   >
                     📧 Send Email & Start the Journey!
-                  </a>
-                  
-                  <p className="text-sm text-gray-500 mt-4">
-                    This will open your default email app with a pre-filled message
-                  </p>
-                </div>
+                  </button>
+                </form>
+                
+                <p className="text-sm text-gray-500 mt-4 text-center">
+                  This will open your email client with the filled information
+                </p>
               </div>
             </div>
           </div>
