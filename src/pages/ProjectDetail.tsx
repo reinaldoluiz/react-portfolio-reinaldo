@@ -1,4 +1,5 @@
 
+
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -282,13 +283,13 @@ const ProjectDetail = () => {
                       }}
                     />
                     
-                    {/* Bottom left - focus on bottom left */}
+                    {/* Bottom left - focus on upper portion to avoid Takeaways text */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '0% 100%',
+                        backgroundPosition: '0% 30%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
@@ -386,3 +387,4 @@ const ProjectDetail = () => {
 };
 
 export default ProjectDetail;
+
