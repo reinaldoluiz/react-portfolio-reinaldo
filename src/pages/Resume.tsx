@@ -1,4 +1,3 @@
-
 import { Download, MapPin, Phone, Mail, Calendar, Linkedin } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -31,68 +30,78 @@ const Resume = () => {
           company: "Tech Mahindra, Remote, United States • Out 2021 - Jan 2025",
           tasks: [
             "• Cliente atendido: Kimberly-Clark",
-            "• Conduzi testes de usabilidade, garantindo acessibilidade e alinhamento dos objetivos dos stakeholders",
-            "• Colaborei com equipes multiculturais em projetos mundiais",
-            "• Desenvolvi e implementei sistemas de design seguindo critérios de melhoria e usabilidade",
-            "• Criei landing pages, sites de e-commerce e sistemas para produtos em toda América do Norte e Sul"
+            "• Como Product Designer na Kimberly-Clark, tive a oportunidade de trabalhar com uma gama diversificada de clientes e projetos. Minha experiência em design UX incluiu testes de usuário, garantindo acessibilidade, alinhamento de objetivos dos stakeholders e colaboração com equipes multiculturais em projetos mundiais.",
+            "• Em design UI, fui responsável por desenvolver e implementar sistemas de design que seguiam critérios de melhoria e usabilidade. Isso incluiu criação de novos sistemas de design, atualização de componentes e aplicação correta do BrandBook.",
+            "• Criei landing pages, sites de e-commerce e sistemas para produtos em toda América do Norte e Sul."
           ]
         },
         {
           title: "UX Lead",
           company: "HDI Insurance, São Paulo - Brasil • Jan 2021 - Dez 2021",
           tasks: [
-            "• Gerenciei projetos de agência mantendo identidade da marca e sistema de design",
-            "• Coordenei trabalho da equipe UX com business e desenvolvedores",
-            "• Criei ícones e componentes para manter consistência entre designers",
-            "• Colaborei com equipes de design e desenvolvimento para implementar sistemas funcionais"
+            "• Gerenciei projetos de agência mantendo identidade da marca e sistema de design. Responsável por coordenar trabalho da equipe UX com business e desenvolvedores.",
+            "• Criei ícones e componentes que designers de produto pudessem usar para manter consistência. Tenho experiência colaborando com equipes de design e desenvolvimento para implementar sistemas funcionais e user-friendly."
           ]
         },
         {
           title: "Product Designer",
           company: "Santander, São Paulo - Brasil • Jan 2021 - Dez 2021",
           tasks: [
-            "• Participei do processo UX end-to-end, incluindo análise de dados para insights de negócio",
-            "• Atualizei Sistema de Design, criando componentes e ícones",
-            "• Liderei projeto de redesign do app para melhorar jornada do usuário",
-            "• Participei ativamente de reuniões de decisão com business e desenvolvimento"
+            "• Como Product Designer, participei do processo UX end-to-end. Isso incluiu análise de dados para gerar insights para inputs de negócio e melhoria da jornada do usuário.",
+            "• Atualizei o Sistema de Design, criando componentes, ícones e garantindo handoff suave para entrega do layout final. Participei ativamente de reuniões de decisão com equipes de business e desenvolvimento.",
+            "• Liderei projeto de redesign do app para melhorar jornada do usuário, considerando recomendações e requisitos de business e desenvolvimento."
           ]
         },
         {
           title: "Product Designer",
           company: "Deloitte, Brasil • Mar 2020 - Dez 2020",
           tasks: [
-            "• Produzi conceitos funcionais e conceituais em colaboração com POs e usuários finais",
-            "• Traduzi conceitos em protótipos funcionais priorizados no desenvolvimento",
-            "• Documentei User Stories, coletando requisitos e criando personas",
-            "• Trabalhei com Salesforce, Vlocity Omniscript e LWC para clientes como Claro e Caixa Seguradora"
+            "• Como UX/UI na Deloitte, fui responsável por produzir conceitos funcionais e conceituais em colaboração com POs, usuários finais e profissionais de treinamento, traduzindo-os em prototipos funcionais priorizados no desenvolvimento.",
+            "• Ajudei a documentar User Stories, incluindo coleta de requisitos e criação de personas de usuário. Acompanhei projetos do desenvolvimento até publicação em produção.",
+            "• Trabalhei com Salesforce, Vlocity Omniscript e LWC como soluções, ajudando empresas como Claro e Caixa Seguradora."
           ]
         },
         {
           title: "UX/UI Designer & Front-end Developer",
           company: "Finnet, Brasil • Mar 2019 - Set 2020",
           tasks: [
-            "• Criei processos de design eficazes: fluxos UX, mapas de jornada, wireframes",
-            "• Dominei princípios de design responsivo para mobile e desktop",
-            "• Estabeleci padrões de design: guias de estilo UI, estratégias visuais e sistemas de design",
-            "• Garanti experiência consistente do usuário across plataformas Web, iOS e Android"
+            "• Como Product Designer, trouxe experiência extensa em UX, UI e desenvolvimento front-end. Meu conhecimento em design centrado no usuário, usabilidade, acessibilidade e metodologias de teste me permite criar processos de design eficazes.",
+            "• Em design UI, domino princípios de design responsivo para telas mobile e desktop. Estabeleci padrões de design como guias de estilo UI, estratégias visuais e sistemas de design para garantir experiência consistente."
           ]
         },
         {
           title: "UX/UI Designer & Front-end Developer",
           company: "Hortatech, Brasil • Set 2018 - Set 2019",
           tasks: [
-            "• Criei wireframes, conduzi testes de usuário, A/B testing e pesquisa de usuário",
-            "• Desenvolvi designs visualmente atraentes usando Adobe XD, Photoshop e Illustrator",
-            "• Programei em JavaScript, HTML, CSS, Bootstrap com design responsivo",
-            "• Otimizei projetos web para proporcionar experiência de usuário excepcional"
+            "• Como desenvolvedor front-end e UX/UI, especializo-me em criar projetos web que proporcionam experiência incrível ao usuário. Com habilidades em design UX, construo wireframes, conduzo testes de usuário e A/B testing.",
+            "• Domino ferramentas de design UI como Adobe XD, Photoshop e Illustrator, permitindo desenvolver designs visualmente atraentes. Meu conhecimento em JavaScript, HTML, CSS, Bootstrap com design responsivo me permite otimizar projetos web para proporcionar experiência de usuário excepcional."
           ]
         }
       ],
-      education: {
-        degree: "Bacharelado em Design",
-        institution: "Universidade de São Paulo • 2016 - 2020",
-        focus: "Foco em Design Digital e Experiência do Usuário"
-      },
+      education: [
+        {
+          degree: "Mestrado em UX/UI Design",
+          institution: "ESDI • Abr 2025 - Abr 2026, Espanha",
+          details: [
+            "• Estudar metodologias e técnicas que permitem pesquisar, analisar e compreender necessidades dos usuários",
+            "• Encorajar pensamento crítico, criatividade e inovação",
+            "• Promover pensamento estratégico",
+            "• Utilizar ferramentas de ponta em UX/UI Design",
+            "• Aprender a projetar, prototipar e testar"
+          ]
+        },
+        {
+          degree: "Bacharelado em Design",
+          institution: "Mackenzie • Jan 2004 - Dez 2009, Brasil",
+          details: [
+            "• Design Studios: Trabalhar em projetos de design com orientação do corpo docente",
+            "• Workshops e Sessões de Desenvolvimento: Aprender habilidades técnicas e tendências da indústria",
+            "• Sessões de Crítica: Apresentar trabalhos para feedback e melhoria",
+            "• Pesquisa em Design: Conduzir estudos para informar decisões de design",
+            "• Projetos Colaborativos: Trabalhar juntos em desafios interdisciplinares"
+          ]
+        }
+      ],
       skillsCategories: [
         {
           title: "Design",
@@ -133,68 +142,78 @@ const Resume = () => {
           company: "Tech Mahindra, Remote, United States • Oct 2021 - Jan 2025",
           tasks: [
             "• Clients Served: Kimberly-Clark",
-            "• Conducted user testing, ensuring accessibility and aligning stakeholder goals",
-            "• Collaborated with multicultural teams on worldwide projects",
-            "• Developed and implemented design systems adhering to improvement and usability criteria",
-            "• Designed landing pages, e-commerce sites, and systems for products throughout North and South America"
+            "• As a Product Designer at Kimberly-Clark, I had the opportunity to work with a diverse range of clients and projects. My experience in UX design included conducting user testing, ensuring accessibility, aligning stakeholder goals, and collaborating with multicultural teams on worldwide projects.",
+            "• In terms of UI design, I was responsible for developing and implementing design systems that adhered to the criteria of improvement and usability for both users and the development team. This included creating new design systems, updating components, and applying the BrandBook correctly.",
+            "• I also designed landing pages, e-commerce sites, and systems for all of the company's products throughout North and South America."
           ]
         },
         {
           title: "UX Lead",
           company: "HDI Insurance, São Paulo - Brazil • Jan 2021 - Dec 2021",
           tasks: [
-            "• Managed project agency management while adhering to brand identity and design system",
-            "• Coordinated UX team's work with business and developers",
-            "• Created icons and components for product designers to maintain consistency",
-            "• Collaborated closely with designers and development teams to implement functional design systems"
+            "• Managing project agency management while adhering to brand identity and design system. Responsible for coordinating the UX team's work with the business and developers.",
+            "• I enjoy creating icons and components that product designers can use to maintain consistency and have experience collaborating closely with designers and development teams to implement design systems that are both user-friendly and functional."
           ]
         },
         {
           title: "Product Designer",
           company: "Santander, São Paulo - Brazil • Jan 2021 - Dec 2021",
           tasks: [
-            "• Involved in end-to-end UX process, including data analysis for business insights",
-            "• Updated Design System, creating components and icons",
-            "• Led app redesign project to improve user journey",
-            "• Actively participated in decision-making meetings with business and development teams"
+            "• As a Product Designer, I was involved in the end-to-end UX process. This included data analysis to generate insights for business inputs and user journey enhancement.",
+            "• I updated the Design System, creating components, icons, and ensuring a smooth handoff for the final layout delivery. I actively participated in decision-making meetings with the business and development teams.",
+            "• One of my notable achievements was leading a redesign project for the app to improve the user journey. During this process, I considered business and development recommendations and requirements."
           ]
         },
         {
           title: "Product Designer",
           company: "Deloitte, Brazil • Mar 2020 - Dec 2020",
           tasks: [
-            "• Produced functional and conceptual concepts with POs, end-users, and training professionals",
-            "• Translated concepts into functional prototypes prioritized in development",
-            "• Documented User Stories, gathering requirements and creating user personas",
-            "• Worked with Salesforce, Vlocity Omniscript, and LWC for clients like Claro and Caixa Seguradora"
+            "• As a UX/UI at Deloitte, I was responsible for producing functional and conceptual concepts in collaboration with product owners (POs), end-users, and training professionals, which were then translated into functional prototypes and prioritized in the development aftermath.",
+            "• I also helped to document User Stories, which included gathering requirements and creating user personas. I tracked the project from development through production publishing, ensuring that the final result met design standards.",
+            "• I've worked with Salesforce, Vlocity Omniscript, and LWC as solutions, and I've helped companies like Claro and Caixa Seguradora."
           ]
         },
         {
           title: "UX/UI Designer & Front-end Developer",
           company: "Finnet, Brazil • Mar 2019 - Sep 2020",
           tasks: [
-            "• Created effective design processes: UX flows, user journey maps, wireframes",
-            "• Mastered responsive design principles for mobile and desktop screens",
-            "• Established design standards: UI style guides, visual strategies, and design systems",
-            "• Ensured consistent user experience across Web, iOS, and Android platforms"
+            "• As a Product Designer, I bring to the team extensive experience in UX, UI, and front-end development. My knowledge of user-centered design, usability, accessibility, and testing methodologies allows me to create effective design processes such as UX flows, user journey maps, wireframes, and research ideation and testing.",
+            "• In terms of UI design, I am well-versed in responsive design principles and am capable of designing for both mobile and desktop screens. I am able to establish design standards such as UI style guides, visual strategies, and design systems. This guarantees that all products generated follow consistent design standards and deliver a consistent user experience across platforms."
           ]
         },
         {
           title: "UX/UI Designer & Front-end Developer",
           company: "Hortatech, Brazil • Sep 2018 - Sep 2019",
           tasks: [
-            "• Created wireframes, conducted user testing, A/B testing, and user research",
-            "• Developed visually attractive designs using Adobe XD, Photoshop, and Illustrator",
-            "• Programmed in JavaScript, HTML, CSS, Bootstrap with responsive design",
-            "• Optimized web projects to provide amazing user experience"
+            "• As a front-end and UX/UI developer, I specialize in creating web projects that provide an amazing user experience. With my UX design talents, I can construct wireframes, do user testing and A/B testing, and conduct user research to better understand user demands.",
+            "• I am well-versed in UI design technologies such as Adobe XD, Photoshop, and Illustrator, allowing me to develop visually attractive designs that are consistent with the brand's visual identity. My knowledge of front-end programming languages such as JavaScript, HTML, CSS, Bootstrap, and responsive design concepts enables me to bring my designs to life and optimize them."
           ]
         }
       ],
-      education: {
-        degree: "Bachelor in Design",
-        institution: "University of São Paulo • 2016 - 2020",
-        focus: "Focus on Digital Design and User Experience"
-      },
+      education: [
+        {
+          degree: "Master in UX/UI Design",
+          institution: "ESDI • Apr 2025 - Apr 2026, Spain",
+          details: [
+            "• Study methodologies and techniques that allow us to research, analyse, and understand users' needs",
+            "• Encourage critical thinking, creativity, and innovation",
+            "• Promote strategic thinking",
+            "• Utilise cutting-edge tools in UX/UI Design",
+            "• Learn to design, prototype, and test"
+          ]
+        },
+        {
+          degree: "Bachelor in Design",
+          institution: "Mackenzie • Jan 2004 - Dec 2009, Brazil",
+          details: [
+            "• Design Studios: Working on design projects with guidance from faculty",
+            "• Workshops and Skill-building Sessions: Learning technical skills and industry trends",
+            "• Critique Sessions: Presenting work for feedback and improvement",
+            "• Design Research: Conducting studies to inform design decisions",
+            "• Collaborative Projects: Working together on interdisciplinary challenges"
+          ]
+        }
+      ],
       skillsCategories: [
         {
           title: "Design",
@@ -235,68 +254,78 @@ const Resume = () => {
           company: "Tech Mahindra, Remote, United States • Oct 2021 - Ene 2025",
           tasks: [
             "• Clientes atendidos: Kimberly-Clark",
-            "• Realicé pruebas de usuario, garantizando accesibilidad y alineación de objetivos",
-            "• Colaboré con equipos multiculturales en proyectos mundiales",
-            "• Desarrollé e implementé sistemas de diseño siguiendo criterios de mejora y usabilidad",
-            "• Diseñé landing pages, sitios de e-commerce y sistemas para productos en Norte y Sudamérica"
+            "• Como Product Designer en Kimberly-Clark, tuve la oportunidad de trabajar con una gama diversa de clientes y proyectos. Mi experiencia en diseño UX incluyó pruebas de usuario, garantizar accesibilidad, alinear objetivos de stakeholders y colaborar con equipos multiculturales en proyectos mundiales.",
+            "• En términos de diseño UI, fui responsable de desarrollar e implementar sistemas de diseño que siguieran criterios de mejora y usabilidad. Esto incluyó crear nuevos sistemas de diseño, actualizar componentes y aplicar correctamente el BrandBook.",
+            "• También diseñé landing pages, sitios de e-commerce y sistemas para todos los productos de la compañía en Norte y Sudamérica."
           ]
         },
         {
           title: "UX Lead",
           company: "HDI Insurance, São Paulo - Brasil • Ene 2021 - Dic 2021",
           tasks: [
-            "• Gestioné proyectos de agencia manteniendo identidad de marca y sistema de diseño",
-            "• Coordiné trabajo del equipo UX con business y desarrolladores",
-            "• Creé íconos y componentes para mantener consistencia entre diseñadores",
-            "• Colaboré estrechamente con equipos de diseño y desarrollo para implementar sistemas funcionales"
+            "• Gestioné proyectos de agencia manteniendo identidad de marca y sistema de diseño. Responsable de coordinar el trabajo del equipo UX con business y desarrolladores.",
+            "• Disfruto crear íconos y componentes que los diseñadores de producto puedan usar para mantener consistencia y tengo experiencia colaborando estrechamente con equipos de diseño y desarrollo para implementar sistemas user-friendly y funcionales."
           ]
         },
         {
           title: "Product Designer",
           company: "Santander, São Paulo - Brasil • Ene 2021 - Dic 2021",
           tasks: [
-            "• Participé en proceso UX end-to-end, incluyendo análisis de datos para insights de negocio",
-            "• Actualicé Sistema de Diseño, creando componentes e íconos",
-            "• Lideré proyecto de rediseño de app para mejorar journey del usuario",
-            "• Participé activamente en reuniones de decisión con business y desarrollo"
+            "• Como Product Designer, participé en el proceso UX end-to-end. Esto incluyó análisis de datos para generar insights para inputs de negocio y mejora del journey del usuario.",
+            "• Actualicé el Sistema de Diseño, creando componentes, íconos y asegurando handoff suave para entrega del layout final. Participé activamente en reuniones de decisión con equipos de business y desarrollo.",
+            "• Uno de mis logros notables fue liderar un proyecto de rediseño de la app para mejorar el journey del usuario, considerando recomendaciones y requisitos de business y desarrollo."
           ]
         },
         {
           title: "Product Designer",
           company: "Deloitte, Brasil • Mar 2020 - Dic 2020",
           tasks: [
-            "• Produje conceptos funcionales y conceptuales con POs, usuarios finales y profesionales",
-            "• Traduje conceptos en prototipos funcionales priorizados en desarrollo",
-            "• Documenté User Stories, recopilando requisitos y creando personas",
-            "• Trabajé con Salesforce, Vlocity Omniscript y LWC para clientes como Claro y Caixa Seguradora"
+            "• Como UX/UI en Deloitte, fui responsable de producir conceptos funcionales y conceptuales en colaboración con POs, usuarios finales y profesionales de entrenamiento, traduciéndolos en prototipos funcionales priorizados en el desarrollo.",
+            "• También ayudé a documentar User Stories, incluyendo recopilación de requisitos y creación de personas de usuario. Seguí proyectos desde desarrollo hasta publicación en producción.",
+            "• Trabajé con Salesforce, Vlocity Omniscript y LWC como soluciones, ayudando a empresas como Claro y Caixa Seguradora."
           ]
         },
         {
           title: "UX/UI Designer & Front-end Developer",
           company: "Finnet, Brasil • Mar 2019 - Sep 2020",
           tasks: [
-            "• Creé procesos de diseño efectivos: flujos UX, mapas de journey, wireframes",
-            "• Dominé principios de diseño responsivo para pantallas móviles y desktop",
-            "• Establecí estándares de diseño: guías de estilo UI, estrategias visuales y sistemas de diseño",
-            "• Aseguré experiencia consistente del usuario across plataformas Web, iOS y Android"
+            "• Como Product Designer, aporto al equipo experiencia extensa en UX, UI y desarrollo front-end. Mi conocimiento en diseño centrado en el usuario, usabilidad, accesibilidad y metodologías de testing me permite crear procesos de diseño efectivos.",
+            "• En términos de diseño UI, domino principios de diseño responsivo para pantallas móviles y desktop. Puedo establecer estándares de diseño como guías de estilo UI, estrategias visuales y sistemas de diseño para garantizar experiencia consistente."
           ]
         },
         {
           title: "UX/UI Designer & Front-end Developer",
           company: "Hortatech, Brasil • Sep 2018 - Sep 2019",
           tasks: [
-            "• Creé wireframes, realicé pruebas de usuario, A/B testing e investigación de usuario",
-            "• Desarrollé diseños visualmente atractivos usando Adobe XD, Photoshop e Illustrator",
-            "• Programé en JavaScript, HTML, CSS, Bootstrap con diseño responsivo",
-            "• Optimicé proyectos web para proporcionar experiencia de usuario excepcional"
+            "• Como desarrollador front-end y UX/UI, me especializo en crear proyectos web que proporcionan experiencia increíble al usuario. Con mis habilidades en diseño UX, puedo construir wireframes, hacer pruebas de usuario y A/B testing.",
+            "• Domino tecnologías de diseño UI como Adobe XD, Photoshop e Illustrator, permitiéndome desarrollar diseños visualmente atractivos. Mi conocimiento en JavaScript, HTML, CSS, Bootstrap y conceptos de diseño responsivo me habilita para optimizar proyectos."
           ]
         }
       ],
-      education: {
-        degree: "Licenciatura en Diseño",
-        institution: "Universidad de São Paulo • 2016 - 2020",
-        focus: "Enfoque en Diseño Digital y Experiencia de Usuario"
-      },
+      education: [
+        {
+          degree: "Maestría en UX/UI Design",
+          institution: "ESDI • Abr 2025 - Abr 2026, España",
+          details: [
+            "• Estudiar metodologías y técnicas que nos permiten investigar, analizar y comprender necesidades de usuarios",
+            "• Fomentar pensamiento crítico, creatividad e innovación",
+            "• Promover pensamiento estratégico",
+            "• Utilizar herramientas de vanguardia en UX/UI Design",
+            "• Aprender a diseñar, prototipar y testear"
+          ]
+        },
+        {
+          degree: "Licenciatura en Diseño",
+          institution: "Mackenzie • Ene 2004 - Dic 2009, Brasil",
+          details: [
+            "• Design Studios: Trabajar en proyectos de diseño con orientación del cuerpo docente",
+            "• Workshops y Sesiones de Desarrollo: Aprender habilidades técnicas y tendencias de la industria",
+            "• Sesiones de Crítica: Presentar trabajos para feedback y mejora",
+            "• Investigación en Diseño: Conducir estudios para informar decisiones de diseño",
+            "• Proyectos Colaborativos: Trabajar juntos en desafíos interdisciplinarios"
+          ]
+        }
+      ],
       skillsCategories: [
         {
           title: "Diseño",
@@ -432,10 +461,18 @@ const Resume = () => {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 transform rotate-1 inline-block">
             {data.sections.education}
           </h2>
-          <div className="bg-rose-50 p-6 transform -rotate-1 border border-gray-200 rounded-lg">
-            <h3 className="text-xl font-bold text-gray-800 mb-2">{data.education.degree}</h3>
-            <p className="text-red-400 font-semibold mb-2">{data.education.institution}</p>
-            <p className="text-gray-700">{data.education.focus}</p>
+          <div className="space-y-6">
+            {data.education.map((edu, index) => (
+              <div key={index} className={`p-6 transform ${index % 2 === 0 ? '-rotate-1 bg-rose-50' : 'rotate-1 bg-indigo-50'} border border-gray-200 rounded-lg`}>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">{edu.degree}</h3>
+                <p className="text-red-400 font-semibold mb-3">{edu.institution}</p>
+                <ul className="text-gray-700 space-y-1">
+                  {edu.details.map((detail, detailIndex) => (
+                    <li key={detailIndex}>{detail}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
 
