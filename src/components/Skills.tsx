@@ -2,20 +2,20 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Design Tools",
-      skills: ["Figma", "Adobe Creative Suite", "Sketch", "Principle"],
+      title: "Design & Prototyping",
+      skills: ["Figma", "Adobe Creative Suite", "Sketch", "Design Systems", "Prototyping", "Wireframing"],
       illustration: "/lovable-uploads/45b28675-eb95-4a86-b3cc-3a79f03709d0.png",
       color: "bg-blue-100"
     },
     {
-      title: "Development", 
-      skills: ["HTML/CSS", "JavaScript", "React", "Tailwind CSS"],
+      title: "Frontend Development", 
+      skills: ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "Ruby on Rails"],
       illustration: "/lovable-uploads/6fc5ff19-a59d-4426-967e-0a1990aa3c84.png",
       color: "bg-green-100"
     },
     {
-      title: "UX Methods",
-      skills: ["User Research", "Usability Testing", "Information Architecture", "Design Systems"],
+      title: "UX Research & Testing",
+      skills: ["User Research", "Usability Testing", "A/B Testing", "Analytics", "User Journey Mapping", "Personas"],
       illustration: "/lovable-uploads/f9e35747-07b9-409a-8404-387cce1846a7.png",
       color: "bg-yellow-100"
     }
@@ -35,7 +35,7 @@ const Skills = () => {
             </h2>
             <div className="w-32 h-1 bg-green-400 mx-auto mt-4 transform rotate-2"></div>
             <p className="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
-              Every explorer needs the right gear! Here's what I pack for my design adventures.
+              8+ years of experience with cutting-edge tools and methodologies to create exceptional digital experiences.
             </p>
           </div>
           
@@ -64,14 +64,14 @@ const Skills = () => {
             ))}
           </div>
           
-          {/* Fun fact */}
+          {/* Experience highlight */}
           <div className="text-center mt-16">
             <div className="bg-pink-100 p-6 transform rotate-1 border-2 border-gray-300 inline-block max-w-md">
               <p className="text-lg font-semibold text-gray-800 mb-2">
-                🎒 Fun Fact!
+                🌟 Global Experience!
               </p>
               <p className="text-gray-700">
-                I always keep learning new tools and techniques - a designer's backpack is never fully packed!
+                Worked with multinational teams across America, Europe, and managed projects for companies like Tech Mahindra, Santander, and Deloitte.
               </p>
             </div>
           </div>

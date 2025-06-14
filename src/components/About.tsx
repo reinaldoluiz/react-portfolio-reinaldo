@@ -1,5 +1,4 @@
 
-
 const About = () => {
   return (
     <section className="py-32 bg-white relative overflow-hidden">
@@ -21,12 +20,14 @@ const About = () => {
             <div>
               <div className="bg-blue-50 p-8 transform -rotate-1 border-2 border-gray-300">
                 <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                  Just like preparing for a hiking adventure, I believe great UX design requires careful planning, 
-                  understanding the terrain (user needs), and having the right tools for the journey.
+                  I'm Reinaldo, a Brazilian designer currently in Barcelona, Spain, pursuing a Master's degree in UX Design. 
+                  With over 8 years of experience, I've worked with global companies like Kimberly-Clark, Santander, and Deloitte, 
+                  creating digital solutions that bridge user needs with business goals.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  With 5+ years of experience, I've guided countless digital expeditions, helping users navigate 
-                  complex interfaces and reach their goals with confidence and joy.
+                  My journey combines technical expertise in frontend development with deep UX research skills, 
+                  allowing me to create comprehensive design systems and user experiences that work seamlessly 
+                  across platforms and cultures.
                 </p>
               </div>
             </div>
@@ -49,28 +50,28 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-yellow-100 p-6 transform rotate-1 border-2 border-gray-300">
               <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
-                🔍 Research & Discovery
+                🔍 Research & Strategy
               </h3>
               <p className="text-gray-600">
-                Like scouting the best trail, I dive deep into user research to understand the journey ahead.
+                User research, usability testing, and data analysis to uncover insights that drive design decisions and business outcomes.
               </p>
             </div>
             
             <div className="bg-green-100 p-6 transform -rotate-1 border-2 border-gray-300">
               <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
-                🎨 Design & Prototyping
+                🎨 Design Systems & UI
               </h3>
               <p className="text-gray-600">
-                Sketching the path forward with wireframes, prototypes, and beautiful interfaces.
+                Creating cohesive design systems, prototypes, and interfaces using Figma, Adobe Creative Suite, and modern design tools.
               </p>
             </div>
             
             <div className="bg-orange-100 p-6 transform rotate-1 border-2 border-gray-300">
               <h3 className="text-xl font-bold mb-3 text-gray-800 flex items-center">
-                🚀 Testing & Iteration
+                🚀 Frontend Development
               </h3>
               <p className="text-gray-600">
-                Every good explorer tests their route and adjusts based on what they discover.
+                Bringing designs to life with HTML5, CSS3, JavaScript, React, and modern frontend technologies for seamless implementation.
               </p>
             </div>
           </div>
@@ -81,4 +82,3 @@ const About = () => {
 };
 
 export default About;
-

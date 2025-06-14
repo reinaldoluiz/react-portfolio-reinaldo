@@ -2,28 +2,28 @@
 const Projects = () => {
   const projects = [
     {
-      title: "EcoCommerce App",
-      description: "A sustainable shopping platform that helps users discover eco-friendly products with an intuitive map-like navigation system.",
-      year: "2024",
+      title: "Kimberly-Clark Global Products",
+      description: "Led UX/UI design for global product lines across North and South America, creating design systems and e-commerce platforms that serve millions of users worldwide.",
+      year: "2021-2025",
       image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
       color: "bg-green-100",
-      tools: ["Figma", "User Research", "Prototyping"]
+      tools: ["Figma", "Design Systems", "User Testing", "Accessibility"]
     },
     {
-      title: "FinTech Dashboard", 
-      description: "A comprehensive financial dashboard for investment tracking - like having a compass for your financial journey.",
-      year: "2024",
+      title: "Santander Banking App Redesign", 
+      description: "End-to-end UX process redesign of mobile banking application, improving user journey and updating design system components for better usability.",
+      year: "2021",
       image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
       color: "bg-blue-100",
-      tools: ["Adobe XD", "Data Visualization", "Usability Testing"]
+      tools: ["User Research", "Data Analysis", "Prototyping", "Design Systems"]
     },
     {
-      title: "Learning Platform",
-      description: "An educational platform connecting students and instructors - mapping out learning adventures for every user.",
-      year: "2023", 
+      title: "HDI Insurance Digital Platform",
+      description: "Led UX team coordination with business and development teams, maintaining brand identity while creating user-friendly insurance products and services.",
+      year: "2021", 
       image: "/lovable-uploads/898d43f4-a54b-415e-8512-7d437380d908.png",
       color: "bg-yellow-100",
-      tools: ["Sketch", "Information Architecture", "User Flows"]
+      tools: ["Team Leadership", "Brand Identity", "Component Design", "Cross-functional Collaboration"]
     }
   ];
 
@@ -37,11 +37,11 @@ const Projects = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 transform rotate-1 inline-block">
-              My Adventures
+              Featured Projects
             </h2>
             <div className="w-32 h-1 bg-blue-400 mx-auto mt-4 transform -rotate-1"></div>
             <p className="text-lg text-gray-600 mt-6 max-w-2xl mx-auto">
-              Each project is like a different expedition - unique challenges, discoveries, and destinations!
+              Real-world projects where I've collaborated with global teams to create impactful digital experiences!
             </p>
           </div>
           
