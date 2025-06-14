@@ -1,5 +1,6 @@
 
 import { ArrowDown } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const scrollToNext = () => {
@@ -36,9 +37,12 @@ const Hero = () => {
             +8 years crafting digital experiences from concept to production, helping teams create user-centered solutions worldwide.
           </p>
           
-          <button onClick={scrollToNext} className="bg-red-400 hover:bg-red-500 text-white px-8 py-4 text-lg font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg">
+          <Link 
+            to="/portfolio"
+            className="bg-red-400 hover:bg-red-500 text-white px-8 py-4 text-lg font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg inline-block"
+          >
             Let's Explore My Work! →
-          </button>
+          </Link>
         </div>
       </div>
       
