@@ -94,7 +94,7 @@ const Portfolio = () => {
 
           {/* Categories Tabs */}
           <Tabs defaultValue="Todos" className="w-full max-w-4xl mx-auto mb-16">
-            <TabsList className="grid w-full grid-cols-5 bg-gray-100">
+            <TabsList className="grid w-full grid-cols-5 bg-white">
               {categories.map((category) => (
                 <TabsTrigger 
                   key={category} 
