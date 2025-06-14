@@ -180,6 +180,31 @@ const Resume = () => {
             {data.title}
           </h1>
           <div className="w-32 h-1 bg-red-400 mx-auto transform rotate-1 mb-6"></div>
+          
+          {/* Language Tabs */}
+          <div className="mb-8">
+            <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 bg-transparent border-b border-gray-200 p-0 h-auto rounded-none">
+              <TabsTrigger 
+                value="pt" 
+                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
+              >
+                Português
+              </TabsTrigger>
+              <TabsTrigger 
+                value="en"
+                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
+              >
+                English
+              </TabsTrigger>
+              <TabsTrigger 
+                value="es"
+                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
+              >
+                Español
+              </TabsTrigger>
+            </TabsList>
+          </div>
+
           <button className="bg-red-400 hover:bg-red-500 text-white px-6 py-3 font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black shadow-lg flex items-center gap-2 mx-auto">
             <Download size={20} />
             {data.downloadText}
@@ -263,29 +288,6 @@ const Resume = () => {
       <Navigation />
       <div className="pt-20">
         <Tabs defaultValue="pt" className="w-full">
-          <div className="container mx-auto px-6 max-w-4xl mb-8">
-            <TabsList className="grid w-full max-w-lg mx-auto grid-cols-3 bg-transparent border-b border-gray-200 p-0 h-auto rounded-none">
-              <TabsTrigger 
-                value="pt" 
-                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
-              >
-                Português
-              </TabsTrigger>
-              <TabsTrigger 
-                value="en"
-                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
-              >
-                English
-              </TabsTrigger>
-              <TabsTrigger 
-                value="es"
-                className="text-sm font-semibold py-3 px-4 rounded-none border-b-2 border-transparent data-[state=active]:border-red-400 data-[state=active]:text-red-400 data-[state=active]:bg-transparent hover:text-red-300 transition-all duration-300"
-              >
-                Español
-              </TabsTrigger>
-            </TabsList>
-          </div>
-          
           <TabsContent value="pt">
             {renderResumeContent('pt')}
           </TabsContent>
