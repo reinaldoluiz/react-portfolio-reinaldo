@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -47,7 +46,7 @@ const ProjectDetail = () => {
       duration: "6 months",
       team: "2 Designers, 3 Developers, Product Manager",
       role: "Senior UX Designer",
-      image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
+      image: "/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png",
       color: "bg-blue-100",
       tools: ["Adobe XD", "Data Visualization", "Usability Testing", "Figma"],
       category: "Design System",
@@ -257,32 +256,34 @@ const ProjectDetail = () => {
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
               {project.id === 2 ? (
-                // Grid layout for project 2 with increased height
+                // Grid layout for project 2 with updated images from the Pull-Ups case study
                 <div className="w-full h-[500px]">
                   <div className="grid grid-cols-2 gap-4 h-full">
-                    {/* Single image on the left */}
+                    {/* Main case study overview on the left */}
                     <div className="h-full overflow-hidden rounded-lg">
                       <img 
-                        src={project.image} 
-                        alt={`${project.title} - Main view`}
-                        className="w-full h-full object-cover shadow-lg"
+                        src="/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png" 
+                        alt="Pull-Ups E-commerce - Complete Case Study Overview"
+                        className="w-full h-full object-cover object-top shadow-lg"
                       />
                     </div>
                     
-                    {/* Two images stacked on the right */}
+                    {/* Two detailed sections on the right */}
                     <div className="grid grid-rows-2 gap-4 h-full">
                       <div className="h-full overflow-hidden rounded-lg">
                         <img 
-                          src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=200&fit=crop"
-                          alt={`${project.title} - Detail view 1`}
-                          className="w-full h-full object-cover shadow-lg"
+                          src="/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png"
+                          alt="Pull-Ups E-commerce - Mobile and Desktop Design"
+                          className="w-full h-full object-cover object-center shadow-lg"
+                          style={{objectPosition: '50% 15%'}}
                         />
                       </div>
                       <div className="h-full overflow-hidden rounded-lg">
                         <img 
-                          src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=200&fit=crop"
-                          alt={`${project.title} - Detail view 2`}
-                          className="w-full h-full object-cover shadow-lg"
+                          src="/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png"
+                          alt="Pull-Ups E-commerce - Design Process and Solutions"
+                          className="w-full h-full object-cover object-bottom shadow-lg"
+                          style={{objectPosition: '50% 85%'}}
                         />
                       </div>
                     </div>
