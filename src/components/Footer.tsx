@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Eye, Users, Volume2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -59,6 +59,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/accessibility" className="text-gray-600 hover:text-gray-800 transition-colors">
+                  Acessibilidade
+                </Link>
+              </li>
+              <li>
                 <Link to="/#contact" className="text-gray-600 hover:text-gray-800 transition-colors">
                   Contact
                 </Link>
@@ -66,21 +71,29 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Accessibility Section */}
           <div>
-            <h4 className="font-semibold text-gray-800 mb-3">Contact</h4>
+            <h4 className="font-semibold text-gray-800 mb-3">Acessibilidade</h4>
             <div className="space-y-2 text-sm">
               <div className="flex items-center gap-2 text-gray-600">
-                <Mail size={16} />
-                <span>reinaldo@email.com</span>
+                <Eye size={16} />
+                <span>Design inclusivo</span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
-                <Phone size={16} />
-                <span>+55 (11) 99999-9999</span>
+                <Users size={16} />
+                <span>Para todos os usuários</span>
               </div>
               <div className="flex items-center gap-2 text-gray-600">
-                <MapPin size={16} />
-                <span>São Paulo, Brazil</span>
+                <Volume2 size={16} />
+                <span>Compatível com leitores</span>
+              </div>
+              <div className="mt-3">
+                <Link 
+                  to="/accessibility"
+                  className="text-blue-600 hover:text-blue-800 transition-colors font-medium"
+                >
+                  Ver Checkpoint →
+                </Link>
               </div>
             </div>
           </div>
