@@ -1,5 +1,3 @@
-
-
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -257,7 +255,7 @@ const ProjectDetail = () => {
           {/* Project Images Grid */}
           <div className="mb-16">
             <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
-              <div className="w-full max-w-4xl mx-auto h-96">
+              <div className="w-full h-96">
                 <div className="grid grid-cols-2 gap-4 h-full">
                   {/* Single image on the left */}
                   <div className="h-full overflow-hidden rounded-lg">
@@ -358,4 +356,3 @@ const ProjectDetail = () => {
 };
 
 export default ProjectDetail;
-
