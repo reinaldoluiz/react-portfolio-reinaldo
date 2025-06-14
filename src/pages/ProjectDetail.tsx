@@ -270,13 +270,13 @@ const ProjectDetail = () => {
                       }}
                     />
                     
-                    {/* Top right - focus on right side of image */}
+                    {/* Top right - moved down to hide computer */}
                     <div 
                       className="h-full rounded-lg shadow-lg"
                       style={{
                         backgroundImage: `url('/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png')`,
                         backgroundSize: 'cover',
-                        backgroundPosition: '100% 0%',
+                        backgroundPosition: '100% 80%',
                         backgroundRepeat: 'no-repeat'
                       }}
                     />
