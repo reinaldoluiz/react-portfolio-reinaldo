@@ -203,7 +203,7 @@ export const projects: Project[] = [
       duration: "4 months",
       team: "UX/UI Designer, 2 Developers, PM",
       role: "Lead UX/UI Designer",
-      image: "/lovable-uploads/f41b0b87-a058-4973-855d-d63e330c5fc4.png",
+      image: "/lovable-uploads/26081ceb-e762-402b-94bd-719e5737a1f8.png",
       color: "bg-yellow-100",
       tools: ["Figma", "Design Thinking", "User Research", "Prototyping"],
       categories: ["UI/UX Design", "E-commerce"],
