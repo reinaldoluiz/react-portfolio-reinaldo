@@ -8,16 +8,25 @@ interface Props {
   index: number;
 }
 
+const ensureAbsolute = (path?: string) => {
+  if (!path) return '';
+  if (path.startsWith('http') || path.startsWith('/')) {
+    return path;
+  }
+  return `/${path}`;
+};
+
 const PortfolioProjectCard = ({ project, index }: Props) => {
   const topAlignedProjectIds = [2, 3, 6, 7, 8, 10];
   const isTopAligned = topAlignedProjectIds.includes(project.id);
+  const imageUrl = ensureAbsolute(project.image);
 
   return (
     <div className="group">
       <div className={`${project.color} p-6 transform ${index % 2 === 0 ? 'rotate-2' : '-rotate-2'} group-hover:rotate-0 transition-all duration-300 border-2 border-gray-300 shadow-lg hover:shadow-xl`}>
         <div className="mb-4">
           <img 
-            src={project.image} 
+            src={imageUrl} 
             alt={project.title}
             className={`w-full h-48 object-cover mx-auto ${isTopAligned ? 'object-top' : ''}`}
           />

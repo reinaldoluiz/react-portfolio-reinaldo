@@ -1,5 +1,14 @@
+
 import { Link } from 'react-router-dom';
 import { projects } from '../data/projects';
+
+const ensureAbsolute = (path?: string) => {
+  if (!path) return '';
+  if (path.startsWith('http') || path.startsWith('/')) {
+    return path;
+  }
+  return `/${path}`;
+};
 
 const Projects = () => {
   const featuredProjects = projects.slice(0, 3);
@@ -28,7 +37,7 @@ const Projects = () => {
                 <div className={index % 2 === 1 ? "md:order-2" : ""}>
                   <div className={`${project.color} p-8 transform ${index % 2 === 0 ? 'rotate-2' : '-rotate-2'} border-2 border-gray-300`}>
                     <img 
-                      src={project.image} 
+                      src={ensureAbsolute(project.image)} 
                       alt={project.title}
                       className="w-full h-auto mx-auto"
                     />

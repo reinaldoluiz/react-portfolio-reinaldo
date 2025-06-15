@@ -10,20 +10,28 @@ interface ProjectImageGridProps {
   project: Project;
 }
 
+const ensureAbsolute = (path?: string): string => {
+  if (!path) return '';
+  if (path.startsWith('http') || path.startsWith('/')) {
+    return path;
+  }
+  return `/${path}`;
+};
+
 const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {
   const renderGrid = () => {
     // Project 1: Single image
     if (project.id === 1) {
-      return <SingleImageGrid image={project.image} title={project.title} />;
+      return <SingleImageGrid image={ensureAbsolute(project.image)} title={project.title} />;
     }
     // Projects with 4-image grid
     const fourImageGridProjects = [2, 3, 4, 6, 7, 8, 9, 10, 11];
     if (fourImageGridProjects.includes(project.id) && project.customImages) {
-      return <Project4Grid images={project.customImages} />;
+      return <Project4Grid images={project.customImages.map(ensureAbsolute)} />;
     }
     // Project 5: 3-image grid
     if (project.id === 5 && project.customImages) {
-      return <Project5Grid images={project.customImages} />;
+      return <Project5Grid images={project.customImages.map(ensureAbsolute)} />;
     }
     // Default: 4-image placeholder grid
     return <DefaultImageGrid />;
