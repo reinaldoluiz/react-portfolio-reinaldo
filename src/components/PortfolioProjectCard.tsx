@@ -15,7 +15,7 @@ const PortfolioProjectCard = ({ project, index }: Props) => (
         <img 
           src={project.image} 
           alt={project.title}
-          className="w-full h-auto mx-auto"
+          className="w-full h-48 object-cover mx-auto"
         />
       </div>
       <div className="mb-3">
