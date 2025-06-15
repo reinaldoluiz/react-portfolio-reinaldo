@@ -10,18 +10,23 @@ export const project9: Project = {
   duration: "Em andamento",
   team: "Eu e IA",
   role: "Designer e Desenvolvedor",
-  image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
+  image: "/lovable-uploads/dbb8d21d-ceeb-42e2-9d83-e203604a1363.png",
   color: "bg-purple-100",
   tools: ["Lovable AI", "React", "TypeScript", "TailwindCSS", "Figma"],
   categories: ["AI", "UI Design"],
   problem: "Criar um portfólio digital moderno e responsivo para apresentar meus projetos e habilidades, otimizando o tempo de desenvolvimento sem sacrificar a qualidade e a personalização.",
-  solution: "Utilizei uma ferramenta de desenvolvimento assistida por IA para gerar a estrutura inicial do site, as ilustrações e os componentes. Apliquei meus conhecimentos de front-end para refinar o design, corrigir bugs, e garantir uma experiência de usuário fluida e única.",
+  solution: "Utilizei uma ferramenta de desenvolvimento assistida por IA para gerar a estrutura inicial do site, as ilustrações e os componentes. Com conhecimentos de front-end, refinei o design e implementei funcionalidades-chave como a opção de currículo multi-idioma com impressão e as abas de categoria no portfólio, garantindo uma experiência de usuário fluida e única.",
   process: ["Definição de Requisitos", "Geração de Design com IA", "Desenvolvimento e Customização", "Criação de Conteúdo", "Deploy"],
-  results: ["Um portfólio pessoal totalmente funcional e responsivo.", "Redução significativa no tempo de desenvolvimento inicial.", "Experiência prática na colaboração Homem-IA em um projeto real."],
+  results: [
+    "Um portfólio pessoal totalmente funcional e responsivo.",
+    "Implementação de funcionalidades avançadas: CV multi-idioma, impressão de CV e filtros de categoria.", 
+    "Redução significativa no tempo de desenvolvimento inicial.", 
+    "Experiência prática na colaboração Homem-IA em um projeto real."
+  ],
   customImages: [
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&q=80",
-    "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&q=80",
-    "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80",
-    "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800&q=80"
+    "/lovable-uploads/dbb8d21d-ceeb-42e2-9d83-e203604a1363.png",
+    "/lovable-uploads/c8a0491b-2494-4973-a47e-d0d37373bd46.png",
+    "/lovable-uploads/ebf62d50-6335-45a1-b769-8f8fd14ed65c.png",
+    "/lovable-uploads/07efa419-f4d7-4428-a71c-8386f29f927b.png"
   ]
 };
