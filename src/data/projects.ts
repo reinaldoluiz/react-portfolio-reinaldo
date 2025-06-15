@@ -220,6 +220,12 @@ export const projects: Project[] = [
         "Successfully launched a new online sales channel",
         "Designed an intuitive and easy-to-use purchase flow",
         "Received positive feedback from both client and end-users"
+      ],
+      customImages: [
+        "/lovable-uploads/26081ceb-e762-402b-94bd-719e5737a1f8.png",
+        "/lovable-uploads/dcbfaf79-f5d0-4c2a-81b2-a9497dc3d8ee.png",
+        "/lovable-uploads/c1b5a856-4ddc-4ed2-8c64-f4a7f743e307.png",
+        "/lovable-uploads/543bffc6-6b51-45fa-966f-fb80546c0ff5.png"
       ]
     }
   ];

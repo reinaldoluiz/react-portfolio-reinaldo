@@ -1,3 +1,4 @@
+
 import React from 'react';
 import SingleImageGrid from './image-grids/SingleImageGrid';
 import Project2Grid from './image-grids/Project2Grid';
@@ -19,7 +20,7 @@ interface ProjectImageGridProps {
 const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {
   const renderGrid = () => {
     // Project 1: Single image
-    if (project.id === 1 || project.id === 6) {
+    if (project.id === 1) {
       return <SingleImageGrid image={project.image} title={project.title} />;
     }
     // Project 2: 4-image grid with fixed URLs
@@ -30,8 +31,8 @@ const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {
     if (project.id === 3) {
       return <Project3Grid />;
     }
-    // Project 4: 4-image grid with custom images
-    if (project.id === 4 && project.customImages) {
+    // Project 4 & 6: 4-image grid with custom images
+    if ((project.id === 4 || project.id === 6) && project.customImages) {
       return <Project4Grid images={project.customImages} />;
     }
     // Project 5: 4-image grid (2 images, 2 empty)
