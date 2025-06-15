@@ -1,8 +1,6 @@
 
 import React from 'react';
 import SingleImageGrid from './image-grids/SingleImageGrid';
-import Project2Grid from './image-grids/Project2Grid';
-import Project3Grid from './image-grids/Project3Grid';
 import Project4Grid from './image-grids/Project4Grid';
 import Project5Grid from './image-grids/Project5Grid';
 import DefaultImageGrid from './image-grids/DefaultImageGrid';
@@ -23,19 +21,11 @@ const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {
     if (project.id === 1) {
       return <SingleImageGrid image={project.image} title={project.title} />;
     }
-    // Project 2: 4-image grid with fixed URLs
-    if (project.id === 2) {
-      return <Project2Grid />;
-    }
-    // Project 3: 4-image grid with fixed URLs
-    if (project.id === 3) {
-      return <Project3Grid />;
-    }
-    // Project 4 & 6: 4-image grid with custom images
-    if ((project.id === 4 || project.id === 6) && project.customImages) {
+    // Project 2, 3, 4 & 6: 4-image grid with custom images
+    if ((project.id === 2 || project.id === 3 || project.id === 4 || project.id === 6) && project.customImages) {
       return <Project4Grid images={project.customImages} />;
     }
-    // Project 5: 4-image grid (2 images, 2 empty)
+    // Project 5: 3-image grid
     if (project.id === 5 && project.customImages) {
       return <Project5Grid images={project.customImages} />;
     }

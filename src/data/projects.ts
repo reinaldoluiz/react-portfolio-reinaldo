@@ -58,7 +58,7 @@ export const projects: Project[] = [
       duration: "6 months",
       team: "UX/UI Designer, Developer, Product Manager, Content Strategist",
       role: "Lead UX/UI Designer",
-      image: "/lovable-uploads/9488caaa-dfee-409f-a625-e61a6ee2cdbd.png",
+      image: "/lovable-uploads/18593925-b8e8-43b5-94fa-a39fedaf3798.png",
       color: "bg-purple-100",
       tools: ["Research", "UI Design", "Design System"],
       categories: ["Research", "UI Design", "Design System"],
@@ -79,6 +79,12 @@ export const projects: Project[] = [
         "Enhanced educational resources integration",
         "Successful launch across multiple markets",
         "Positive feedback from diverse parent demographics"
+      ],
+      customImages: [
+        "/lovable-uploads/18593925-b8e8-43b5-94fa-a39fedaf3798.png",
+        "/lovable-uploads/6c0eef8c-0854-4e43-a833-862a82f40b23.png",
+        "/lovable-uploads/470e5153-db23-4479-a138-1c12dc72d959.png",
+        "/lovable-uploads/5c328bc9-a8e3-4f58-9f7c-658e8c08e5a5.png"
       ]
     },
     {
@@ -90,7 +96,7 @@ export const projects: Project[] = [
       duration: "5 months",
       team: "UX/UI Designer, Developer, Product Manager, Business Analyst",
       role: "Lead UX/UI Designer",
-      image: "/lovable-uploads/13c99f9e-2516-44a2-a16f-677610b38f82.png",
+      image: "/lovable-uploads/e171f6c0-f022-4ab0-a8cb-67dc5c32b757.png",
       color: "bg-red-100",
       tools: ["Adobe XD", "Illustrator", "Figma", "Google Analytics"],
       category: "UX/UI Design",
@@ -111,6 +117,12 @@ export const projects: Project[] = [
         "Increased conversion rates on landing pages",
         "Better user engagement with insurance products",
         "Successful integration of value-added services"
+      ],
+      customImages: [
+        "/lovable-uploads/e171f6c0-f022-4ab0-a8cb-67dc5c32b757.png",
+        "/lovable-uploads/37f81d0f-a0cc-4902-a480-dddccff83c3a.png",
+        "/lovable-uploads/36b6753b-9e52-4aa3-8366-aed818a9bb35.png",
+        "/lovable-uploads/d28ebb13-9a16-4b7f-9d15-01bb098205b3.png"
       ]
     },
     {
