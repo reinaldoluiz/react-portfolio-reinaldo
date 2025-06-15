@@ -2,7 +2,7 @@
 import React from 'react';
 
 const DefaultImageGrid: React.FC = () => (
-  <div className="w-full h-[500px]">
+  <div className="w-full h-[500px] px-6 py-8 md:px-12 md:py-12">
     <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
       {/* Top left */}
       <div
@@ -49,3 +49,4 @@ const DefaultImageGrid: React.FC = () => (
 );
 
 export default DefaultImageGrid;
+
