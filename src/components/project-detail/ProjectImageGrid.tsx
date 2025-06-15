@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 interface ProjectImageGridProps {
@@ -5,6 +6,7 @@ interface ProjectImageGridProps {
     id: number;
     color: string;
     image: string;
+    title: string; // <-- Added this property
     customImages?: string[];
   };
 }
@@ -230,3 +232,4 @@ const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {
 };
 
 export default ProjectImageGrid;
+
