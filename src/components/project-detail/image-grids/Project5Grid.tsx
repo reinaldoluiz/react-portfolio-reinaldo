@@ -12,7 +12,7 @@ const Project5Grid: React.FC<Project5GridProps> = ({ images }) => (
       <div
         className="h-full rounded-lg shadow-lg bg-white"
         style={{
-          backgroundImage: `url('${images[0]}')`,
+          backgroundImage: images[0] ? `url('${images[0]}')` : 'none',
           backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
@@ -22,14 +22,22 @@ const Project5Grid: React.FC<Project5GridProps> = ({ images }) => (
       <div
         className="h-full rounded-lg shadow-lg bg-white"
         style={{
-          backgroundImage: `url('${images[1]}')`,
+          backgroundImage: images[1] ? `url('${images[1]}')` : 'none',
           backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
       />
-      {/* Bottom left - empty */}
-      <div className="h-full rounded-lg shadow-lg bg-white" />
+      {/* Bottom left */}
+      <div
+        className="h-full rounded-lg shadow-lg bg-white"
+        style={{
+          backgroundImage: images[2] ? `url('${images[2]}')` : 'none',
+          backgroundSize: 'contain',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
       {/* Bottom right - empty */}
       <div className="h-full rounded-lg shadow-lg bg-white" />
     </div>
