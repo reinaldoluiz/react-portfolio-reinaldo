@@ -1,4 +1,3 @@
-
 import React from 'react';
 import SingleImageGrid from './image-grids/SingleImageGrid';
 import Project2Grid from './image-grids/Project2Grid';
@@ -33,7 +32,7 @@ const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {
     }
     // Project 4: 4-image grid with custom images
     if (project.id === 4 && project.customImages) {
-      return <Project4Grid images={project.customImages} color={project.color} />;
+      return <Project4Grid images={project.customImages} />;
     }
     // Project 5: 4-image grid (2 images, 2 empty)
     if (project.id === 5 && project.customImages) {
