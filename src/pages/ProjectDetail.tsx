@@ -1,4 +1,3 @@
-
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
@@ -104,31 +103,34 @@ const ProjectDetail = () => {
     },
     {
       id: 4,
-      title: "Healthcare App",
-      subtitle: "Telemedicine Platform",
-      description: "A telemedicine application that connects patients with doctors through an intuitive and accessible interface, focusing on user safety and medical compliance.",
-      year: "2023",
-      duration: "8 months",
-      team: "2 Designers, 5 Developers, Medical Advisor",
+      title: "Viva E-commerce",
+      subtitle: "UX/UI – Redesign Site Viva (Kimberly-Clark)",
+      description: "Redesign completo do e-commerce da linha de produtos Viva (Kimberly-Clark), com foco em experiência de compra otimizada, acessibilidade, consistência visual e implementação de um novo design system.",
+      year: "2022",
+      duration: "5 meses",
+      team: "UX/UI Designer, Desenvolvedor Frontend, Desenvolvedor Backend, PM, QA",
       role: "UX/UI Designer",
-      image: "/lovable-uploads/3bc795d8-161f-4f91-acc0-46a5d2d4b7d9.png",
-      color: "bg-green-100",
-      tools: ["Figma", "Accessibility Design", "User Testing", "Prototyping"],
+      image: "/lovable-uploads/5ae57945-bb25-44cb-96c2-e475d963ecb5.png",
+      color: "bg-purple-100",
+      tools: ["Figma", "Adobe Illustrator", "Adobe Photoshop", "Google Analytics"],
       category: "UI Design",
-      problem: "Patients faced barriers accessing healthcare remotely, with existing telemedicine solutions being complex and not meeting accessibility standards.",
-      solution: "Designed an accessible, HIPAA-compliant platform with simple navigation, video consultations, and integrated prescription management.",
+      problem: "A jornada de compra do produto era complexa, o site possuía baixa acessibilidade e não havia padronização visual entre os componentes, dificultando tanto para os usuários quanto para o time de desenvolvimento.",
+      solution: "Reestruturei todo o e-commerce adotando design system, acessibilidade como prioridade e componentes pensados para diferentes jornadas. Defini um novo estilo visual, alinhei as demandas de negócio e desenvolvi a navegação das páginas de produto e compra com foco na experiência do usuário.",
       process: [
-        "Healthcare Regulation Research",
-        "Patient & Doctor Interviews",
-        "Accessibility Compliance Design",
-        "Medical Workflow Integration",
-        "Clinical Testing & Validation"
+        "Pesquisa sobre produto e jornada de compra",
+        "Definição de objetivos do redesenho",
+        "Criação de Design System",
+        "Prototipação de telas do e-commerce (desktop e mobile)",
+        "Testes de usabilidade e ajustes",
+        "Padronização de componentes",
+        "Entrega dos assets e documentação para desenvolvimento"
       ],
       results: [
-        "95% patient satisfaction rate",
-        "50% reduction in appointment wait times",
-        "HIPAA compliance certification",
-        "Adopted by 25+ healthcare providers"
+        "Jornada de compra mais fácil e direta",
+        "Aumento na conversão de vendas no site",
+        "Site tornou-se referência de usabilidade no segmento",
+        "Redução do retrabalho do time de dev (componentização)",
+        "Melhora significativa nos índices de acessibilidade"
       ]
     },
     {
