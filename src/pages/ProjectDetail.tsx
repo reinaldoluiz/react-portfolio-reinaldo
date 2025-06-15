@@ -104,33 +104,41 @@ const ProjectDetail = () => {
     {
       id: 4,
       title: "Viva E-commerce",
-      subtitle: "UX/UI – Redesign Site Viva (Kimberly-Clark)",
-      description: "Redesign completo do e-commerce da linha de produtos Viva (Kimberly-Clark), com foco em experiência de compra otimizada, acessibilidade, consistência visual e implementação de um novo design system.",
+      subtitle: "UX/UI – Redesign Viva Site (Kimberly-Clark)",
+      description:
+        "Complete redesign of the Viva (Kimberly-Clark) product line's e-commerce, focusing on optimized purchase experience, accessibility, visual consistency, and the implementation of a new design system.",
       year: "2022",
-      duration: "5 meses",
-      team: "UX/UI Designer, Desenvolvedor Frontend, Desenvolvedor Backend, PM, QA",
+      duration: "5 months",
+      team: "UX/UI Designer, Frontend Developer, Backend Developer, PM, QA",
       role: "UX/UI Designer",
       image: "/lovable-uploads/5ae57945-bb25-44cb-96c2-e475d963ecb5.png",
       color: "bg-purple-100",
-      tools: ["Figma", "Adobe Illustrator", "Adobe Photoshop", "Google Analytics"],
+      tools: [
+        "Figma",
+        "Adobe Illustrator",
+        "Adobe Photoshop",
+        "Google Analytics"
+      ],
       category: "UI Design",
-      problem: "A jornada de compra do produto era complexa, o site possuía baixa acessibilidade e não havia padronização visual entre os componentes, dificultando tanto para os usuários quanto para o time de desenvolvimento.",
-      solution: "Reestruturei todo o e-commerce adotando design system, acessibilidade como prioridade e componentes pensados para diferentes jornadas. Defini um novo estilo visual, alinhei as demandas de negócio e desenvolvi a navegação das páginas de produto e compra com foco na experiência do usuário.",
+      problem:
+        "The product purchase journey was complex, the website had low accessibility, and there was no visual standardization among components, making things difficult for both users and the development team.",
+      solution:
+        "I restructured the entire e-commerce using a design system, with accessibility as a priority and components designed for different user journeys. I defined a new visual style, aligned business requirements, and developed product and purchase pages focused on user experience.",
       process: [
-        "Pesquisa sobre produto e jornada de compra",
-        "Definição de objetivos do redesenho",
-        "Criação de Design System",
-        "Prototipação de telas do e-commerce (desktop e mobile)",
-        "Testes de usabilidade e ajustes",
-        "Padronização de componentes",
-        "Entrega dos assets e documentação para desenvolvimento"
+        "Product and purchase journey research",
+        "Redesign objectives definition",
+        "Design System creation",
+        "Prototyping e-commerce screens (desktop and mobile)",
+        "Usability testing and adjustments",
+        "Component standardization",
+        "Assets and documentation handoff to development"
       ],
       results: [
-        "Jornada de compra mais fácil e direta",
-        "Aumento na conversão de vendas no site",
-        "Site tornou-se referência de usabilidade no segmento",
-        "Redução do retrabalho do time de dev (componentização)",
-        "Melhora significativa nos índices de acessibilidade"
+        "Easier and more direct purchase journey",
+        "Increased website sales conversion",
+        "Site became a usability reference in the segment",
+        "Reduced rework for dev team (componentization)",
+        "Significant improvement in accessibility metrics"
       ]
     },
     {
