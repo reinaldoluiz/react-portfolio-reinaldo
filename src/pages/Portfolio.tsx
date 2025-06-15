@@ -5,82 +5,9 @@ import Footer from '../components/Footer';
 import PortfolioHeader from '../components/PortfolioHeader';
 import PortfolioTabs from '../components/PortfolioTabs';
 import PortfolioCTA from '../components/PortfolioCTA';
+import { projects } from '../data/projects';
 
 const Portfolio = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "Intimus Brazil",
-      description: "A sustainable shopping platform that helps users discover eco-friendly products with an intuitive map-like navigation system.",
-      year: "2024",
-      image: "/lovable-uploads/53a631d0-16bb-4460-970a-b51729b1668b.png",
-      color: "bg-pink-100",
-      tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
-      category: "UI Design"
-    },
-    {
-      id: 2,
-      title: "Pull-Ups E-commerce", 
-      description: "Complete e-commerce redesign for Pull-Ups training pants, creating an engaging and educational platform for parents. The project focused on combining product discovery with educational content about potty training.",
-      year: "2024",
-      image: "/lovable-uploads/18593925-b8e8-43b5-94fa-a39fedaf3798.png",
-      color: "bg-purple-100",
-      tools: ["Research", "UI Design", "Design System"],
-      categories: ["Research", "UI Design", "Design System"]
-    },
-    {
-      id: 3,
-      title: "Santander Auto",
-      description: "Complete redesign of the Santander Auto app and landing page, creating a seamless digital experience for car and motorcycle insurance. The project focused on improving user journey and adding value to insurance installments.",
-      year: "2023", 
-      image: "/lovable-uploads/e171f6c0-f022-4ab0-a8cb-67dc5c32b757.png",
-      color: "bg-red-100",
-      tools: ["UX Research", "Mobile Design", "Design System", "User Testing"],
-      category: "UX/UI Design"
-    },
-    {
-      id: 4,
-      title: "Viva E-commerce",
-      description: "Uma experiência de e-commerce sustentável com foco em produtos eco-friendly e jornada de compra intuitiva.",
-      year: "2024",
-      image: "/lovable-uploads/bc92d7c9-9d89-40f6-839a-3dae35ff94fd.png", // caneca
-      color: "bg-pink-100",
-      tools: ["Figma", "UI Design", "User Research"],
-      category: "UI Design",
-      images: [
-        "/lovable-uploads/bc92d7c9-9d89-40f6-839a-3dae35ff94fd.png", // caneca - principal
-        "/lovable-uploads/5b7c2195-2d61-49dc-a6c1-ee8578150f9a.png",
-        "/lovable-uploads/84f32a35-cb29-4d19-9f29-67d0b7f09a3a.png",
-        "/lovable-uploads/8feffc75-561a-49fd-8445-8513dcce8d18.png",
-      ],
-    },
-    {
-      id: 5,
-      title: "TrackView Web System",
-      description: "Complete redesign of a banking file transfer tracking system. Enhanced usability, interface and visual consistency for Brazilian corporations.",
-      year: "2023",
-      image: "/lovable-uploads/edcec85f-6437-4ea0-9c1b-0cb71ad01129.png", // laptop image as main image
-      color: "bg-orange-100",
-      tools: ["Adobe XD", "Illustrator", "Photoshop", "Hotjar", "Google Analytics"],
-      category: "UI/UX Design",
-      images: [
-        "/lovable-uploads/edcec85f-6437-4ea0-9c1b-0cb71ad01129.png",
-        "/lovable-uploads/ef3ba5eb-dbe3-4f4e-b8e0-5fe503d6d9c5.png",
-        "/lovable-uploads/77af6bc2-801c-4627-8cc1-7ec98873bed9.png"
-      ],
-    },
-    {
-      id: 6,
-      title: "The Bike Culture",
-      description: "Development of a new e-commerce sales channel for a company looking to start selling its products online.",
-      year: "2021",
-      image: "/lovable-uploads/f41b0b87-a058-4973-855d-d63e330c5fc4.png",
-      color: "bg-yellow-100",
-      tools: ["Figma", "Design Thinking", "User Research"],
-      categories: ["UI/UX Design", "E-commerce"]
-    }
-  ];
-
   const categories = ["All", "Research", "UI Design", "UX/UI Design", "Design System", "Graphic Design", "E-commerce"];
 
   const filterProjectsByCategory = (category: string) => {
