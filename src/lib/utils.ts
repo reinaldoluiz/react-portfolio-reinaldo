@@ -8,7 +8,12 @@ export function cn(...inputs: ClassValue[]) {
 
 export function resolveImagePath(path?: string): string {
   if (!path) return '';
-  // Para assets no diretório 'public', o caminho absoluto (começando com '/')
-  // é o suficiente. O Vite irá lidar com o 'base path' durante o build para produção.
-  return path;
+  if (path.startsWith('http')) return path;
+
+  const baseUrl = import.meta.env.BASE_URL;
+  // If path is absolute (starts with '/'), remove it to avoid // when joining.
+  const imagePath = path.startsWith('/') ? path.substring(1) : path;
+  
+  // Combine baseUrl and imagePath, ensuring only one slash between them.
+  return `${baseUrl.replace(/\/$/, '')}/${imagePath}`;
 }
