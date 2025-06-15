@@ -1,11 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
+import { ArrowLeft, ExternalLink, Calendar, Users, Clock } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
-import ProjectHeader from '../components/projectDetail/ProjectHeader';
-import ProjectInfoGrid from '../components/projectDetail/ProjectInfoGrid';
-import ProjectImagesGrid from '../components/projectDetail/ProjectImagesGrid';
-import ProjectDetailsGrid from '../components/projectDetail/ProjectDetailsGrid';
-import ProjectCallToAction from '../components/projectDetail/ProjectCallToAction';
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -221,7 +217,7 @@ const ProjectDetail = () => {
         <div className="container mx-auto px-6 py-16">
           {/* Back Button */}
           <div className="mb-8">
-            <Link
+            <Link 
               to="/portfolio"
               className="inline-flex items-center gap-2 bg-white px-4 py-2 transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-gray-300 text-gray-700 hover:text-red-400"
             >
@@ -231,19 +227,335 @@ const ProjectDetail = () => {
           </div>
 
           {/* Project Header */}
-          <ProjectHeader project={project} />
+          <div className="text-center mb-16">
+            <div className="mb-6">
+              {project.categories ? (
+                // Multiple categories for project 2
+                <div className="flex justify-center flex-wrap gap-2">
+                  {project.categories.map((cat, catIndex) => (
+                    <div key={catIndex} className="bg-red-200 px-4 py-2 inline-block transform rotate-2">
+                      <p className="text-sm font-bold text-gray-800">{cat}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                // Single category for other projects
+                <div className="bg-red-200 px-4 py-2 inline-block transform rotate-2">
+                  <p className="text-sm font-bold text-gray-800">{project.category}</p>
+                </div>
+              )}
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-800 transform -rotate-1 inline-block mb-4">
+              {project.title}
+            </h1>
+            <p className="text-xl text-gray-600 mb-6">{project.subtitle}</p>
+            <div className="w-32 h-1 bg-blue-400 mx-auto transform rotate-1"></div>
+          </div>
 
           {/* Project Info Grid */}
-          <ProjectInfoGrid project={project} />
+          <div className="grid md:grid-cols-3 gap-6 mb-16">
+            <div className="bg-blue-100 p-6 transform rotate-1 border-2 border-gray-300">
+              <div className="flex items-center gap-2 mb-2">
+                <Calendar size={20} className="text-red-400" />
+                <h3 className="font-bold text-gray-800">Timeline</h3>
+              </div>
+              <p className="text-gray-700">{project.duration}</p>
+              <p className="text-sm text-gray-600">{project.year}</p>
+            </div>
+            
+            <div className="bg-yellow-100 p-6 transform -rotate-1 border-2 border-gray-300">
+              <div className="flex items-center gap-2 mb-2">
+                <Users size={20} className="text-red-400" />
+                <h3 className="font-bold text-gray-800">Team</h3>
+              </div>
+              <p className="text-gray-700">{project.team}</p>
+              <p className="text-sm text-gray-600">My role: {project.role}</p>
+            </div>
+            
+            <div className="bg-green-100 p-6 transform rotate-2 border-2 border-gray-300">
+              <div className="flex items-center gap-2 mb-2">
+                <Clock size={20} className="text-red-400" />
+                <h3 className="font-bold text-gray-800">Tools Used</h3>
+              </div>
+              <div className="flex flex-wrap gap-1">
+                {project.tools.map((tool, index) => (
+                  <span key={index} className="bg-white px-2 py-1 text-xs font-semibold text-gray-700 border border-gray-400">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
 
           {/* Project Images Grid */}
-          <ProjectImagesGrid project={project} />
+          <div className="mb-16">
+            {project.id === 4 ? (
+              // Custom grid for project 4
+              <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
+                <div className="w-full h-[500px]">
+                  <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
+                    {/* Top left - Main (cup/computer/phone) image */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white flex justify-center items-center"
+                      style={{
+                        backgroundImage: `url('${project.customImages?.[0]}')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    {/* Top right - Buy online */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white flex justify-center items-center"
+                      style={{
+                        backgroundImage: `url('${project.customImages?.[1]}')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    {/* Bottom left - Shop Product */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white flex justify-center items-center"
+                      style={{
+                        backgroundImage: `url('${project.customImages?.[2]}')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                    {/* Bottom right - Articles and Benefits */}
+                    <div 
+                      className="h-full rounded-lg shadow-lg bg-white flex justify-center items-center"
+                      style={{
+                        backgroundImage: `url('${project.customImages?.[3]}')`,
+                        backgroundSize: 'contain',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat'
+                      }}
+                    />
+                  </div>
+                </div>
+              </div>
+            ) : project.id === 1 ? (
+              // Single image layout for project 1
+              <div className="w-full max-w-4xl mx-auto">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-80 object-cover rounded-lg shadow-lg"
+                />
+              </div>
+            ) : project.id === 2 ? (
+              // Grid layout for project 2 with the uploaded images
+              <div className="w-full h-[500px]">
+                <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
+                  {/* Top left - Reinaldo Luiz mockup */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('/lovable-uploads/18593925-b8e8-43b5-94fa-a39fedaf3798.png')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                  
+                  {/* Top right - About Pull-Ups page */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('/lovable-uploads/6c0eef8c-0854-4e43-a833-862a82f40b23.png')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                  
+                  {/* Bottom left - Various features and content */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('/lovable-uploads/470e5153-db23-4479-a138-1c12dc72d959.png')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                  
+                  {/* Bottom right - Disney integration */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('/lovable-uploads/5c328bc9-a8e3-4f58-9f7c-658e8c08e5a5.png')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                </div>
+              </div>
+            ) : project.id === 3 ? (
+              // Grid layout for project 3 (Santander Auto) with new uploaded images
+              <div className="w-full h-[500px]">
+                <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
+                  {/* Top left - Reinaldo Luiz Santander mockup (first image) */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('/lovable-uploads/e171f6c0-f022-4ab0-a8cb-67dc5c32b757.png')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                  
+                  {/* Top right - Mobile app screens grid */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('/lovable-uploads/37f81d0f-a0cc-4902-a480-dddccff83c3a.png')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                  
+                  {/* Bottom left - Desktop landing page with phone */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('/lovable-uploads/36b6753b-9e52-4aa3-8366-aed818a9bb35.png')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                  
+                  {/* Bottom right - Mobile app features */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('/lovable-uploads/d28ebb13-9a16-4b7f-9d15-01bb098205b3.png')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                </div>
+              </div>
+            ) : (
+              // Grid layout for projects 5, 6, and 7 using placeholder images
+              <div className="w-full h-[500px]">
+                <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
+                  {/* Top left */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=300&fit=crop')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                  
+                  {/* Top right */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=400&h=300&fit=crop')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                  
+                  {/* Bottom left */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                  
+                  {/* Bottom right */}
+                  <div 
+                    className="h-full rounded-lg shadow-lg bg-white"
+                    style={{
+                      backgroundImage: `url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop')`,
+                      backgroundSize: 'contain',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat'
+                    }}
+                  />
+                </div>
+              </div>
+            )}
+          </div>
 
-          {/* Project Details Grid */}
-          <ProjectDetailsGrid project={project} />
+          {/* Project Details */}
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            {/* Problem & Solution */}
+            <div>
+              <div className="bg-orange-100 p-6 transform rotate-1 border-2 border-gray-300 mb-8">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">The Challenge</h3>
+                <p className="text-gray-700 leading-relaxed">{project.problem}</p>
+              </div>
+              
+              <div className="bg-pink-100 p-6 transform -rotate-1 border-2 border-gray-300">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">The Solution</h3>
+                <p className="text-gray-700 leading-relaxed">{project.solution}</p>
+              </div>
+            </div>
+            
+            {/* Process & Results */}
+            <div>
+              <div className="bg-purple-100 p-6 transform -rotate-1 border-2 border-gray-300 mb-8">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Design Process</h3>
+                <ul className="space-y-2">
+                  {project.process.map((step, index) => (
+                    <li key={index} className="text-gray-700 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-red-400 rounded-full"></span>
+                      {step}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div className="bg-teal-100 p-6 transform rotate-1 border-2 border-gray-300">
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Results</h3>
+                <ul className="space-y-2">
+                  {project.results.map((result, index) => (
+                    <li key={index} className="text-gray-700 flex items-center gap-2">
+                      <span className="w-2 h-2 bg-green-500 rounded-full"></span>
+                      {result}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
 
           {/* Call to Action */}
-          <ProjectCallToAction />
+          <div className="text-center">
+            <div className="bg-red-100 p-8 transform rotate-1 border-2 border-gray-300 inline-block max-w-md">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                Interested in this project?
+              </h3>
+              <p className="text-gray-700 mb-6">
+                Let's discuss how we can create something amazing for your next project!
+              </p>
+              <Link 
+                to="/#contact"
+                className="bg-red-400 hover:bg-red-500 text-white px-6 py-3 font-semibold transform -rotate-1 hover:rotate-0 transition-all duration-300 border-2 border-black inline-block"
+              >
+                Get In Touch
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />
