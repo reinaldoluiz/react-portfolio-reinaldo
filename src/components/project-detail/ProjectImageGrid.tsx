@@ -35,39 +35,35 @@ const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {
     );
   }
 
-  // Project 5: Grid 2x2 horizontal, apenas 2 imagens, espaço vazio embaixo
+  // Project 5: 4-image grid padrão (2 imagens, 2 espaços vazios)
   if (project.id === 5 && project.customImages) {
     return (
-      <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
-        <div className="w-full h-[500px]">
-          <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
-            {/* Top left - primeira imagem */}
-            <div
-              className="h-full rounded-lg shadow-lg bg-white flex justify-center items-center"
-              style={{
-                backgroundImage: `url('${project.customImages[0]}')`,
-                backgroundSize: 'contain',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                aspectRatio: '4/3',
-              }}
-            />
-            {/* Top right - segunda imagem */}
-            <div
-              className="h-full rounded-lg shadow-lg bg-white flex justify-center items-center"
-              style={{
-                backgroundImage: `url('${project.customImages[1]}')`,
-                backgroundSize: 'contain',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                aspectRatio: '4/3',
-              }}
-            />
-            {/* Bottom left - vazio */}
-            <div className="h-full rounded-lg shadow-lg bg-white" />
-            {/* Bottom right - vazio */}
-            <div className="h-full rounded-lg shadow-lg bg-white" />
-          </div>
+      <div className="w-full h-[500px]">
+        <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
+          {/* Top left - primeira imagem */}
+          <div
+            className="h-full rounded-lg shadow-lg bg-white"
+            style={{
+              backgroundImage: `url('${project.customImages[0]}')`,
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          />
+          {/* Top right - segunda imagem */}
+          <div
+            className="h-full rounded-lg shadow-lg bg-white"
+            style={{
+              backgroundImage: `url('${project.customImages[1]}')`,
+              backgroundSize: 'contain',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat'
+            }}
+          />
+          {/* Bottom left - vazio */}
+          <div className="h-full rounded-lg shadow-lg bg-white" />
+          {/* Bottom right - vazio */}
+          <div className="h-full rounded-lg shadow-lg bg-white" />
         </div>
       </div>
     );
