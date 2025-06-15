@@ -6,7 +6,7 @@ export const project7: Project = {
   title: 'Claro PME',
   subtitle: 'B2B Sales Platform on Salesforce',
   description: 'A complete platform to manage business customers, plans, and services for Claro, one of the main telecommunications operators.',
-  year: '2022',
+  year: '2020',
   duration: '10 months',
   team: 'Cross-functional team',
   role: 'UX/UI Designer',
