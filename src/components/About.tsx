@@ -1,4 +1,4 @@
-
+import { resolveImagePath } from "@/lib/utils";
 const About = () => {
   return (
     <section className="py-32 bg-white relative overflow-hidden">
@@ -34,7 +34,7 @@ const About = () => {
             
             <div className="text-center">
               <img 
-                src="/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png" 
+                src={resolveImagePath("/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png")} 
                 alt="Explorer with magnifying glass" 
                 className="w-64 h-64 object-contain mx-auto mb-6"
               />

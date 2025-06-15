@@ -7,7 +7,7 @@ import PortfolioCTA from '../components/PortfolioCTA';
 import { projects } from '../data/projects';
 
 const Portfolio = () => {
-  const categories = ["All", "UX Research", "UI Design", "AI", "Design Grafico"];
+  const categories = ["All", "UX Research", "UI Design", "AI", "Graphic design"];
 
   const filterProjectsByCategory = (category: string) => {
     if (category === "All") return projects;

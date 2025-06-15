@@ -13,7 +13,7 @@ export const project10: Project = {
   image: "/lovable-uploads/d7686e15-1da1-4eda-b427-6ff15b6b724c.png",
   color: "bg-blue-100",
   tools: ["Adobe Photoshop", "AI Generativa", "Figma"],
-  categories: ["AI", "Design Grafico"],
+  categories: ["AI", "Graphic design"],
   problem: "As imagens originais dos modelos não se encaixavam perfeitamente no layout do site, necessitando de ajustes para manter a consistência visual e a qualidade da marca.",
   solution: "Utilizei ferramentas de IA generativa para expandir os cenários das fotos, ajustar a iluminação e garantir que as imagens se integrassem harmoniosamente ao design do site da Depend. Isso permitiu uma aplicação mais flexível das imagens em diferentes formatos e layouts.",
   process: ["Análise das Imagens", "Testes com Ferramentas de IA", "Ajustes e Refinamento", "Validação com a Equipe", "Entrega Final"],

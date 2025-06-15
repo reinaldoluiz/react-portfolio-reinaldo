@@ -13,7 +13,7 @@ export const project11: Project = {
   image: "/lovable-uploads/e35106dd-0993-40e8-b09b-957fca79214d.png",
   color: "bg-yellow-100",
   tools: ["Adobe Photoshop", "Adobe Illustrator", "AI Generativa"],
-  categories: ["AI", "Design Grafico"],
+  categories: ["AI", "Graphic design"],
   problem: "Clientes necessitavam de materiais de ponto de venda (PDV) que fossem não apenas visualmente atraentes, mas também eficazes em comunicar promoções, destacar produtos e fortalecer a identidade da marca em ambientes de varejo competitivos.",
   solution: "Criei uma série de materiais de PDV, utilizando design gráfico estratégico e ferramentas de IA para gerar mockups realistas e otimizar layouts rapidamente. Isso resultou em peças coesas e impactantes que capturaram a atenção do consumidor e alinharam-se com os objetivos de marketing de cada cliente.",
   process: ["Análise de Briefing", "Pesquisa de Concorrentes", "Desenvolvimento de Conceito", "Criação de Mockups com IA", "Design e Refinamento", "Preparação para Produção"],

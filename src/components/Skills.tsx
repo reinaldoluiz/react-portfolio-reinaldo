@@ -1,22 +1,22 @@
-
+import { resolveImagePath } from "@/lib/utils";
 const Skills = () => {
   const skillCategories = [
     {
       title: "Design & Prototyping",
       skills: ["Figma", "Adobe Creative Suite", "Sketch", "Design Systems", "Prototyping", "Wireframing"],
-      illustration: "/lovable-uploads/45b28675-eb95-4a86-b3cc-3a79f03709d0.png",
+      illustration: resolveImagePath("/lovable-uploads/45b28675-eb95-4a86-b3cc-3a79f03709d0.png"),
       color: "bg-blue-100"
     },
     {
       title: "Frontend Development", 
       skills: ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "Ruby on Rails"],
-      illustration: "/lovable-uploads/6fc5ff19-a59d-4426-967e-0a1990aa3c84.png",
+      illustration: resolveImagePath("/lovable-uploads/6fc5ff19-a59d-4426-967e-0a1990aa3c84.png"),
       color: "bg-green-100"
     },
     {
       title: "UX Research & Testing",
       skills: ["User Research", "Usability Testing", "A/B Testing", "Analytics", "User Journey Mapping", "Personas"],
-      illustration: "/lovable-uploads/f9e35747-07b9-409a-8404-387cce1846a7.png",
+      illustration: resolveImagePath("/lovable-uploads/f9e35747-07b9-409a-8404-387cce1846a7.png"),
       color: "bg-yellow-100"
     }
   ];

@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-
+import { resolveImagePath } from "@/lib/utils";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -22,7 +22,7 @@ const Contact = () => {
     const subject = "Design Project Inquiry";
     const body = `Hi Reinaldo,%0D%0A%0D%0AI'm ${formData.name} and I'm interested in discussing a design project with you.%0D%0A%0D%0AProject details:%0D%0A${encodeURIComponent(formData.message)}%0D%0A%0D%0ABest regards,%0D%0A${formData.name}%0D%0A${formData.email}`;
     
-    window.location.href = `mailto:reinaldo@email.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    window.location.href = `mailto:reinaldolluiz@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
   };
 
   return (
@@ -44,7 +44,7 @@ const Contact = () => {
             <div className="text-center">
               <div className="mb-8">
                 <img 
-                  src="/lovable-uploads/5445d46d-711b-49b0-9683-89d1404f0db4.png" 
+                  src= {resolveImagePath("/lovable-uploads/5445d46d-711b-49b0-9683-89d1404f0db4.png")}
                   alt="Adventure character with background" 
                   className="w-56 h-56 object-contain mx-auto"
                 />
