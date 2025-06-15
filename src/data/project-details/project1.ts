@@ -13,7 +13,7 @@ export const project1: Project = {
   image: "/lovable-uploads/53a631d0-16bb-4460-970a-b51729b1668b.png",
   color: "bg-pink-100",
   tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
-  category: "UI Design",
+  categories: ["UI Design"],
   problem: "Users struggle to find and verify eco-friendly products while shopping online. Existing platforms lack transparency about environmental impact and sustainable alternatives.",
   solution: "Created an intuitive mobile app with map-based navigation, sustainability scores, and AR features to help users make informed eco-friendly purchasing decisions.",
   process: [

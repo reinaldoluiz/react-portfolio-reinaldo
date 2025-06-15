@@ -13,7 +13,7 @@ export const project6: Project = {
   image: "/lovable-uploads/26081ceb-e762-402b-94bd-719e5737a1f8.png",
   color: "bg-yellow-100",
   tools: ["Figma", "Design Thinking", "User Research", "Prototyping"],
-  categories: ["UI/UX Design", "E-commerce"],
+  categories: ["UI Design", "UX Research"],
   problem: "A bicycle company wanted to start selling their products online but lacked an e-commerce platform, missing out on a major sales channel.",
   solution: "Developed a user-centric e-commerce website from scratch. The focus was on creating a seamless shopping experience, from product discovery to checkout, to establish a strong online sales channel.",
   process: [

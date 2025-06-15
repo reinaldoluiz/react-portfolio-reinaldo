@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
@@ -8,7 +7,7 @@ import PortfolioCTA from '../components/PortfolioCTA';
 import { projects } from '../data/projects';
 
 const Portfolio = () => {
-  const categories = ["All", "Research", "UI Design", "UX/UI Design", "Design System", "Graphic Design", "E-commerce", "Branding"];
+  const categories = ["All", "UX Research", "UI Design", "AI", "Design Grafico"];
 
   const filterProjectsByCategory = (category: string) => {
     if (category === "All") return projects;

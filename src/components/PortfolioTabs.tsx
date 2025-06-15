@@ -12,7 +12,7 @@ interface Props {
 
 const PortfolioTabs = ({ categories, projects, filterProjectsByCategory }: Props) => (
   <Tabs defaultValue="All" className="w-full max-w-4xl mx-auto mb-16">
-    <TabsList className="grid w-full grid-cols-6 bg-white">
+    <TabsList className="grid w-full grid-cols-5 bg-white">
       {categories.map((category) => (
         <TabsTrigger 
           key={category} 

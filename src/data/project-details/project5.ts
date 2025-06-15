@@ -13,7 +13,7 @@ export const project5: Project = {
   image: "/lovable-uploads/edcec85f-6437-4ea0-9c1b-0cb71ad01129.png", // laptop image main
   color: "bg-orange-100",
   tools: ["Adobe XD", "Illustrator", "Photoshop", "Hotjar", "Google Analytics"],
-  category: "UI/UX Design",
+  categories: ["UI Design", "UX Research"],
   problem: "TrackView was an obsolete system with little user adoption. The interface was outdated, non-intuitive, and lacked consistency, making file tracking and validation cumbersome for banking professionals.",
   solution: "Led a complete redesign focused on user interviews and analytics. Introduced a new styleguide, improved daily task management, and facilitated clear user journeys validated by stakeholders.",
   process: [

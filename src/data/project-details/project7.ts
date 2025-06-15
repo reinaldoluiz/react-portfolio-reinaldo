@@ -13,7 +13,7 @@ export const project7: Project = {
   image: '/lovable-uploads/2b413020-94d9-4b29-99b1-2b8eb3ec1bc4.png',
   color: 'bg-red-100',
   tools: ['Salesforce', 'Figma', 'React', 'JavaScript'],
-  categories: ['UI Design', 'UX/UI Design', 'E-commerce'],
+  categories: ['UI Design', 'UX Research'],
   problem: 'Claro needed a unified and efficient system for its B2B sales representatives to manage clients, create quotes, and associate services, replacing a fragmented and slow legacy system.',
   solution: 'We designed and developed a new platform on Salesforce Lightning Experience, with a step-by-step wizard for order creation, a clear dashboard, and a responsive mobile interface to empower sales representatives in the field.',
   process: ['Discovery and Research', 'Wireframing and Prototyping', 'UI Design and Design System', 'Development and Integration', 'Testing and Deployment'],
