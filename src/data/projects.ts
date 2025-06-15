@@ -176,9 +176,9 @@ export const projects: Project[] = [
       title: "TrackView Web System",
       subtitle: "Web system – Desktop",
       description: "Complete redesign of TrackView, a system used by major Brazilian corporations to monitor and validate banking file transfers. The project focused on improving user interface, usability, and visual consistency.",
-      year: "2023",
+      year: "2020",
       duration: "3 months",
-      team: "UX/UI Designer",
+      team: "Developer, Product Manager",
       role: "UX/UI Designer",
       image: "/lovable-uploads/edcec85f-6437-4ea0-9c1b-0cb71ad01129.png", // laptop image main
       color: "bg-orange-100",
