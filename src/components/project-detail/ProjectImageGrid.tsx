@@ -1,3 +1,4 @@
+
 import React from 'react';
 import SingleImageGrid from './image-grids/SingleImageGrid';
 import Project4Grid from './image-grids/Project4Grid';
@@ -15,8 +16,9 @@ const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {
     if (project.id === 1) {
       return <SingleImageGrid image={project.image} title={project.title} />;
     }
-    // Project 2, 3, 4, 6, 7, 8, 9 & 10: 4-image grid with custom images
-    if ((project.id === 2 || project.id === 3 || project.id === 4 || project.id === 6 || project.id === 7 || project.id === 8 || project.id === 9 || project.id === 10) && project.customImages) {
+    // Projects with 4-image grid
+    const fourImageGridProjects = [2, 3, 4, 6, 7, 8, 9, 10, 11];
+    if (fourImageGridProjects.includes(project.id) && project.customImages) {
       return <Project4Grid images={project.customImages} />;
     }
     // Project 5: 3-image grid
