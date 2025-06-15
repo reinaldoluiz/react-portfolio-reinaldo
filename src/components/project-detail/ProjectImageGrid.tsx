@@ -19,7 +19,7 @@ interface ProjectImageGridProps {
 const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {
   const renderGrid = () => {
     // Project 1: Single image
-    if (project.id === 1) {
+    if (project.id === 1 || project.id === 6) {
       return <SingleImageGrid image={project.image} title={project.title} />;
     }
     // Project 2: 4-image grid with fixed URLs

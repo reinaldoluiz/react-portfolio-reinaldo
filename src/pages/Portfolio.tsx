@@ -71,17 +71,17 @@ const Portfolio = () => {
     },
     {
       id: 6,
-      title: "Brand Identity Project",
-      description: "A comprehensive brand identity design including logo, color palette, and marketing materials.",
-      year: "2022",
-      image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
-      color: "bg-purple-100",
-      tools: ["Illustrator", "InDesign", "Brand Strategy"],
-      category: "Graphic Design"
+      title: "The Bike Culture",
+      description: "Development of a new e-commerce sales channel for a company looking to start selling its products online.",
+      year: "2021",
+      image: "/lovable-uploads/f41b0b87-a058-4973-855d-d63e330c5fc4.png",
+      color: "bg-yellow-100",
+      tools: ["Figma", "Design Thinking", "User Research"],
+      categories: ["UI/UX Design", "E-commerce"]
     }
   ];
 
-  const categories = ["All", "Research", "UI Design", "UX/UI Design", "Design System", "Graphic Design"];
+  const categories = ["All", "Research", "UI Design", "UX/UI Design", "Design System", "Graphic Design", "E-commerce"];
 
   const filterProjectsByCategory = (category: string) => {
     if (category === "All") return projects;

@@ -196,31 +196,30 @@ export const projects: Project[] = [
     },
     {
       id: 6,
-      title: "Brand Identity Project",
-      subtitle: "Comprehensive Brand System",
-      description: "A comprehensive brand identity design including logo, color palette, and marketing materials for a sustainable fashion startup.",
-      year: "2022",
-      duration: "2 months",
-      team: "Brand Designer, Marketing Specialist",
-      role: "Brand Designer",
-      image: "/lovable-uploads/5c46fb05-5f26-4317-a11c-c681893bd33e.png",
-      color: "bg-purple-100",
-      tools: ["Illustrator", "InDesign", "Brand Strategy", "Photoshop"],
-      category: "Graphic Design",
-      problem: "A sustainable fashion startup needed a complete brand identity that would resonate with eco-conscious consumers and stand out in a crowded market.",
-      solution: "Developed a cohesive brand system with earth-inspired visuals, sustainable messaging, and flexible design elements across all touchpoints.",
+      title: "The Bike Culture",
+      subtitle: "E-commerce Website",
+      description: "Development of a new e-commerce sales channel for a company looking to start selling its products online. The project focused on creating an intuitive user experience and a clear purchasing journey.",
+      year: "2021",
+      duration: "4 months",
+      team: "UX/UI Designer, 2 Developers, PM",
+      role: "Lead UX/UI Designer",
+      image: "/lovable-uploads/f41b0b87-a058-4973-855d-d63e330c5fc4.png",
+      color: "bg-yellow-100",
+      tools: ["Figma", "Design Thinking", "User Research", "Prototyping"],
+      categories: ["UI/UX Design", "E-commerce"],
+      problem: "A bicycle company wanted to start selling their products online but lacked an e-commerce platform, missing out on a major sales channel.",
+      solution: "Developed a user-centric e-commerce website from scratch. The focus was on creating a seamless shopping experience, from product discovery to checkout, to establish a strong online sales channel.",
       process: [
-        "Brand Strategy Workshop",
-        "Market Research & Analysis",
-        "Logo & Visual Identity Design",
-        "Brand Guidelines Creation",
-        "Marketing Material Design"
+        "Empathy: Benchmarking, briefing, and client interviews",
+        "Definition: Creating user personas and mapping the customer journey",
+        "Ideation: Brainstorming sessions and feature prioritization",
+        "Prototyping: Developing a style guide and high-fidelity interactive prototypes",
+        "Testing: Conducting usability tests with different user groups to validate the design"
       ],
       results: [
-        "300% increase in brand recognition",
-        "150% growth in social media following",
-        "Featured in sustainable fashion magazines",
-        "Brand system adopted across 15+ touchpoints"
+        "Successfully launched a new online sales channel",
+        "Designed an intuitive and easy-to-use purchase flow",
+        "Received positive feedback from both client and end-users"
       ]
     }
   ];
