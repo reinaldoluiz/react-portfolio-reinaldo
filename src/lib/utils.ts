@@ -11,8 +11,8 @@ export function resolveImagePath(path?: string): string {
   if (path.startsWith('http')) {
     return path;
   }
-  // Let Vite and the browser handle path resolution based on the <base> tag.
-  // All image paths in the project data are absolute (start with "/"),
-  // so we can just return them as is.
-  return path;
+  const baseUrl = import.meta.env.BASE_URL;
+  // Ensure we don't have double slashes between base and path
+  const finalPath = `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
+  return finalPath;
 }
