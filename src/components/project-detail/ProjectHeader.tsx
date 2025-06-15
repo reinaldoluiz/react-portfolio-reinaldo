@@ -1,13 +1,9 @@
 
 import React from 'react';
+import { Project } from '../../types/project';
 
 interface ProjectHeaderProps {
-  project: {
-    title: string;
-    subtitle: string;
-    category?: string;
-    categories?: string[];
-  };
+  project: Project;
 }
 
 const ProjectHeader = ({ project }: ProjectHeaderProps) => (

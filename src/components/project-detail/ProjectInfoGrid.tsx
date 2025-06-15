@@ -1,15 +1,10 @@
 
 import React from 'react';
 import { Calendar, Users, Clock } from 'lucide-react';
+import { Project } from '../../types/project';
 
 interface ProjectInfoGridProps {
-  project: {
-    duration: string;
-    year: string;
-    team: string;
-    role: string;
-    tools: string[];
-  };
+  project: Project;
 }
 
 const ProjectInfoGrid = ({ project }: ProjectInfoGridProps) => (

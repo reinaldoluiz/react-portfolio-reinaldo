@@ -1,13 +1,9 @@
 
 import React from 'react';
+import { Project } from '../../types/project';
 
 interface ProjectDetailsProps {
-  project: {
-    problem: string;
-    solution: string;
-    process: string[];
-    results: string[];
-  };
+  project: Project;
 }
 
 const ProjectDetails = ({ project }: ProjectDetailsProps) => (

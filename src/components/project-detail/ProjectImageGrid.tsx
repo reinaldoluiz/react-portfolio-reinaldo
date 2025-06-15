@@ -4,15 +4,10 @@ import SingleImageGrid from './image-grids/SingleImageGrid';
 import Project4Grid from './image-grids/Project4Grid';
 import Project5Grid from './image-grids/Project5Grid';
 import DefaultImageGrid from './image-grids/DefaultImageGrid';
+import { Project } from '../../types/project';
 
 interface ProjectImageGridProps {
-  project: {
-    id: number;
-    color: string;
-    image: string;
-    title: string;
-    customImages?: string[];
-  };
+  project: Project;
 }
 
 const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {

@@ -1,18 +1,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  year: string;
-  image: string;
-  color: string;
-  tools: string[];
-  category?: string;
-  categories?: string[];
-}
+import { Project } from '../../types/project';
 
 interface Props {
   project: Project;
