@@ -2,7 +2,7 @@
 import React from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '../components/ui/tabs';
 import PortfolioProjectCard from './PortfolioProjectCard';
-import { Project } from '../../types/project';
+import { Project } from '../types/project';
 
 interface Props {
   categories: string[];
