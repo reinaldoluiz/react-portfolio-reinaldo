@@ -1,35 +1,8 @@
-
 import { Link } from 'react-router-dom';
+import { projects } from '../data/projects';
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Intimus Brazil",
-      description: "A sustainable shopping platform that helps users discover eco-friendly products with an intuitive map-like navigation system.",
-      year: "2024",
-      image: "/lovable-uploads/53a631d0-16bb-4460-970a-b51729b1668b.png",
-      color: "bg-pink-100",
-      tools: ["Figma", "User Research", "Prototyping", "Adobe Creative Suite"],
-      category: "UI Design"
-    },
-    {
-      title: "Pull-Ups E-commerce", 
-      description: "Complete e-commerce redesign for Pull-Ups training pants, creating an engaging and educational platform for parents. The project focused on combining product discovery with educational content about potty training.",
-      year: "2024",
-      image: "/lovable-uploads/18593925-b8e8-43b5-94fa-a39fedaf3798.png",
-      color: "bg-purple-100",
-      tools: ["Research", "UI Design", "Design System"]
-    },
-    {
-      title: "Santander Auto",
-      description: "Complete redesign of the Santander Auto app and landing page, creating a seamless digital experience for car and motorcycle insurance. The project focused on improving user journey and adding value to insurance installments.",
-      year: "2023", 
-      image: "/lovable-uploads/e171f6c0-f022-4ab0-a8cb-67dc5c32b757.png",
-      color: "bg-red-100",
-      tools: ["UX Research", "Mobile Design", "Design System", "User Testing"],
-      category: "UX/UI Design"
-    }
-  ];
+  const featuredProjects = projects.slice(0, 3);
 
   return (
     <section className="py-32 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
@@ -50,8 +23,8 @@ const Projects = () => {
           </div>
           
           <div className="space-y-24">
-            {projects.map((project, index) => (
-              <div key={index} className="grid md:grid-cols-2 gap-16 items-center">
+            {featuredProjects.map((project, index) => (
+              <div key={project.id} className="grid md:grid-cols-2 gap-16 items-center">
                 <div className={index % 2 === 1 ? "md:order-2" : ""}>
                   <div className={`${project.color} p-8 transform ${index % 2 === 0 ? 'rotate-2' : '-rotate-2'} border-2 border-gray-300`}>
                     <img 
