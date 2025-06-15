@@ -54,13 +54,16 @@ const Portfolio = () => {
     },
     {
       id: 5,
-      title: "Food Delivery UI",
-      description: "A modern food delivery interface focusing on quick ordering and real-time tracking features.",
-      year: "2022",
-      image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
+      title: "TrackView Web System",
+      description: "Complete redesign of a banking file transfer tracking system. Enhanced usability, interface and visual consistency for Brazilian corporations.",
+      year: "2023",
+      image: "/lovable-uploads/53667846-5168-4010-928b-8bb20a0242a7.png",
       color: "bg-orange-100",
-      tools: ["Adobe XD", "Micro-interactions", "Prototyping"],
-      category: "UI Design"
+      tools: ["Adobe XD", "Illustrator", "Photoshop", "Hotjar", "Google Analytics"],
+      category: "UI/UX Design",
+      images: [
+        "/lovable-uploads/53667846-5168-4010-928b-8bb20a0242a7.png"
+      ],
     },
     {
       id: 6,

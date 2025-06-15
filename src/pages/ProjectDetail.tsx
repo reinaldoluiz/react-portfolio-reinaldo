@@ -149,31 +149,35 @@ const ProjectDetail = () => {
     },
     {
       id: 5,
-      title: "Food Delivery UI",
-      subtitle: "Modern Ordering Experience",
-      description: "A modern food delivery interface focusing on quick ordering and real-time tracking features, with emphasis on local restaurant discovery.",
-      year: "2022",
+      title: "TrackView Web System",
+      subtitle: "Web system – Desktop",
+      description: "Complete redesign of TrackView, a system used by major Brazilian corporations to monitor and validate banking file transfers. The project focused on improving user interface, usability, and visual consistency.",
+      year: "2023",
       duration: "3 months",
-      team: "Designer, 2 Developers",
-      role: "UI/UX Designer",
-      image: "/lovable-uploads/4ea7692a-f646-41c6-a293-9a18f209e15d.png",
+      team: "UX/UI Designer",
+      role: "UX/UI Designer",
+      image: "/lovable-uploads/53667846-5168-4010-928b-8bb20a0242a7.png",
       color: "bg-orange-100",
-      tools: ["Adobe XD", "Micro-interactions", "Prototyping", "After Effects"],
-      category: "UI Design",
-      problem: "Users found existing food delivery apps cluttered and slow, with poor restaurant discovery and confusing ordering processes.",
-      solution: "Created a streamlined interface with visual menu browsing, one-tap ordering, and engaging micro-interactions for a delightful user experience.",
+      tools: ["Adobe XD", "Illustrator", "Photoshop", "Hotjar", "Google Analytics"],
+      category: "UI/UX Design",
+      problem: "TrackView was an obsolete system with little user adoption. The interface was outdated, non-intuitive, and lacked consistency, making file tracking and validation cumbersome for banking professionals.",
+      solution: "Led a complete redesign focused on user interviews and analytics. Introduced a new styleguide, improved daily task management, and facilitated clear user journeys validated by stakeholders.",
       process: [
-        "Competitive Analysis",
-        "User Flow Optimization",
-        "Visual Design & Branding",
-        "Micro-interaction Design",
-        "Usability Testing"
+        "User interviews and feedback collection",
+        "Wireframing and prototyping",
+        "Usability analysis with Hotjar and business teams",
+        "Creation of a consistent styleguide",
+        "UI and UX refinement through testing",
+        "Final implementation and stakeholder validation"
       ],
       results: [
-        "35% faster ordering process",
-        "20% increase in repeat orders",
-        "4.7/5 app store rating",
-        "Featured in Design Awards 2022"
+        "Modern interface adopted by a large user base",
+        "Improved clarity and speed in file validation",
+        "Positive stakeholder and user feedback",
+        "Defined best practices for future UI projects"
+      ],
+      customImages: [
+        "/lovable-uploads/53667846-5168-4010-928b-8bb20a0242a7.png"
       ]
     },
     {
