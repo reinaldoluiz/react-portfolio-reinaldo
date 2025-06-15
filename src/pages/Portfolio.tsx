@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Navigation from '../components/Navigation';
@@ -39,13 +38,19 @@ const Portfolio = () => {
     },
     {
       id: 4,
-      title: "Healthcare App",
-      description: "A telemedicine application that connects patients with doctors through an intuitive and accessible interface.",
-      year: "2023",
-      image: "/lovable-uploads/3bc795d8-161f-4f91-acc0-46a5d2d4b7d9.png",
+      title: "Viva E-commerce",
+      description: "Uma experiência de e-commerce sustentável com foco em produtos eco-friendly e jornada de compra intuitiva.",
+      year: "2024",
+      image: "/lovable-uploads/bc92d7c9-9d89-40f6-839a-3dae35ff94fd.png", // caneca
       color: "bg-pink-100",
-      tools: ["Figma", "Accessibility Design", "User Testing"],
-      category: "UI Design"
+      tools: ["Figma", "UI Design", "User Research"],
+      category: "UI Design",
+      images: [
+        "/lovable-uploads/bc92d7c9-9d89-40f6-839a-3dae35ff94fd.png", // caneca - principal
+        "/lovable-uploads/5b7c2195-2d61-49dc-a6c1-ee8578150f9a.png",
+        "/lovable-uploads/84f32a35-cb29-4d19-9f29-67d0b7f09a3a.png",
+        "/lovable-uploads/8feffc75-561a-49fd-8445-8513dcce8d18.png",
+      ],
     },
     {
       id: 5,
