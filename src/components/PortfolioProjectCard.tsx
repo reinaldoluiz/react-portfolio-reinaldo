@@ -9,7 +9,7 @@ interface Props {
 }
 
 const PortfolioProjectCard = ({ project, index }: Props) => {
-  const topAlignedProjectIds = [2, 6, 7, 8, 10];
+  const topAlignedProjectIds = [2, 3, 6, 7, 8, 10];
   const isTopAligned = topAlignedProjectIds.includes(project.id);
 
   return (
