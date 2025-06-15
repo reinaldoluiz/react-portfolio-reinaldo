@@ -1,14 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { projects } from '../data/projects';
-
-const ensureAbsolute = (path?: string) => {
-  if (!path) return '';
-  if (path.startsWith('http') || path.startsWith('/')) {
-    return path;
-  }
-  return `/${path}`;
-};
+import { resolveImagePath } from '@/lib/utils';
 
 const Projects = () => {
   const featuredProjects = projects.slice(0, 3);
@@ -37,7 +30,7 @@ const Projects = () => {
                 <div className={index % 2 === 1 ? "md:order-2" : ""}>
                   <div className={`${project.color} p-8 transform ${index % 2 === 0 ? 'rotate-2' : '-rotate-2'} border-2 border-gray-300`}>
                     <img 
-                      src={ensureAbsolute(project.image)} 
+                      src={resolveImagePath(project.image)} 
                       alt={project.title}
                       className="w-full h-auto mx-auto"
                     />
@@ -72,7 +65,7 @@ const Projects = () => {
           <div className="text-center mt-20">
             <div className="bg-orange-200 p-6 transform -rotate-1 border-2 border-gray-300 inline-block">
               <img 
-                src="/lovable-uploads/3bc795d8-161f-4f91-acc0-46a5d2d4b7d9.png" 
+                src={resolveImagePath("/lovable-uploads/3bc795d8-161f-4f91-acc0-46a5d2d4b7d9.png")} 
                 alt="Running character" 
                 className="w-24 h-24 object-contain mx-auto mb-4"
               />

@@ -1,25 +1,17 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Project } from '../types/project';
+import { resolveImagePath } from '@/lib/utils';
 
 interface Props {
   project: Project;
   index: number;
 }
 
-const ensureAbsolute = (path?: string) => {
-  if (!path) return '';
-  if (path.startsWith('http') || path.startsWith('/')) {
-    return path;
-  }
-  return `/${path}`;
-};
-
 const PortfolioProjectCard = ({ project, index }: Props) => {
   const topAlignedProjectIds = [2, 3, 6, 7, 8, 10];
   const isTopAligned = topAlignedProjectIds.includes(project.id);
-  const imageUrl = ensureAbsolute(project.image);
+  const imageUrl = resolveImagePath(project.image);
 
   return (
     <div className="group">

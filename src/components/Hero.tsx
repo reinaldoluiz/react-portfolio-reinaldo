@@ -1,6 +1,7 @@
 
 import { ArrowDown } from "lucide-react";
 import { Link } from "react-router-dom";
+import { resolveImagePath } from "@/lib/utils";
 
 const Hero = () => {
   const scrollToNext = () => {
@@ -21,7 +22,7 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Main illustration */}
           <div className="mb-8 flex justify-center">
-            <img alt="Adventure character with backpack" className="w-48 h-48 object-contain" src="/lovable-uploads/704183ad-9645-40d7-8d57-76502b5ee749.png" />
+            <img alt="Adventure character with backpack" className="w-48 h-48 object-contain" src={resolveImagePath("/lovable-uploads/704183ad-9645-40d7-8d57-76502b5ee749.png")} />
           </div>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-800 tracking-tight transform -rotate-1">
