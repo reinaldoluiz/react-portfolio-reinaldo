@@ -156,7 +156,7 @@ const ProjectDetail = () => {
       duration: "3 months",
       team: "UX/UI Designer",
       role: "UX/UI Designer",
-      image: "/lovable-uploads/53667846-5168-4010-928b-8bb20a0242a7.png",
+      image: "/lovable-uploads/23cd1ea5-0e7a-4c71-afaa-8d75d780f030.png", // laptop image main
       color: "bg-orange-100",
       tools: ["Adobe XD", "Illustrator", "Photoshop", "Hotjar", "Google Analytics"],
       category: "UI/UX Design",
@@ -177,7 +177,9 @@ const ProjectDetail = () => {
         "Defined best practices for future UI projects"
       ],
       customImages: [
-        "/lovable-uploads/53667846-5168-4010-928b-8bb20a0242a7.png"
+        "/lovable-uploads/23cd1ea5-0e7a-4c71-afaa-8d75d780f030.png", // laptop image
+        "/lovable-uploads/0ad5f1e2-27b9-4ee4-9f14-77018c7b8672.png",
+        "/lovable-uploads/10e921c1-4075-425f-914e-8227d013ceb1.png"
       ]
     },
     {
@@ -448,8 +450,29 @@ const ProjectDetail = () => {
                   />
                 </div>
               </div>
+            ) : project.id === 5 ? (
+              // Custom grid for project 5 (TrackView) - 3 images: laptop, system UI 1, system UI 2
+              <div className={`${project.color} p-8 transform -rotate-1 border-2 border-gray-300`}>
+                <div className="w-full h-[400px]">
+                  <div className="grid grid-cols-3 gap-6 h-full">
+                    {project.customImages &&
+                      project.customImages.map((img, idx) => (
+                        <div
+                          key={idx}
+                          className="h-full rounded-lg shadow-lg bg-white flex justify-center items-center"
+                          style={{
+                            backgroundImage: `url('${img}')`,
+                            backgroundSize: 'contain',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat'
+                          }}
+                        />
+                      ))}
+                  </div>
+                </div>
+              </div>
             ) : (
-              // Grid layout for projects 5, 6, and 7 using placeholder images
+              // Grid layout for projects 6, 7, and 8 using placeholder images
               <div className="w-full h-[500px]">
                 <div className="grid grid-cols-2 grid-rows-2 gap-6 h-full">
                   {/* Top left */}

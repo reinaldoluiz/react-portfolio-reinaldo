@@ -57,12 +57,14 @@ const Portfolio = () => {
       title: "TrackView Web System",
       description: "Complete redesign of a banking file transfer tracking system. Enhanced usability, interface and visual consistency for Brazilian corporations.",
       year: "2023",
-      image: "/lovable-uploads/53667846-5168-4010-928b-8bb20a0242a7.png",
+      image: "/lovable-uploads/23cd1ea5-0e7a-4c71-afaa-8d75d780f030.png", // laptop image as main image
       color: "bg-orange-100",
       tools: ["Adobe XD", "Illustrator", "Photoshop", "Hotjar", "Google Analytics"],
       category: "UI/UX Design",
       images: [
-        "/lovable-uploads/53667846-5168-4010-928b-8bb20a0242a7.png"
+        "/lovable-uploads/23cd1ea5-0e7a-4c71-afaa-8d75d780f030.png", // laptop image (main)
+        "/lovable-uploads/0ad5f1e2-27b9-4ee4-9f14-77018c7b8672.png",
+        "/lovable-uploads/10e921c1-4075-425f-914e-8227d013ceb1.png"
       ],
     },
     {
