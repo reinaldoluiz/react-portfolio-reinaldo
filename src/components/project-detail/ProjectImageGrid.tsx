@@ -36,7 +36,11 @@ const ProjectImageGrid = ({ project }: ProjectImageGridProps) => {
   }
   // Project 5: 4-image grid (2 images, 2 empty)
   if (project.id === 5 && project.customImages) {
-    return <Project5Grid images={project.customImages} />;
+    return (
+      <div className="pb-16">
+        <Project5Grid images={project.customImages} />
+      </div>
+    );
   }
   // Default: 4-image placeholder grid
   return <DefaultImageGrid />;
