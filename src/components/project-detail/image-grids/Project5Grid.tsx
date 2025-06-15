@@ -38,8 +38,6 @@ const Project5Grid: React.FC<Project5GridProps> = ({ images }) => (
           backgroundRepeat: 'no-repeat'
         }}
       />
-      {/* Bottom right - empty */}
-      <div className="h-full rounded-lg shadow-lg bg-white" />
     </div>
   </div>
 );
