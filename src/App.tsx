@@ -18,7 +18,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/react-portfolio-reinaldo/">
+      <BrowserRouter basename={import.meta.env.PROD ? "/react-portfolio-reinaldo/" : "/"}>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/resume" element={<Resume />} />
