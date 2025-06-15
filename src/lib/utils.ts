@@ -11,8 +11,17 @@ export function resolveImagePath(path?: string): string {
   if (path.startsWith('http')) {
     return path;
   }
+
   const baseUrl = import.meta.env.BASE_URL;
-  // Ensure we don't have double slashes between base and path
-  const finalPath = `${baseUrl.replace(/\/$/, '')}/${path.replace(/^\//, '')}`;
-  return finalPath;
+  const cleanPath = path.startsWith('/') ? path : `/${path}`;
+
+  // In dev, baseUrl is '/', so we just return the cleaned path.
+  // This avoids creating paths like '//image.png'.
+  if (baseUrl === '/' || baseUrl === '') {
+    return cleanPath;
+  }
+
+  // In prod, prepend the base path (e.g., /react-portfolio-reinaldo/).
+  // This ensures paths work correctly when deployed to a subfolder.
+  return `${baseUrl.replace(/\/$/, '')}${cleanPath}`;
 }
