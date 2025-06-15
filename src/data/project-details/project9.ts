@@ -15,11 +15,11 @@ export const project9: Project = {
   tools: ["Lovable AI", "React", "TypeScript", "TailwindCSS", "Figma"],
   categories: ["AI", "UI Design"],
   problem: "Criar um portfólio digital moderno e responsivo para apresentar meus projetos e habilidades, otimizando o tempo de desenvolvimento sem sacrificar a qualidade e a personalização.",
-  solution: "Utilizei uma ferramenta de desenvolvimento assistida por IA para gerar a estrutura inicial do site, as ilustrações e os componentes. Com conhecimentos de front-end, refinei o design e implementei funcionalidades-chave como a opção de currículo multi-idioma com impressão e as abas de categoria no portfólio, garantindo uma experiência de usuário fluida e única.",
+  solution: "Utilizei uma ferramenta de desenvolvimento assistida por IA para gerar a estrutura inicial do site, as ilustrações e os componentes. Com conhecimentos de front-end, refinei o design e implementei funcionalidades-chave como a opção de currículo multi-idioma com impressão, as abas de categoria no portfólio e uma página dedicada à acessibilidade, garantindo uma experiência de usuário fluida e única.",
   process: ["Definição de Requisitos", "Geração de Design com IA", "Desenvolvimento e Customização", "Criação de Conteúdo", "Deploy"],
   results: [
     "Um portfólio pessoal totalmente funcional e responsivo.",
-    "Implementação de funcionalidades avançadas: CV multi-idioma, impressão de CV e filtros de categoria.", 
+    "Implementação de funcionalidades avançadas: CV multi-idioma, impressão de CV, filtros de categoria e página de checkpoint de acessibilidade.", 
     "Redução significativa no tempo de desenvolvimento inicial.", 
     "Experiência prática na colaboração Homem-IA em um projeto real."
   ],
