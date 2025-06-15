@@ -9,6 +9,7 @@ import { project6 } from './project-details/project6';
 import { project7 } from './project-details/project7';
 import { project8 } from './project-details/project8';
 import { project9 } from './project-details/project9';
+import { project10 } from './project-details/project10';
 
 export const projects: Project[] = [
     project1,
@@ -19,5 +20,6 @@ export const projects: Project[] = [
     project6,
     project7,
     project8,
-    project9
+    project9,
+    project10
 ];
