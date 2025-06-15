@@ -1,5 +1,4 @@
-
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Eye, Users, Volume2 } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Eye, Users, Volume2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -19,22 +18,20 @@ const Footer = () => {
             {/* Social Links */}
             <div className="flex space-x-3">
               <a 
-                href="#" 
+                href="http://linkedin.com/in/reinaldolluiz" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-600 transition-colors"
               >
                 <Linkedin size={20} />
               </a>
               <a 
-                href="#" 
+                href="https://github.com/reinaldoluiz" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="text-gray-400 hover:text-gray-600 transition-colors"
               >
                 <Github size={20} />
-              </a>
-              <a 
-                href="#" 
-                className="text-gray-400 hover:text-gray-600 transition-colors"
-              >
-                <Twitter size={20} />
               </a>
             </div>
           </div>
