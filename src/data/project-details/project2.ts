@@ -16,14 +16,27 @@ export const project2: Project = {
   categories: ["Research", "UI Design", "Design System"],
   problem: "Parents struggled to find the right training pants for their children while also needing educational support during the potty training process. The existing platform lacked engagement and failed to address the multicultural needs of diverse families.",
   solution: "Created an integrated e-commerce and educational platform with personalized product recommendations, interactive potty training resources, and culturally diverse content. Implemented a design system that worked across desktop and mobile devices.",
-  process: [
-    "Stakeholder Interviews & Requirements Gathering",
-    "User Research with Parents & Children",
-    "Competitive Analysis of E-commerce Platforms",
-    "Information Architecture & User Journey Mapping",
-    "Design System Creation",
-    "Prototyping & User Testing",
-    "Implementation & Launch Support"
+ process: [
+    {
+      title: "User Research & Interviews",
+      description: "Conducted in-depth interviews with parents and caregivers across diverse demographic backgrounds to map emotional pain points, behavioral habits, and learning preferences during the potty training journey."
+    },
+    {
+      title: "Competitive Analysis",
+      description: "Audited leading regional and global parenting platforms to benchmark educational tools, e-commerce flows, and content personalization strategies, identifying key gaps in multicultural representation."
+    },
+    {
+      title: "Wireframing & Prototyping",
+      description: "Designed flexible layout frameworks and interactive flow diagrams for both the e-commerce store and the educational hub, ensuring intuitive navigation and responsive design across desktop and mobile."
+    },
+    {
+      title: "User Testing & Iteration",
+      description: "Ran usability testing sessions with target parents using interactive prototypes to validate product recommendation flows, content engagement, and feature clarity, refining components based on user feedback."
+    },
+    {
+      title: "Final Design & Handoff",
+      description: "Delivered high-fidelity UI components, accessible color palettes, and culturally inclusive imagery assets, establishing clear design system documentation for efficient development and cross-team alignment."
+    }
   ],
   results: [
     "Improved user engagement with multicultural content",

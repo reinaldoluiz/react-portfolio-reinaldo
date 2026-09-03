@@ -14,17 +14,30 @@ export const project3: Project = {
   color: "bg-red-100",
   tools: ["Adobe XD", "Illustrator", "Figma", "Google Analytics"],
   category: "UX/UI Design",
-  problem: "Customers faced difficulties navigating the complex insurance acquisition process, with poor mobile user experience and lack of clear value proposition for insurance installments. The existing platform had high abandonment rates and low user satisfaction.",
-  solution: "Developed a comprehensive digital solution featuring an intuitive mobile app with streamlined insurance acquisition flow, clear coverage information, and added-value services. Created responsive landing pages that effectively communicate the benefits and guide users through the decision-making process.",
+  problem: "Customers faced difficulties navigating the complex insurance acquisition process, with poor mobile user experience and lack of clear value proposition for insurance installments. The existing platform had high abandonment rates and low user satisfaction.Customers faced difficulties navigating the complex insurance acquisition process, with poor mobile user experience and lack of clear value proposition for insurance installments. The existing platform had high abandonment rates and low user satisfaction.",
+  solution: "Developed a comprehensive digital solution featuring an intuitive mobile app with a streamlined insurance acquisition flow, clear coverage information, and added-value services. Created responsive landing pages that effectively communicate the benefits and guide users through the decision-making process.",
   process: [
-    "Business Requirements Analysis",
-    "User Journey Mapping & Pain Point Identification",
-    "Competitive Analysis of Insurance Platforms",
-    "Mobile-First Design Approach",
-    "Prototyping & User Testing",
-    "Design System Implementation",
-    "Collaboration with Development Team"
-  ],
+  {
+    title: "User Research & Interviews",
+    description: "Executed qualitative interviews with policyholders to identify key friction points in the purchasing funnel, uncovering cognitive overload caused by dense legal jargon and complex installment choices."
+  },
+  {
+    title: "Competitive Analysis",
+    description: "Evaluated leading InsurTech platforms and digital financial services to analyze onboarding patterns, coverage comparison structures, and checkout UX standards."
+  },
+  {
+    title: "Wireframing & Prototyping",
+    description: "Designed mobile-first wireframes focusing on progressive disclosure to break complex insurance policies into digestible steps, establishing clear paths for plan selection and payment customization."
+  },
+  {
+    title: "User Testing & Iteration",
+    description: "Conducted unmoderated usability tests on high-fidelity mobile prototypes to validate quote customization tools, payment installment flows, and coverage clarity, optimizing micro-copy based on user confidence levels."
+  },
+  {
+    title: "Final Design & Handoff",
+    description: "Delivered a complete mobile-first design system with scalable UI components, status indicators, and clear documentation for seamless handoff to engineering teams."
+  }
+],
   results: [
     "Improved user experience with simplified navigation",
     "Enhanced mobile app functionality and usability",

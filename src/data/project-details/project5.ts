@@ -16,14 +16,28 @@ export const project5: Project = {
   categories: ["UI Design", "UX Research"],
   problem: "TrackView was an obsolete system with little user adoption. The interface was outdated, non-intuitive, and lacked consistency, making file tracking and validation cumbersome for banking professionals.",
   solution: "Led a complete redesign focused on user interviews and analytics. Introduced a new styleguide, improved daily task management, and facilitated clear user journeys validated by stakeholders.",
-  process: [
-    "User interviews and feedback collection",
-    "Wireframing and prototyping",
-    "Usability analysis with Hotjar and business teams",
-    "Creation of a consistent styleguide",
-    "UI and UX refinement through testing",
-    "Final implementation and stakeholder validation"
-  ],
+ process: [
+  {
+    title: "User Research & Interviews",
+    description: "Executed contextual inquiries and interviews with banking professionals to understand workflow bottlenecks, uncovering key pain points in file tracking, validation errors, and daily task management."
+  },
+  {
+    title: "Competitive Analysis",
+    description: "Analyzed enterprise financial software and internal data tracking tools to establish modern usability benchmarks, workflow automation patterns, and data visualization standards."
+  },
+  {
+    title: "Wireframing & Prototyping",
+    description: "Designed simplified dashboard layouts and intuitive task management flows, replacing legacy screens with structured, clear file-tracking interfaces and status indicators."
+  },
+  {
+    title: "User Testing & Iteration",
+    description: "Validated high-fidelity prototypes through guided testing sessions with stakeholders and daily system users, refining data views, search filters, and validation steps based on feedback."
+  },
+  {
+    title: "Final Design & Handoff",
+    description: "Created a modern, cohesive style guide and UI component library tailored for financial data tools, providing comprehensive documentation for smooth developer handoff."
+  }
+],
   results: [
     "Modern interface adopted by a large user base",
     "Improved clarity and speed in file validation",

@@ -16,7 +16,28 @@ export const project7: Project = {
   categories: ['UI Design', 'UX Research'],
   problem: 'Claro needed a unified and efficient system for its B2B sales representatives to manage clients, create quotes, and associate services, replacing a fragmented and slow legacy system.',
   solution: 'We designed and developed a new platform on Salesforce Lightning Experience, with a step-by-step wizard for order creation, a clear dashboard, and a responsive mobile interface to empower sales representatives in the field.',
-  process: ['Discovery and Research', 'Wireframing and Prototyping', 'UI Design and Design System', 'Development and Integration', 'Testing and Deployment'],
+ process: [
+  {
+    title: "User Research & Interviews",
+    description: "Shadowed B2B sales representatives in the field and interviewed account managers to map existing legacy system bottlenecks, client management flows, and quote generation pain points."
+  },
+  {
+    title: "Competitive Analysis",
+    description: "Evaluated enterprise CRM standards, telecom B2B sales workflows, and Salesforce Lightning best practices to establish an optimized order creation structure and service bundling model."
+  },
+  {
+    title: "Wireframing & Prototyping",
+    description: "Designed a step-by-step wizard interface for complex order building, alongside an intuitive executive dashboard layout tailored for both desktop and field mobile use."
+  },
+  {
+    title: "User Testing & Iteration",
+    description: "Conducted usability testing sessions with field agents using interactive prototypes to validate quote customization speed, service association flows, and mobile responsiveness."
+  },
+  {
+    title: "Final Design & Handoff",
+    description: "Delivered a complete UI design system aligned with Salesforce Lightning guidelines, featuring clear status indicators, field-optimized components, and handoff documentation for engineers."
+  }
+],
   results: ['30% increase in sales efficiency', '50% reduction in order processing time', 'Improved user satisfaction among sales representatives'],
   customImages: [
     '/lovable-uploads/2b413020-94d9-4b29-99b1-2b8eb3ec1bc4.png',

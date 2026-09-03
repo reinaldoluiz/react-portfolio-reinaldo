@@ -24,15 +24,28 @@ export const project4: Project = {
     "The product purchase journey was complex, the website had low accessibility, and there was no visual standardization among components, making things difficult for both users and the development team.",
   solution:
     "I restructured the entire e-commerce using a design system, with accessibility as a priority and components designed for different user journeys. I defined a new visual style, aligned business requirements, and developed product and purchase pages focused on user experience.",
-  process: [
-    "Product and purchase journey research",
-    "Redesign objectives definition",
-    "Design System creation",
-    "Prototyping e-commerce screens (desktop and mobile)",
-    "Usability testing and adjustments",
-    "Component standardization",
-    "Assets and documentation handoff to development"
-  ],
+ process: [
+  {
+    title: "User Research & Interviews",
+    description: "Conducted accessibility audits and user interviews to pinpoint navigation hurdles, identifying key friction points in the checkout journey and visual inconsistency across pages."
+  },
+  {
+    title: "Competitive Analysis",
+    description: "Benchmarked leading e-commerce platforms to establish accessibility standards (WCAG guidelines), seamless conversion flows, and scalable design system architectures."
+  },
+  {
+    title: "Wireframing & Prototyping",
+    description: "Architected intuitive layout frameworks for product and checkout pages, focusing on clear visual hierarchy, keyboard navigation, and responsive component structures."
+  },
+  {
+    title: "User Testing & Iteration",
+    description: "Ran usability sessions with diverse user groups to test component readability, interactive flows, and purchase completion rates, refining micro-interactions based on feedback."
+  },
+  {
+    title: "Final Design & Handoff",
+    description: "Built a fully accessible, standardized UI design system with comprehensive guidelines and component specifications to ensure seamless implementation by the engineering team."
+  }
+],
   results: [
     "Easier and more direct purchase journey",
     "Increased website sales conversion",

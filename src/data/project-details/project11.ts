@@ -1,26 +1,46 @@
-
 import { Project } from '../../types/project';
 
 export const project11: Project = {
   id: 11,
-  title: "Criação de Material de Ponto de Venda (PDV)",
-  subtitle: "Design gráfico para materiais de merchandising e campanhas promocionais",
-  description: "Experiência na criação de materiais de ponto de venda para diversas marcas, desenvolvendo peças como displays, banners e embalagens promocionais que se destacam no varejo e comunicam efetivamente a mensagem da marca.",
+  title: "Point of Sale (POS) Material Creation",
+  subtitle: "Graphic design for merchandising materials and promotional campaigns",
+  description: "Experience in creating point-of-sale materials for various brands, developing pieces such as displays, banners, and promotional packaging that stand out in retail environments and effectively communicate the brand message.",
   year: "2023",
-  duration: "Contínuo",
-  team: "Agências e Clientes",
-  role: "Designer Gráfico",
+  duration: "Ongoing",
+  team: "Agencies & Clients",
+  role: "Graphic Designer",
   image: "/lovable-uploads/e35106dd-0993-40e8-b09b-957fca79214d.png",
   color: "bg-yellow-100",
-  tools: ["Adobe Photoshop", "Adobe Illustrator", "AI Generativa"],
+  tools: ["Adobe Photoshop", "Adobe Illustrator", "Generative AI"],
   categories: ["AI", "Graphic design"],
-  problem: "Clientes necessitavam de materiais de ponto de venda (PDV) que fossem não apenas visualmente atraentes, mas também eficazes em comunicar promoções, destacar produtos e fortalecer a identidade da marca em ambientes de varejo competitivos.",
-  solution: "Criei uma série de materiais de PDV, utilizando design gráfico estratégico e ferramentas de IA para gerar mockups realistas e otimizar layouts rapidamente. Isso resultou em peças coesas e impactantes que capturaram a atenção do consumidor e alinharam-se com os objetivos de marketing de cada cliente.",
-  process: ["Análise de Briefing", "Pesquisa de Concorrentes", "Desenvolvimento de Conceito", "Criação de Mockups com IA", "Design e Refinamento", "Preparação para Produção"],
+  problem: "Clients needed point-of-sale (POS) materials that were not only visually appealing, but also effective in communicating promotions, highlighting products, and strengthening brand identity in competitive retail environments.",
+  solution: "Created a series of POS materials using strategic graphic design and AI tools to rapidly generate realistic mockups and optimize layouts. This resulted in cohesive, high-impact assets that captured consumer attention and aligned with each client's marketing goals.",
+  process: [
+    {
+      title: "Briefing & Visual Strategy",
+      description: "Analyzed brand guidelines and campaign goals to define visual hierarchy, messaging focus, and key messaging elements for the retail space."
+    },
+    {
+      title: "AI Prompting & Visual Exploration",
+      description: "Leveraged generative AI tools to rapidly generate high-fidelity background environments, textures, and initial layout concepts."
+    },
+    {
+      title: "Graphic Design & Key Visual Production",
+      description: "Designed vector assets, key visuals, and typographic structures in Adobe Illustrator and Photoshop to ensure print-ready precision."
+    },
+    {
+      title: "3D Mockups & Retail Simulation",
+      description: "Built realistic 3D mockup renders to simulate how displays, banners, and packaging would look and function in real-world store environments."
+    },
+    {
+      title: "Pre-press & File Preparation",
+      description: "Prepared final production files with color management, bleeds, dielines, and technical specs required for high-quality printing."
+    }
+  ],
   results: [
-    "Aumento do engajamento do consumidor no ponto de venda.",
-    "Fortalecimento da presença de marca para os clientes.",
-    "Materiais entregues dentro do prazo, com alta qualidade visual e de produção."
+    "Increased consumer engagement at the point of sale.",
+    "Strengthened brand presence and visibility for clients.",
+    "Delivered assets on schedule with high visual and production quality."
   ],
   customImages: [
     "/lovable-uploads/e35106dd-0993-40e8-b09b-957fca79214d.png",
