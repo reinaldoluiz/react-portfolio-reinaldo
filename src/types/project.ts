@@ -1,4 +1,8 @@
 
+export interface ProcessStep {
+  title: string;
+  description: string;
+}
 export interface Project {
   id: number;
   title: string;
@@ -15,7 +19,7 @@ export interface Project {
   categories?: string[];
   problem: string;
   solution: string;
-  process: string[];
+  process: ProcessStep[];
   results: string[];
   customImages?: string[];
 }
