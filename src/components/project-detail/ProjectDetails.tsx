@@ -25,9 +25,9 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => (
         <h3 className="text-2xl font-bold text-gray-800 mb-4">Design Process</h3>
         <ul className="space-y-2">
           {project.process.map((step, index) => (
-            <li key={index} className="text-gray-700 flex items-center gap-2">
-              <span className="w-2 h-2 bg-red-400 rounded-full"></span>
-              {step}
+            <li key={index} className="text-gray-700 flex flex-col gap-1">
+             <strong className="font-bold text-gray-900">{step.title}: </strong>
+      <span className="text-gray-700">{step.description}</span>
             </li>
           ))}
         </ul>
